@@ -469,7 +469,7 @@ h3.shadow {
 
 .reveal table {
   margin: auto;
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0; }
 
 .reveal table th {
@@ -477,9 +477,9 @@ h3.shadow {
   border-top: 2px solid;
   border-bottom: 1px solid;}
 
-.reveal table th, .reveal table td {
+.reveal table th, .reveal table td, .reveal table tr {
   text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;}
+  padding: 0.2em 0.2em 0.2em 0.2em;}
   /* border-bottom: 1px solid; }*/
 
 .reveal table tr:last-child td {
