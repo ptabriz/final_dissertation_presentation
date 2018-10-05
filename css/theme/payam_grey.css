@@ -274,11 +274,14 @@ body {
   font-weight: 700;
   color: #fff;
   text-shadow: none; }
-  font-family:
+
 .reveal h2 {
-  font-size: 1.5em;
+  margin-top: .5em;
+  font-size: 1em;
+  align: left;
+  float: left;
   font-weight: 600;
-  color: #3d3d3d; }
+  color: gray; }
 
 .reveal h3 {
   font-size: 1.3em;
@@ -343,8 +346,10 @@ h3.shadow {
  * OTHER
  *********************************************/
 .reveal p {
-  margin: 0.5em 0;
-  line-height: 1.2em; }
+  margin-top: 0.1em ;
+  line-height: 1em;
+  text-align: center;
+  align: center}
 
 
 .reveal p2 {
@@ -352,6 +357,21 @@ h3.shadow {
   line-height: 1.3em;
   font-size: .7em }
 
+.reveal p3 {
+  margin: 0.5em 0;
+  font-family: "LatoWeb", sans-serif;
+  text-align: left;
+  text-align: justify;
+  display: inline-block;
+  line-height: 1.3em;
+  font-size: .7em }
+
+.reveal p4 {
+  margin-top: 0.1em;
+  font-family: "LatoWeblight", sans-serif;
+  float: right;
+  line-height: 1.3em;
+  font-size: .5em }
 
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
@@ -474,16 +494,19 @@ h3.shadow {
 
 .reveal table th {
   font-weight: bold;
-  border-top: 2px solid;
-  border-bottom: 1px solid;}
+  border-top: 2px solid grey;
+  border-bottom: 1px solid grey;}
 
 .reveal table th, .reveal table td, .reveal table tr {
   text-align: left;
   padding: 0.2em 0.2em 0.2em 0.2em;}
   /* border-bottom: 1px solid; }*/
 
+.reveal table tr.border_bottom td {
+    border-bottom: .5pt dashed lightgray;
+  }
 .reveal table tr:last-child td {
-  border-bottom: 2px solid; }
+  border-bottom: 2px solid grey; }
 
 .reveal sup {
   vertical-align: super; }
