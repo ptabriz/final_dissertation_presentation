@@ -504,7 +504,7 @@ h3.shadow {
 .reveal table {
   margin: auto;
   border-collapse: separate;
-  border-spacing: 0; }
+  border-spacing: 0 ; }
 
 .reveal table th {
   font-weight: bold;
@@ -518,8 +518,8 @@ h3.shadow {
 
 .reveal table.condensed tr {
   line-height: 1em;
+  border-spacing: 100em;
   }
-
 
 .reveal table tr.border_bottom td {
     border-bottom: .5pt dashed lightgray;
@@ -530,6 +530,13 @@ h3.shadow {
     border-top: 0px;
 
   }
+
+  .reveal table tr.no_space td {
+    padding-bottom: .1em;
+    padding-top:.1em;
+
+
+    }
 
 .reveal table tr.border_top td {
     border-top: 2px solid grey;
@@ -593,8 +600,8 @@ h3.shadow {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  /* border: 4px solid #000; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); } */
 
 .reveal a img {
   -webkit-transition: all 0.15s linear;
