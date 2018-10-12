@@ -552,6 +552,10 @@ h3.shadow {
 .reveal table tr:last-child td {
   border-bottom: 2px solid grey; }
 
+.reveal table.no_bottom_border tr:last-child td {
+  border-bottom: 0px solid grey; }
+
+
 
 .reveal sup {
   vertical-align: super; }
