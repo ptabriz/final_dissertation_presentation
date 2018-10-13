@@ -393,6 +393,11 @@ h3.shadow {
   font-size: .9em;
   padding: .3em 0.8em; }
 
+.reveal li.condensed {
+  font-size: 1em;
+  padding: .1em 0.1em;
+  line-height: 1.5em }
+
 .reveal reference {
   font-size: .7em;
   font-style: italic;
