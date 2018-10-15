@@ -1147,21 +1147,20 @@ classification corresponding to the site’s existing land cover.
 
     <aside class="notes">
 
-      This diagram shows the entire workflow for computing viewscape metrics for a single viewscape.
-      I already showed the process of acquiring the maps.
+      This shows the entire workflow for computing viewscape metrics for a single viewscape.
+      Based on the viewscape maps, several metrics related to compositions and computations of viewscape were computed.
 
-      I chose a set of configuration and composition metrics that are previously shown to be related to human perceptions.
+      <!-- I chose a set of configuration and composition metrics that are previously shown to be related to human perceptions. -->
       Composition variables indicate the percentage of each landcover present in viewscape such as percentage of mixed forest, buildings, etc.
 
-      Configuration metrics indiate the spatial charactristic of a viewscape.
-      These include the extent and depth of view, some metrics borrowed from landscape ecology that indicate pattern and shape diversity, and vertical variability
-      such as relief and skyline.
+      Configuration metrics include the extent and depth of view, some metrics borrowed from landscape ecology that indicate pattern and shape diversity, and metrics
+      related to vertical variability such as relief and skyline.
 
-      Once I developed the workflow for 1 viewscape, I developed a python code for GRASS GIS, to repeat the workflow for the entire study area
+      Finally, I developed a python script in GRASS GIS, to automatically compute viewscapes for the entire study area
       considering a viewpoints every 5 meters resulting in around 40000 points.
 
-
     </aside>
+
 </section>
 
 <section data-background="white">
@@ -1256,9 +1255,9 @@ classification corresponding to the site’s existing land cover.
 
 
         <aside class="notes">
-        I pulled out the results for four viewpoints to show the composition metrics charactrize the viewscapes.
-        You can see the first viewscape is charactrized by dominant presence of PAved roads and buildings.
-        The second and third viewscapes have a good mixture of most landcover types.
+        I pulled out the results for four viewpoints to show how the composition metrics charactrize the viewscapes.
+        You can see the first viewscape is charactrized by dominant presence of Paved roads and buildings.
+        The second and third viewscapes have a in general a good mixture of landcover types.
         The forth viewscapes is mostly charactrized by presense of natural ground cover and mixed forest.
 
         </aside>
@@ -1358,8 +1357,8 @@ classification corresponding to the site’s existing land cover.
 
               <aside class="notes">
                   The same was done for configuration metrics.
-                  As an example the first two maps extent charactrize large and small viewscapes.
-                  In the third map Shannon diversity index, Mean shape index and Patch number indicate the pattern and shape diverisity of the viewscape.
+                  --As you can see in the Extent charactrize large and small viewscapes shown in the first two maps.
+                  In the third map Shannon diversity index, Mean shape index and Patch number charactrize the high pattern and shape variability of the viewscape.
 
               </aside>
 </section>
