@@ -1095,11 +1095,11 @@ classification corresponding to the site’s existing land cover.
 
 
   <aside class="notes">
-  Based on the detailed landcover then, I computed a bunch of viewscape maps.
-  The binary viewscape shows the visibile areas from a vantage points, it simply shows much one can see.
-  I intersected this map with landcover to acquire a map showing the land cover types that are present in a viewscape.
-  I also intersected the binary viewscape with the bare earth model to
-  disect the viewscape into seperate maps of on the ground and above-ground visibility.
+  Based on the spatial data, I generated 4 viewscape maps.
+  The first one is shows the visibile areas of the surface model from a vantage point, so called binary viewscape.
+  I intersected this map with landcover to acquire a second map that shows the types of land cover present in a viewscape.
+  I also intersected the binary viewscape with bare-ground model to create Horizontal viewscape which is what you can see
+  on the ground and vertical viewscape which is what you can see above the ground.
 
   Based on these maps, I was able to compute the viewscape metrics.
 
@@ -1147,16 +1147,17 @@ classification corresponding to the site’s existing land cover.
 
     <aside class="notes">
 
-      This diagram shows the workflow entire for computing viewscape metrics for a single viewscape.
+      This diagram shows the entire workflow for computing viewscape metrics for a single viewscape.
       I already showed the process of acquiring the maps.
 
       I chose a set of configuration and composition metrics that are previously shown to be related to human perceptions.
-      Composition variables simply indicate who “what we see” in a view and indicate proportional presence of each land cover like
-      buildings and vegetation in a viewpoint. Configuration metrics as the name suggest show the dimensions, and diversity of the view.
-      For example, Extent indicates how wide is your view and depth indicates how far you can see. More complex metrics such as Shannon diversity index show how complex is your view and how many
-      different land covers are present in your view. The relief and skyline variability show the elevation change of the surface and above surface elements, respectively.
+      Composition variables indicate the percentage of each landcover present in viewscape such as percentage of mixed forest, buildings, etc.
 
-      Through a python script implemented in GRASS GIS I reiterated this process for the entire study area
+      Configuration metrics indiate the spatial charactristic of a viewscape.
+      These include the extent and depth of view, some metrics borrowed from landscape ecology that indicate pattern and shape diversity, and vertical variability
+      such as relief and skyline.
+
+      Once I developed the workflow for 1 viewscape, I developed a python code for GRASS GIS, to repeat the workflow for the entire study area
       considering a viewpoints every 5 meters resulting in around 40000 points.
 
 
@@ -1255,9 +1256,11 @@ classification corresponding to the site’s existing land cover.
 
 
         <aside class="notes">
-        I pulled out the result for a few viewpoints to see how they can charactrise the viewscapes.
-        You can see that this viewscape is more domintantly paved roads and buildings whereas the one in far right is
-        charactrised by natural ground cover and mixed forest.
+        I pulled out the results for four viewpoints to show the composition metrics charactrize the viewscapes.
+        You can see the first viewscape is charactrized by dominant presence of PAved roads and buildings.
+        The second and third viewscapes have a good mixture of most landcover types.
+        The forth viewscapes is mostly charactrized by presense of natural ground cover and mixed forest.
+
         </aside>
 
 </section>
@@ -1281,89 +1284,102 @@ classification corresponding to the site’s existing land cover.
           <tr class = "border_bottom_solid border_top no_space">
             <td style="text-align:left; vertical-align: middle"> Viewscape image </td>
             <td><img src="img/ENV_210.png" style="width: 80%"></td>
-            <td><img src="img/ENV_194.png" style="width: 80%"></td>
             <td><img src="img/ENV_196.png" style="width: 80%"></td>
+            <td><img src="img/ENV_194.png" style="width: 80%"></td>
+
 
           <tr class= "border_bottom_solid no_space">
             <td style="text-align:left; vertical-align: middle"> Viewscape map</td>
             <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_210.PNG" style="width:80%"></td>
-            <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_194.png" style="width: 80%"></td>
             <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_196.png" style="width: 80%"></td>
+            <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_194.png" style="width: 80%"></td>
+
           </tr>
 
           <tr class = "center_text">
 
             <td style = "text-align:left"> Extent (m<sup>2</sup>) </td>
-            <td><highlight class="dark"> 185,000  </highlight>  </td>
-            <td> 50,710   </td>
-            <td> 1072   </td>
+            <td><highlight class="dark"> 185,000 </highlight></td>
+            <td> <highlight class="dark"> 1072 </highlight></td>
+            <td> 50,710 </td>
+
           </tr>
 
-          <tr class = "center_text">
+          <!-- <tr class = "center_text">
             <td style = "text-align:left"> releif (m)</td>
 
-              <td><highlight class="dark">7.12</highlight></td>
-              <td>4.76</td>
+              <td>7.12</td>
               <td>2.11</td>
-          </tr>
+              <td>4.76</td>
+
+          </tr> -->
 
           <tr class = "center_text">
-            <td style = "text-align:left"> Vdepth (m)</td>
-              <td>17.3</td>
-              <td><highlight class="dark">29.90</highlight></td>
-              <td>5.29</td>
+            <td style = "text-align:left"> Depth (m) </td>
+              <td>538</td>
+              <td>305</td>
+              <td>1293</td>
+
           </tr>
 
           <tr class = "center_text">
             <td style = "text-align:left"> SDI </td>
               <td>1.11</td>
-              <td><highlight class="dark">1.51</highlight></td>
               <td>1.49</td>
+              <td><highlight class="dark">1.51</highlight></td>
+
           </tr>
 
           <tr class = "center_text">
             <td style = "text-align:left"> MSI </td>
               <td>39.1</td>
-              <td><highlight class="dark">63.48</highlight></td>
               <td>19.7</td>
+              <td><highlight class="dark">63.48</highlight></td>
+
           </tr>
 
 
           <tr class = "center_text">
             <td style = "text-align:left"> Nump </td>
               <td>3700</td>
-              <td><highlight class="dark">4168</highlight></td>
               <td>642</td>
+              <td><highlight class="dark">4168</highlight></td>
           </tr>
-
 
           <tr class = "center_text">
-            <td style = "text-align:left"> Depth (m) </td>
-              <td>538</td>
-              <td>1293</td>
-              <td>305</td>
+            <td style = "text-align:left"> Vdepth (m)</td>
+              <td>17.3</td>
+              <td>5.29</td>
+              <td><highlight class="dark">29.90</highlight></td>
+
           </tr>
+
       </table>
 
               <aside class="notes">
-                  Or in these examples of configuration metrics you can see you how small and large viewscapes are characterized by extent and depth parameters.
-                  The viewscape in the middle that depicts multiple vegetation types with varied arrangement has larger values for pattern and shape complexity
-                  compared to other more homogenous views.
+                  The same was done for configuration metrics.
+                  As an example the first two maps extent charactrize large and small viewscapes.
+                  In the third map Shannon diversity index, Mean shape index and Patch number indicate the pattern and shape diverisity of the viewscape.
+
               </aside>
 </section>
 
 
-<section data-background="img/mapping_objective.jpg" data-background-size="58%">
-          <!-- <h2 style= "margin-bottom:60%">Viewscape metrics maps</h2> -->
+<section data-background="img/mapping_objective-2.jpg" data-background-size="58%">
+          <h2 style= "margin-bottom:60%">Viewscape metrics maps</h2>
 
           <aside class="notes">
-            I assigned the viewscape metrcis to their corresponsing viewpoints,
-            with 5 meter spacing, to create a map that shows how viewscapes metrics spatially vary across the study area.
-            Several valuable information can be derived from these maps.
 
-            For example, you can see for that western portions of the site are charactrized by vast viewscapes.
-            Also, the central and northern parts have highly heterogenous landscapes where as the grassy part in southwest seems be realtively homogenous.
-            We can also see that there is a high presence of buildings and decisous trees in the eastern portions of the site.
+            I assigned the viewscape metrics to all 40.000 viewpoints to shows how spatially vary across the site.
+
+            Here is a look to some of these maps. Each of them can be informative, but for the sake of time I am only describing the first four.
+
+            In the extent map you can see how viewscape area varies across the landscape. The most expansive areas are aviable on the western side of the park wheras the
+            eastern side is has low to medium viewscape areas.
+
+            The Shannon Diversity map shows that except the large field to the South West, the rest of the site have highly varied and heterogenous viewscapes.
+
+            Finally, from the composition maps we see that the buildings and decidous trees are mostly visibile in the eastern portions of the site.
 
 
           <p style="float:center; font-size: 18pt; text-align: center; width: 80%; margin-left: 7em">
@@ -1375,9 +1391,11 @@ classification corresponding to the site’s existing land cover.
           <h3 style= "margin-bottom:84%">IVE survey</h3>
           <aside class="notes">
 
-          Once I computed the viewscape values for the entire study area, I used them to draw a sample of viewpoints that are represenative
-          of the site visual charactristics to be used for subjective evluation.
-          From those, I selected viewpoints that are distant enough to spatially represent the park. This resulted in 24 viewpoints.
+          In the next step, I selected a set of locations with viewscape values corresponding to the viewscape values of all other viewpoints.
+          From those, I selected a sample of 24 locations that was dispersed enough to spatially represent the study area.
+
+          At each location, I captured a 360 panoramic photo that can be viewed in IVE headsets.
+          I captured all the images in Winter season to be consistent with the lidar data.
 
           </aside>
 </section>
@@ -1445,20 +1463,32 @@ classification corresponding to the site’s existing land cover.
 
                       <table style = "float: left; margin-left: 1em ;font-size: 14pt">
 
-                        <col width="5%">
+                        <col width="12%">
+                        <col width="30%">
                         <col width="15%">
-                        <col width="15%">
 
-                        <tr><th>item</th><th style= "font-size: 12pt">question</th><th style= "font-size: 12pt">reference</th></tr>
+                        <tr><th>Survey item</th><th>Statement</th><th>Reference</th></tr>
+                        <tr>
+                          <td>Restorativeness</td>
+                          <td><i>I would be able to rest and recover my ability to focus in this environment</i> </Reference></td>
+                          <td>Lindal & Hartig, 2013</td></tr>
+                        <tr>
+                          <td>Openness(Visual access)</td>
+                          <td><i>How well can you see all parts of this setting without having your view blocked or interfered with?</i></td>
+                          <td>Herzog & Kutzli, 2002</td>
+                        </tr>
 
-                        <tr><td>Visual access</td><td style= "font-size: 12pt; color: grey">How well can you see all parts of this setting without having your view blocked or interfered with?
-                        </td><td><reference>Herzog & Kutzli, 2002</td></tr>
+                        <tr>
+                          <td>Complexity</td>
+                          <td><i>I perceive this environments as . . . Simple=0, Complex=10 <i></td>
+                        </td>
+                        <td><reference></td></tr>
 
-                        <tr><td>Complexity</td><td><reference style= "font-size: 12pt">I perceive this environments as . . . Simple=0, Complex=10 </td>
-                        </td><td><reference></td></tr>
-
-                        <tr><td>Naturalness</td><td><reference style= "font-size: 12pt">I perceive this environment as … Not natural = 0 , Natural =10 </td>
-                        </td><td><reference>Marselle, Irvine, Lorenzo-Arribas, & Warber, 2015</td></tr>
+                        <tr>
+                          <td>Naturalness</td>
+                          <td><i>I perceive this environment as … Not natural = 0 , Natural =10 </i></td>
+                          <td>Marselle, Irvine, Lorenzo-Arribas, & Warber, 2015</td>
+                        </tr>
 
                         <!-- <tr><td>Fascination</td><td><reference style= "font-size: 12pt">There is much to explore and discover here
                         </td><td><reference>Hartig, Korpela, Evans, & Gärling, 1996</td></tr> -->
@@ -1469,8 +1499,7 @@ classification corresponding to the site’s existing land cover.
                         <!-- <tr><td>Coherence</td><td><reference style= "font-size: 12pt">There is much to explore and discover here
                         </td><td><reference>Pals, Steg, Dontje, Siero, & van der Zee, 2014</td></tr> -->
 
-                        <tr><td>Restorativeness</td><td><reference style= "font-size: 12pt">I would be able to rest and recover my ability to focus in this environment
-                          </td><td><reference>Lindal & Hartig, 2013</td></tr>
+
 
                         <!-- <tr><td>Preference</td><td><reference style= "font-size: 12pt">I like this environment </td>
                           </td><td><reference>Nordh, Hartig, Hagerhall, & Fry, 2009</td></tr> -->
@@ -1479,10 +1508,10 @@ classification corresponding to the site’s existing land cover.
 
 
                   <aside class="notes">
-                  In the next step, I conducted a lab-based experiment based on the IVE scene.
-                  102 Undergraduate students were recruited for the study. For each IVE, they responded to three direct measures of
-                  perceived visual characteristics including perception of visual access, perception of naturalness,
-                  and complexity. They also responded to one item related to perceived restorativeness.
+                  In the next step, I conducted a lab-based experiment to collect the perception of the IVE scene.
+                  102 Undergraduate students were recruited for the study. For each IVE, they responded to 1 item related to restoration potential, in addition to
+                  three main visual charactristic of perceived openness, perceived naturalness,
+                  and perceived complexity. I chose these three commonly tested perceptions to see how viewscape analysis captures the visual charactirstics of the site.
 
                   </aside>
 
@@ -1555,10 +1584,9 @@ classification corresponding to the site’s existing land cover.
               <aside class="notes">
 
               I used multiple linear regression analysis to examine to what extent the viewscape metrics explain the perceptions of the 24 viewpoints.
-              All independent variables (Viewscape metrics) were checked for collinearity. For each of the response variables, the best fit model was selected using stepwise selection method.
               The results seem promising specially for perceived restorativeness model which predicted 72% of the variations in perceived restorativeness potential.
 
-              The results also confirmed several relationships between viewscape characteristics and human perceptions.
+              The findigs also confirmed several relationships between viewscape characteristics and human perceptions.
               Perceived Visual access was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased visual access.
               For example, perceived naturalness was mostly explained by presence of natural elements and absence of built elements,
               Whereas percepived complexity was explained in large part by landcover heterogeneity and terrain roughness, and shape complexity.
@@ -1741,29 +1769,30 @@ The other hotspot is the large grassy area called big field which is a very popu
 
   <h3> Method 1: Conclusion</h3>
   <ul>
-      <li>  The proposed integrated methodology can be used to model experiential qualities of urban environments.
-      <li class="fragment fade-in">  Predictive maps of perceptions are useful for targeted preservation and intervention decisions.
-      <li class="fragment fade-in">  Findings novel spatial predictors for experiential qualities can advance urban design and research.
-      <li class="fragment fade-in">  Proposed vegetation visibility modeling can improve other landscape visual assessment applications.
-      <li class="fragment fade-in">  The automated viewscape computation method is extendable to larger study areas and other planning and management applications.
+      <li>  My developed methodology can be used to model experiential qualities of urban environments.
+      <li class="fragment fade-in">  The developed spatial maps of perceptions are useful for urban planning and design.
+      <li class="fragment fade-in">  Findings contribute to environmental psychology and design research.
+      <li class="fragment fade-in">  Developed tree obstruction modeling can improve other landscape visual assessment applications.
+      <li class="fragment fade-in">  The automated viewscape computation script can be used to study larger areas.
 
   </ul>
 
       <aside class="notes">
 
-      TO briefly wrap up this chapter, The findings of this study indicate that the integrated methodology can be used to model experience of urban environments.
-      These spatial explicit information based on community perception can be useful for designers and planners to better understand the
-      site qualities and make more targeted decisions for preservation or modification of certain areas....
+      Overall, my developed methodology resulted in 5 cnovel contributions to design and planning fields.
 
+      First, the method proved to be usefull to to model experiential qualities of urban environments, as opposed to the precedent
+      assessment methods that were developed for landscape scale studies and lacked granaularity and precision.
 
-      At the same time the method can be used to investigate much needed evidence on the relationships between urban form and human experience as
-      design guidelines for developing more appealing and restorative environments...
+      Second, the developed spatial maps of perceptions can be usefull to urban planning and design by enabling more targetted preservation and interventions decisions.
+      Third, findings of this study contribute to environmental psychology and design research by providing the links between environmental attributes and perceptions.
 
-      Also, my suggested protocol for developing high-resolution spatial data using lidar
-      and improvements in vegetation modeling can potentially be useful for other research applications that deal with visibility analysis,
-      such as visual impact of wind turbies, or visual impact of landscape change on scenic biways, and identification of ecosystem services.
+      Forth, my developed protocol for tree onstruction modeling can improve many visual assessment studies that deal with vegetation, such as
+      such as visual impact of forest clearing, or visual impact of landscape change on scenic roads, and identification of ecosystem services of forested areas.
 
-      Finaly, the automated viewscape computation script developed for this study can be used to compute and thus be used for larger study areas.
+      Finaly, the automated viewscape computation script developed for this study can be used to compute much higher number of viewpoints and therby can be used to model larger study areas.
+      In fact, I am with Dr.Van Berkel from EPA, we have applied this script to study the vaued landscapes of North Carolina and
+      planning to extend it to the entire United States.
 
       <!-- TENTATIVE. For example with Dr. Van Berkel, our colleague at EPA, we used the automated viewscape analysis
       in combination with geotagged photos harvested from social media to model cultural ecosystem services
@@ -1795,10 +1824,10 @@ The other hotspot is the large grassy area called big field which is a very popu
 
 
     <aside class="notes">
-    Two manuscripts have been developed for this project soon which is soon to be submitted for review.
-    The first paper focuses on describing the method and evaluating its capacity to explain visual characteristics of urban environments.
+    I have developed two manuscripts for this project which are soon to be submitted for review.
+    The first paper focuses have a methodological approach and targets Computes and urban system journal.
     The second manuscript, targeted for landscape and urban planning journal has a more applied perspective and focuses on development of
-    the restoration potential map for the dix area.
+    the spatial model on restoration potential.
     </aside>
 
 
@@ -2426,29 +2455,29 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
 <section  data-background="white" >
 <h3>Method 2: Conclusion</h3>
 <ul>
-<li>  Developed technology makes design more efficient and supports tradeoff assessment between spatial/experiential factors.
-<li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks facilitates collaboration and public participation.
-<li class="fragment fade-in">  User studies (e.g., designers cognition, participation, collaboration).
-<li class="fragment fade-in">  The framework for Realtime 3D rendering with geospatial data can be implemented as a desktop or web-based application to complement other simulations.
-<li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales.
+<li class=>  Developed technology can potentially improve landscape design and planning.
+<!-- <li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks facilitates collaboration and public participation. -->
+<!-- <li class="fragment fade-in">  User studies (e.g., designers cognition, participation, collaboration). -->
+<!-- <li class="fragment fade-in">  Developed technology can contribute to teaching spatial concepts.  -->
+<li class="fragment fade-in">  Framework for Realtime 3D rendering with geospatial data can improve other modeling and simulation applications.
+<!-- <li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales. -->
 
 </ul>
 
 <aside class="notes">
 
-  Our exploratory results show that the the proposed methodology allowed designers to rapidly and iteratively develop designs, realistically visualize landscapes,
-  and collaborate with others to better evaluate the tradeoff and win-win scenarios. The combination of Tangible interaction and
-  automated spatial and experiential feedback can potentially break down the knowledge barriers allowing expert and non-expert to equally participate in the design process.
+  I conclude this section by mentioning a few novel contributions of this work and its implications on design.
 
-  In the future, we are intending to conduct multiple user studies and to compare the technology with typical design tools to
+  First, our exploratory results indicate that the developed technology can improve landscape design by significantly decreasing the ideation to representaion loop,
+  enabling collaboration, and enabling tradeoff assessment between spatial and experiential factors.
+
+  However, to empiricaly test these claims, we are intending to conduct multiple user studies and to compare the technology with typical design tools to
   empirically test how interaction with system and its components influence the design process as well as collaboration, and participation.
 
-  The framework for coupling can be used without the tangible landscape as a standalone desktop or web application for
-  better visualization of geospatial simulations, such as landuse change, landscape evolution, firespread, storm surge and so on.
+  Second, the framework for coupling can be used to with or without the tangible landscape -- as a standalone desktop or web application-- to
+  better visualize the outcome of geospatial simulations, such as landuse change, landscape evolution, firespread, storm surge and so on.
   Special effects in Blender can be used to much better visualize spatial phenomenon such as flooding, fire spread, deforestation, and so on.
 
-  Lastly, while the examples shown here were focused on Landscape design and related spatial analysis, the coupling
-  framework can be used in other planning and design applications.
 
 </aside>
 </section>
@@ -2508,7 +2537,7 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
 <section data-background="white">
 <h2>Related publications</h2>
 
-<p3><highlight style = "background-color:#90CB8F"> Chapter 4.</highlight>
+<p3>
 <strong>Tabrizian, P.</strong>,
 Harmon, B.,
 Petrasova, A.,
@@ -2520,13 +2549,13 @@ Tangible immersion for ecological design</a>,
 <i>Proceedings of the 37th Annual Conference of the Association
     for Computer Aided Design in Architecture (ACADIA)</i>, Cambridge, MA. pp. 600-609. </p3>
 
-<p3>Chapter 5.
+<p3>
   <strong>Tabrizian, P.</strong><a href= "https://www.springer.com/us/book/9783319893020" >
   Realtime 3D modeling, VR and immersion </a>, In :
   Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. <i> Tangible Modeling with Open Source GIS </i>, Springer, NY.
 </p3>
 
-<p3>Chapter 5.
+<p3>
   <strong>Tabrizian, P.</strong><a href= "https://www.springer.com/us/book/9783319893020" >
   Landscape design </a>, In :
   Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. <i> Tangible Modeling with Open Source GIS </i>, Springer, NY.
@@ -2747,12 +2776,12 @@ including University of Georgia and University of Illions.
 <section>
   <h3> Summary of contributions </h3>
   <ul>
-    <li> Integrated method for modeling experiential qualities of urban environments
-    <li class="fragment fade-in"> High-resolution predictive map of restoration potential and novel predictors for restoration potential
+    <li> Method for modeling and mapping experiential qualities of urban environments
+    <!-- <li class="fragment fade-in"> High-resolution predictive map of restoration potential and novel predictors for restoration potential -->
     <li class="fragment fade-in"> Method for improving tree obstruction in DSM
     <li class="fragment fade-in"> Software for automated viewscape analysis and IVE survey
-    <li class="fragment fade-in"> Method and software for realtime 3D rendering and immersion with geospatial data and simulations
-    <li class="fragment fade-in"> Improvement of Tangible Landscape as a design and planning tool
+    <li class="fragment fade-in"> Method and software for realtime 3D rendering and immersion with geospatial data, and tangible interaction.
+    <!-- <li class="fragment fade-in"> Improvement of Tangible Landscape as a design and planning tool -->
   </ul>
 <br><br><br>
     <a href = https://ptabriz.github.io/final_dissertation_presentation/>ptabriz.github.io/final_dissertation_presentation/</a>
