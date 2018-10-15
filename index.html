@@ -853,11 +853,11 @@ That being said, providing spatial evidence of the restorative potential of the 
 
 
 <section data-background= "white">
-<h3>Digital surface model (DSM)</h3>
+<h3>Lidar data</h3>
   <ul>
   <p style="float: center; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
     <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lidar.png" style="width: 100%">
-      Airborne lidar (North Carolina QL2), Acquired Jan 11, 2015 (leaf-off),
+      Airborne lidar (North Carolina QL2), Acquired Jan 11, 2015 (leaf-off)
 
       <aside class="notes">
     To obtain a high-resolution surface, I used North Carolina QL2 lidar data that has a 3 points per
@@ -872,7 +872,7 @@ That being said, providing spatial evidence of the restorative potential of the 
 
    <p style="float: center; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
      <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lidar2.png" style="width: 100%">
-       0.5m Digital surface model (DSM)
+       0.5m resolution DSM
 
      <aside class="notes">
     Then I interpolated it to acquire a 0.5 meters surface model that represents buildings and vegetation.
@@ -967,17 +967,20 @@ That being said, providing spatial evidence of the restorative potential of the 
 <section data-transition="fade-out" data-background="white">
   <h3> Trunk obstruction modeling </h3>
   <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
-    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/dsm.png" style="width: 100%"><br>DSM</p>
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/dsm.png" style="width: 100%"><br>Digital surface model (DSM)
+    <br><reference style="float:right">Source: Murguitto et al. 2013</reference></p></p>
+
 
     <aside class="notes">
-      A way to adress this issue is to extract the decidous trees from the DSM and replace them with their trunks, a technique called trunk obstruction modeling.
+      A way to address this issue is to extract the decidous trees from the DSM and replace them with their trunks, a technique called trunk obstruction modeling.
     </aside>
 </section>
 
 <section data-transition="fade-out" data-background="white">
     <h3> Trunk obstruction modeling </h3>
     <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
-      <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/geomorphon.png" style="width: 100%"><br>Landform analysis (Geomorphon)</p>
+      <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/geomorphon.png" style="width: 100%"><br>Landform analysis (Geomorphons)
+      <br><reference style="float:right">Source:Jasiewicz & Stepinski (2013)</reference></p>
 
       <aside class="notes">
       To exatract the trees, I applied a landform detection algorithm called Geomorphons to DSM to detect the treetops. The as treetop are mostly detected as summits shown in dark brown.
@@ -1052,8 +1055,8 @@ That being said, providing spatial evidence of the restorative potential of the 
 </p>
       </ul>
       <aside class="notes">
-      In the next step, I developed a detailed land cover to better represent the landscape pattern.
-      I combined Lidar vegetation points, with ground cover derived from image classification of multi-band imagery, and buildings derived from vector data.
+      A good DSM can give us a good estimation of how much we can see, but we also need a good land cover mop to estimate what we can see.
+      To develop a detailed lancover, I combined Lidar vegetation points, with ground cover derived from image classification of multi-band imagery, and buildings derived from vector data.
     </aside>
 </section>
 
@@ -1140,10 +1143,10 @@ classification corresponding to the site’s existing land cover.
 
               </section> -->
 
-<section data-background="img/viewscape_comp.jpg"  data-background-size="62%">
-<!-- <h3>Viewscape computation workflow</h3> -->
+<section data-background="img/viewscape_comp.jpg"  data-background-size="64%">
+<h3 style="margin-bottom:80%">Viewscape computation workflow</h3>
     <!-- <p style="float: left; font-size: 18pt; text-align: left; width: 90%; margin-bottom: 85%;"> -->
-    <img src="img/grass_logo.png" style="float: right; width: 15%; margin-top:50.5%; margin-right:5%">
+    <!-- <img src="img/grass_logo.png" style="float: right; width: 15%; margin-top:50.5%; margin-right:5%"> -->
 
     <aside class="notes">
 
@@ -1179,7 +1182,7 @@ classification corresponding to the site’s existing land cover.
               <th style="text-align:center"> Viewpoint 3 </th>
             </tr> -->
             <tr class= "border_bottom_solid border_top">
-              <td style="text-align:left; vertical-align: middle"> Area photo <br><br><br><br><br><br><br> Viewscape </td>
+              <td style="text-align:left; vertical-align: middle"> Areal photo <br><br><br><br><br><br><br> Viewscape </td>
               <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural.png" style="width: 100%"></td>
               <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural2.png" style="width: 100%"></td>
               <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural3.png" style="width: 100%"></td>
@@ -1268,26 +1271,26 @@ classification corresponding to the site’s existing land cover.
 <section data-background="white">
     <h2>Configuration metrics</h2>
 
-      <table class= "condensed" width="80%" style = "font-size:.5em">
-          <col width="10%">
-          <col width="15%">
-          <col width="15%">
-          <col width="15%">
-          <col width="15%">
+      <table class= "condensed" width="100%" style = "font-size:.5em">
+          <col width="18%">
+          <col width="17%">
+          <col width="17%">
+          <col width="17%">
+
             <!-- <tr style = "font-size:.7em">
               <th style="text-align:center"> Metric </th>
               <th style="text-align:center"> Viewpoint 1 </th>
               <th style="text-align:center"> Viewpoint 2 </th>
               <th style="text-align:center"> Viewpoint 3 </th>
             </tr> -->
-          <tr class = "border_bottom_solid border_top no_space">
+          <tr class = "border_bottom_solid border_top no_space" style = "font-size:1.2em">
             <td style="text-align:left; vertical-align: middle"> Viewscape image </td>
             <td><img src="img/ENV_210.png" style="width: 80%"></td>
             <td><img src="img/ENV_196.png" style="width: 80%"></td>
             <td><img src="img/ENV_194.png" style="width: 80%"></td>
 
 
-          <tr class= "border_bottom_solid no_space">
+          <tr class= "border_bottom_solid no_space" style = "font-size:1.2em">
             <td style="text-align:left; vertical-align: middle"> Viewscape map</td>
             <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_210.PNG" style="width:80%"></td>
             <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_196.png" style="width: 80%"></td>
@@ -1322,7 +1325,7 @@ classification corresponding to the site’s existing land cover.
           </tr>
 
           <tr class = "center_text">
-            <td style = "text-align:left"> SDI </td>
+            <td style = "text-align:left"> SDI (Shannon Diversity index) </td>
               <td>1.11</td>
               <td>1.49</td>
               <td><highlight class="dark">1.51</highlight></td>
@@ -1330,7 +1333,7 @@ classification corresponding to the site’s existing land cover.
           </tr>
 
           <tr class = "center_text">
-            <td style = "text-align:left"> MSI </td>
+            <td style = "text-align:left"> MSI (Mean Shape Index) </td>
               <td>39.1</td>
               <td>19.7</td>
               <td><highlight class="dark">63.48</highlight></td>
@@ -1339,7 +1342,7 @@ classification corresponding to the site’s existing land cover.
 
 
           <tr class = "center_text">
-            <td style = "text-align:left"> Nump </td>
+            <td style = "text-align:left"> Nump (Number of Patches)</td>
               <td>3700</td>
               <td>642</td>
               <td><highlight class="dark">4168</highlight></td>
@@ -1441,8 +1444,8 @@ classification corresponding to the site’s existing land cover.
 
               </section> -->
 
-<section data-background="img/panoramas_2.jpg" data-background-size="75%">
-
+<section data-background="img/panoramas_2.jpg" data-background-size="73%">
+<p style="margin-top:60%; font-size:16pt"> Example of panoramic photos (Feb 2016) </p>
     <aside class="notes">
     These example panoramas show how the selected viewpoints represent diffrent envrionmetns whithin the site.
     </aside>
@@ -1566,15 +1569,15 @@ classification corresponding to the site’s existing land cover.
                 <col width = "15%">
                 <col width = "75%"
                 <tr><th>Response variable</th><th>R<sup><small>2</small></sup> adjusted</th><th>Significant independent variable</th></tr>
-                <tr><td>Perceived Visual access</td><td>0.64</td><td style= "font-size: 14pt">Extent &uarr;***, Depth&uarr;**, Relief&darr;***, Vdepth var&darr;***, Nump&darr;***, Building&darr;***, Paved&uarr;** , Deciduous&uarr;** </td></tr>
-                <tr><td>Perceived Complexity</td><td>0.42</td> <td style= "font-size: 14pt"> SDI *** &uarr;, Relief **&uarr;, Depth** &darr;, ED***&uarr;, Nump***&uarr;, Building**&uarr;</td></tr></tr>
-                <tr><td>Perceived Naturalness</td><td>0.62</td><td style= "font-size: 14pt">Relief &uarr;***, Deciduous &uarr;**, Mixed&uarr;***, Herbaceous&uarr;***, Building&darr;***, Nump&uarr;**</td></tr>
-                <tr><td>Perceived Restoration potential</td><td>0.72</td><td style= "font-size: 14pt">Extent &uarr;***,  Depth &darr;***, Relief &darr; ***, SDI&darr;***, Skyline&uarr;***, Deciduous &uarr;**, Mixed&uarr;***, Herbaceous&uarr;***, Building&darr;***, Paved&darr;**</td></tr>
+                <tr><td>Perceived Visual access</td><td>0.64</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***, Depth<font style="color:green">&uarr;</font>**, Relief<font style="color:red">&darr;</font>***, Vdepth var<font style="color:red">&darr;</font>***, Nump<font style="color:red">&darr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:green">&uarr;</font>** , Deciduous<font style="color:green">&uarr;</font>** </td></tr>
+                <tr><td>Perceived Complexity</td><td>0.42</td> <td style= "font-size: 14pt"> SDI *** <font style="color:green">&uarr;</font>, Relief **<font style="color:green">&uarr;</font>, Depth** <font style="color:red">&darr;</font>, ED***<font style="color:green">&uarr;</font>, Nump***<font style="color:green">&uarr;</font>, Building**<font style="color:green">&uarr;</font></td></tr></tr>
+                <tr><td>Perceived Naturalness</td><td>0.62</td><td style= "font-size: 14pt">Relief <font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Nump<font style="color:green">&uarr;</font>**</td></tr>
+                <tr><td>Perceived Restoration potential</td><td>0.72</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***,  Depth <font style="color:red">&darr;</font>***, Relief <font style="color:red">&darr;</font> ***, SDI<font style="color:red">&darr;</font>***, Skyline<font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:red">&darr;</font>**</td></tr>
                 </table>
 
               <p style="float: left; font-size: 12pt; text-align: left; width: 100%; margin-top: 0.1em;">
               Generalized linear models for four response variables. Best model fit was determined by step-wise regression. <br>
-              &uarr; : Positive association <br>&darr; : Nagative association <br>*p<0.05, ** p <0.01, *** p <0.001 <br>
+              <font style="color:green">&uarr;</font> : Positive association <br><font style="color:red">&darr;</font> : Nagative association <br>*p<0.05, ** p <0.01, *** p <0.001 <br>
               <i>Variables:</i> Vdepth_var = viewdepth variation, Nump = patch number, ED = edge density, MSI= mean shape index,
               SDI= shannon diversity index.
 
@@ -1602,28 +1605,29 @@ classification corresponding to the site’s existing land cover.
 
 <table style= "font-size: 16pt" width = "100%">
 
-  <col width = "20%">
+  <col width = "15%">
   <col width = "20%">
   <col width = "20%">
   <col width = "20%">
 
   <tr><th>Variable</th><th>coefficient</th><th>&Beta; coefficient</th><th>Student t</th><th>sig</th></tr>
-  <tr><td>Extent</td><td>&nbsp1.90E-05</td><td>&nbsp0.39</td><td>11.07</td><td>***</td></tr>
-  <tr><td>Relief</td><td>-1.20E-01</td><td>-0.12</td><td>16.17</td><td>***</td></tr>
-  <tr><td>Depth</td><td>-1.27E-03</td><td>-0.34</td><td>-6.06</td><td>***</td></tr>
-  <tr><td>Skyline</td><td>&nbsp1.08E-01</td><td>&nbsp0.12</td><td>-17.10</td><td>***</td></tr>
-  <tr><td>Vdepth_var</td><td>&nbsp7.18E-02</td><td>&nbsp0.27</td><td>&nbsp6.25</td><td>***</td></tr>
-  <tr><td>SDI</td><td>-3.82E-01</td><td>-0.14</td><td>-1.92</td><td>**</td></tr>
-  <tr><td>Building</td><td>-5.41E-02</td><td>-0.37</td><td>-5.38</td><td>***</td></tr>
-  <tr><td>Paved</td><td>-6.14E-03</td><td>-0.03</td><td>-1.53</td><td>*</td></tr>
-  <tr><td>Mixed</td><td>&nbsp1.07E-01</td><td>&nbsp0.66</td><td>&nbsp23.97</td><td>***</td></tr>
-  <tr><td>Deciduous</td><td>&nbsp8.13E-02</td><td>&nbsp0.32</td><td>&nbsp16.47</td><td>***</td></tr>
-  <tr><td>Herbaceous</td><td>&nbsp4.44E-02</td><td>&nbsp0.27</td><td>&nbsp20.30</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Extent</td><td>&nbsp1.90E-05</td><td>&nbsp0.39</td><td>11.07</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Relief</td><td>-1.20E-01</td><td>-0.12</td><td>16.17</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Depth</td><td>-1.27E-03</td><td>-0.34</td><td>-6.06</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Skyline</td><td>&nbsp1.08E-01</td><td>&nbsp0.12</td><td>-17.10</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Vdepth_var</td><td>&nbsp7.18E-02</td><td>&nbsp0.27</td><td>&nbsp6.25</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">SDI</td><td>-3.82E-01</td><td>-0.14</td><td>-1.92</td><td>**</td></tr>
+  <tr><td style="background-color: #FFEAE2">Building</td><td>-5.41E-02</td><td>-0.37</td><td>-5.38</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Paved</td><td>-6.14E-03</td><td>-0.03</td><td>-1.53</td><td>*</td></tr>
+  <tr><td style="background-color: #DAECD8">Mixed</td><td>&nbsp1.07E-01</td><td>&nbsp0.66</td><td>&nbsp23.97</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Deciduous</td><td>&nbsp8.13E-02</td><td>&nbsp0.32</td><td>&nbsp16.47</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Herbaceous</td><td>&nbsp4.44E-02</td><td>&nbsp0.27</td><td>&nbsp20.30</td><td>***</td></tr>
   </table>
 
 <p style="float: center; font-size: 14pt; text-align: left; width: 100%; margin-top: 0.1em;">
-Generalized linear models perceived restoration potential. Best model fit was determined by step-wise regression.*p<0.05, ** p <0.01, *** p <0.001 <br>
-<i>Variables:</i> Vdepth_var = viewdepth variation, Nump = patch number, ED = edge density, MSI= mean shape index,
+Generalized linear models perceived restoration potential. Best model fit was determined by step-wise regression.<br>*p<0.05, ** p <0.01, *** p <0.001 <br>
+ <font style="background-color: #DAECD8">Positive association </font>&nbsp;<font style="background-color: #FFEAE2">Negative association </font>
+<br>Vdepth_var = viewdepth variation, Nump = patch number, ED = edge density, MSI= mean shape index,
 SDI= shannon diversity index.
 </p>
 
@@ -1698,7 +1702,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     <aside class="notes">
  To achieve the second aim of the study, which was to acquire a spatial model of restoration potential.
  I applied the coefficients derived from viewscape model to all the other viewpoints in the study area.
- The resulting predictive map indicates hotspots for higher restoration likelihood and coldspots which are less
+ The resulting predictive map indicates for the lack of a better term hotspots for higher restoration likelihood and coldspots which are less
  likely to be perceived as restorative.
 
  <!-- The greenway, the natural, unpaved areas and
@@ -1716,7 +1720,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
 
 
     <aside class="notes">
- One of these hotspots is For example, the area locally refered to as the grove, which is charactrized by abundant presence of willow oaks, grassy areas, and large viewscapes.
+   One of the most restorative location is the space locally refered to as the grove, which is charactrized by abundant presence of willow oaks, grassy areas, and large viewscapes.
     </aside>
 
 </section>
@@ -1729,11 +1733,11 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     <p style="font-size:14pt"> The Sunflower field
 
 
-<!--
+
     <aside class="notes">
- The other hotspot is the vast area covered with natural low vegetation with no views to buidlings and roads.
- This area is also very popular and called sunflower field.
-    </aside> -->
+   The other highly restorative area is the large open space covered with natural low vegetation and sorrounded by mixed forests.
+   This area is also very popular and called sunflower field.
+    </aside>
 
 </section>
 
@@ -1746,7 +1750,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     <p style="font-size:14pt"> The Big field
 
     <aside class="notes">
-The other hotspot is the large grassy area called big field which is a very popular destination for public events, drone flying and picnicking.
+    The other hotspot is the large grassy area called big field.
     </aside>
 
 </section>
@@ -1759,7 +1763,7 @@ The other hotspot is the large grassy area called big field which is a very popu
     <p style="font-size:14pt">
 
     <aside class="notes">
-    The one of the major coldspots are the areas with high concentration of administrative buidlings, must of which are shut down, and parking lots.
+    The least restorative spaces corresponds to area with high concentration of buidlings and parking lots, which ofcourse is not a surprise.
     </aside>
 
 </section>
@@ -1884,16 +1888,16 @@ immersive virtual environments </a>, <i>Journal of Environmental Psychology </i>
 Virtual Environments</a>,<i>US Regional Association of the International Association for Landscape Ecology (USIALE)</i>, Chicago, Il,
 8-12 April.</p3>
 
-<p3>Tabrizian, P., Petrasova, A., Petras, V., Mitasova, H.(2017). <a href = "https://ptabriz.github.io/publication.html">Using open-source tools and high-resolution geospatial data to estimate landscapes’
+<p3>Tabrizian, P., Petrasova, A., Petras, V., Mitasova, H. (2017). <a href = "https://ptabriz.github.io/publication.html">Using open-source tools and high-resolution geospatial data to estimate landscapes’
 visual attributes.</a> <i>International conference for Free and Open Source Software for Geospatial (FOSS4G)</i>, Boston, MA, Aug 14-19.</p3>
 
 <p3>Tabrizian, P., Baran, P. (2017). <a href = "https://ptabriz.github.io/publication.html">Immersive Virtual Environment Technology in Environmental Design Research: Experimental Methods and
-Procedures</a>, <i> 48th environment and design research association (EDRA) annual conference </i>, Madison, Wisconsin, May 31- June 6.</p3>
+Procedures</a>, <i> 48th environment and design research association (EDRA) annual conference</i>, Madison, Wisconsin, May 31- June 6.</p3>
 
 <p3>Baran, P., Tabrizian, P. (2017).<a href = "https://ptabriz.github.io/publication.html"> Linking Immersive Virtual Environments to complement human perception research</a>, <i>NCGIS
 conference</i>, Raleigh, North Carolina. 23-24 Feb.</p3>
 
-<p3>Baran, P., Tabrizian, P. (2016).<a href = "https://ptabriz.github.io/publication.html"> Use of Immersive Virtual Environments in mapping perceived safety in a park </a>, <i>39th National
+<p3>Baran, P., Tabrizian, P. (2016).<a href = "https://ptabriz.github.io/publication.html"> Use of Immersive Virtual Environments in mapping perceived safety in a park</a>, <i>39th National
 Recreation and Park Association (NRPA) Annual Conference</i>, St. Louis, Missouri, October 5–6.</p3>
 
 <aside class="notes">
@@ -2120,10 +2124,9 @@ Tangible Interaction</div>
 
 <aside class="notes">
   A quick intro to Tangible landscape, is a technology for tangible interaction with GIS developed here at the center
-  for Geospatial analytics by Anna Petrasova and colleagues in Dr. Mitasova's lab. It allows user to manipulate a table model of landscape with hand or tangible objects,
-  and in near real time recieve a variety of spatial analysis such as water flow, biodiversity, fire spread, pathogen spread, etc. Using the open-source GRASS GIS in the backend allows for
-  the system allows for implementing a verity of geospatial simulations.
-
+  for Geospatial analytics by Anna Petrasova and colleagues in Dr. Mitasova's lab. It allows user to manipulate a physcial model of the landscape with hand or tangible objects,
+  and in near real time recieve a variety of spatial analysis such as water flow, biodiversity, fire spread, pathogen spread, etc.
+  The system uses the open-source GRASS GIS software that allows for implementing a wide range of geospatial simulations.
 
 </aside>
 
@@ -2134,13 +2137,9 @@ Tangible Interaction</div>
 <img  style = "width:40%" src="img/setup_1.jpg">
 
 <aside class="notes">
-For implementing the concept, I added a 3D modeling and game engine software,
-called blender to the tangible landscape setup with outputs to a display and an
-immersive virtual reality headset.
-Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
-Blender was perfectly suited to this application because it has an internal python-based IDE for programming automated
-3D modeling procedures and more importantly it has addons for importing GIS data. It also has a very efficient and realistic real time rendering
-capabilities with realtime output for head mounted displays.
+
+Here you can see you the existing tangible landscape setup.
+
 </aside>
 
 </section>
@@ -2150,13 +2149,14 @@ capabilities with realtime output for head mounted displays.
 <img  style = "width:40%" src="img/setup_2.jpg">
 
 <aside class="notes">
-For implementing the concept, I added a 3D modeling and game engine software,
-called blender to the tangible landscape setup with outputs to a display and an
-immersive virtual reality headset.
-Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
-Blender was perfectly suited to this application because it has an internal python-based IDE for programming automated
-3D modeling procedures and more importantly it has addons for importing GIS data. It also has a very efficient and realistic real time rendering
-capabilities with realtime output for head mounted displays.
+  For implementing the concept, I added a 3D modeling and game engine software,
+  called blender with outputs to a computer display and an
+  immersive virtual reality headset.
+  Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
+  Blender was perfectly suited to this application because it has an internal python scripting environment for automating
+  3D modeling procedures and more importantly, it has addons for importing GIS data. It also has a very efficient and realistic real time rendering
+  capabilities with realtime output for head mounted displays.
+
 </aside>
 
 </section>
@@ -2172,7 +2172,6 @@ capabilities with realtime output for head mounted displays.
   GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory.
   A monitoring module in blender scripting environment that constantly watches the directory,
   identifies the type of incoming information, and apply relevant operations needed to update the 3d scene.
-
 
 </aside>
 
@@ -2794,14 +2793,11 @@ including University of Georgia and University of Illions.
     <a href = https://ptabriz.github.io/final_dissertation_presentation/>ptabriz.github.io/final_dissertation_presentation/</a>
 
     <aside class="notes">
+      Across both methods there are the most notable contributions I made.
 
 
-      To briefly go over the original contributions of this dissertations.--
       I Developed a novel method for modeling the experience of urban landscapes.
-      While the integrated approach has been used before they did not use IVEs and high-reolution
-      surfaces making them inapplicable to urban environments.---
-      The high-resolution predictive map of restoration potential developed in this study is also novel. Almost all the precendent studies
-      studied on aesthetic values. ---
+
       This method led to development of two software which can be potentially usefull for other researchers.
 
       -- The framework for realtime rendering and VR with geospsatial data is also Novel and has not been developed before as a software.
