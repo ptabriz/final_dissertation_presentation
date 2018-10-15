@@ -350,8 +350,8 @@
 <section data-background= "img/intro_tech.jpg" data-background-size="95%">
 
       <aside class="notes">
-      Geospatial computation, visualization and user interaction technologies —not only as
-      tools but also as modes of operation and inquiry — can radically disrupt the study and design of our landscapes.
+    With geospatial computation technologies, we can capture an accurate model of the urban Landscape structure and patterns and rapidly simulate the
+    impact of our interventions on a range of environmental factors from flow of water and pollution to spread of fire and pathogens and to flow of traffic and people.
       </aside>
 </section>
 
@@ -512,36 +512,29 @@
 
       <h3> Experience of urban landscape </h3>
       <ul>
-          <li> Landscape visual charactristics impact people's experiences (aesthetic appeal, sense of safety, restorativeness, etc.)<reference> (reference)</reference>
-          <li class="fragment fade-in"> Experiences of landscape impact people's decisions for visit, develop or maintain landscapes <reference> (reference)</reference>.
-          <li class="fragment fade-in"> Exposure to certain landscape patterns and configurations can faciliate psychological restoration and stress recovery.
+          <!-- <li> Landscape visual charactristics impact people's experiences (aesthetic appeal, sense of safety, restorativeness, etc.)<reference> (reference)</reference> -->
+          <li> Experiences of landscape impact people's decisions for visit, develop or maintain landscapes <reference> (reference)</reference>.
+          <li class="fragment fade-in"> Exposure to landscape's with visual attributes can facilitate mental well-being through psychological restoration.
           <li class="fragment fade-in"> Identifiying experiential qualities of urban enviroments can help making more targetted design and management decisions  <reference> (reference)</reference>.
       </ul>
 
 
       <aside class="notes">
 
-        Our experiences of envrionments we visit, or live in, are in large part shaped by
-        visual attributes of those environments.
+        Our experiences of an landscapes (such as sense of beauty, safety, excitemment, serenity and so on) impacts our choices of visiting or living in a landscape,
+        They also influence our psyhiological and psychological health.
 
-        For example, characteristics like openness, naturalness, harmony and complexity of in
-        one way or another shape our impressions of aesthetics as well as sense of safety,
-        fascination, and so on. These experiences not only imapct our willingness to visit or live in a landscape,
-        but also our psychological and phsyiological well-being.
+        For example, research shows that spending time in urban green spaces with certain visual attributes our cognticie resources that become deplete after a long working day or being in demanding environments. A process called psychological restoration.
 
-        For example, research shows that spending time in urban green spaces with certain attributes
-        can promote our psychological well being through recovering our cogntivie resources that become deplete after
-        a long working day or being in demanding environments. A process called psychological restoration.
-
-        Therefore, understanding experiential qualities of a landscape can be very helpfull for designers and planners to make
-        more informed decisions about preserving or changing landscapes.
+        Therefore, identifying and predicting experiential qualities of a landscape can be very helpfull for designers and planners to make
+        more informed decisions about preserving or altering landscapes.
 
         This can be paticularly important in urban envrionments becasue of all the stressors associated with urban living
         and limited availability and access to natural resources.
 
         <!-- If a designers is given a map of experiential potentials a site he can make much more targetted decisions about
         preserving certain areas and imporove the others.  -->
-        But thequestion is how we can measure the experiential qualities of a certain site ?
+        But the question is how we can measure the experiential qualities of a certain site ?
 
         <!-- ,on the other hand are very efficient or expert approach uses spatial analysis of GIS data to compute metrics for landscape structure
         and pattern and estimate landscape quality based on attributes such as openness, harmony, etc. While this
@@ -584,15 +577,14 @@
   </table>
   <aside class="notes">
 
-  Some researchers take an objective approach and use spatial data such as GIS analysis to compute
+  We can take an objective approach and use spatial data such as GIS analysis to compute
   landscape structure and pattern and make assumptions about experiential qualities based on
   harmony, variation, openness, etc.
 
   This approach is very efficient, and provides actionable data such a metrics
   and maps that are valuable for planning and managament purposes.
 
-  However, it misses the critical aspect of
-  experience that is the subjectivity of our interaction with envirionment and the way we experience it from on-the-ground.
+  However, it misses the critical aspect of experience that is the subjectivity and the way we experience landcape on-the-ground.
   <!-- Also, it has been rather difficult to obtain a spatial data that can account for
   granularity and complexity of the urban strcuture and pattern. -->
 
@@ -660,7 +652,7 @@
   </table>
   <aside class="notes">
 
-    We can also take a subjective approach to measuring landscape experience. Than means running perceptions survey based on landscape photos, or simulations.
+    We can also take a subjective approach and run perceptions survey based on landscape photos, or simulations.
     This approach is very powerfull and relible for representing "in-situ" landscape experience and capturing perceptions.
     But since pictures are non-spatial and not easily quantifiable, it is rather difficult to draw accurate information about the landscape attributes.
     For example its difficult to say how many square meters of area you can see from a location or how far is a specefic buildings or more inricate
@@ -692,8 +684,7 @@
 
       I aimed to develop an integrated methodology for modeling experiential qualities of urban landscape.
       To test how the efficiency of the method, I apply it to model perceived restorative potential an urban park.
-      <!-- I chose restorative potential becasue it is much needed experience in urban environment and the
-        -->
+      Restorative potential is the degree to which we find an environment restorative.
 
     </aside>
 
@@ -734,9 +725,9 @@
 
 
     <aside class="notes">
-      As the basis of the objective analysis, I needed a spatial data that could capture the complexity and granularity of the urban landscape.
-      Small detials like a single tree can drastically change the cogntive effect of the urban envirionment.
-      I employed data derived light detection and ranging technology (or LIDAR) that allows for creating a very detailed surface model of the earth surface and above-surface features like trees and buildings.
+      For modeling urban environments we need to make improvements to both subjective and objective methods.
+      For example, we needed a spatial data that can capture the complexity and granularity of the urban landscape.
+      For that, I employed data derived light detection and ranging technology (or LIDAR) that allows for creating a very detailed surface model of the earth surface and above-surface features like trees and buildings.
       This surface is alled DSM.
 
     </aside>
@@ -769,8 +760,10 @@
 </table>
 
     <aside class="notes">
-    Based on the detialed DSM we can then use viewscape analysis to compute landscape structure and patten from the standpoint of the human observer on the ground.
-    Viewscape analysis is a widely used GIS-based method that computes the visible area of a 3D surface based on a given vantage point.
+    Based on the detialed DSM we can then use viewscape analysis to compute landscape structure and
+    patten from the viewpoint of the human observer on the ground.
+    Viewscape analysis is a widely used GIS-based method for computing
+    the visible area of a 3D surface based on a given vantage point.
     </aside>
 
     </section>
@@ -803,8 +796,8 @@
     <aside class="notes">
 
       We can then take panoramic photos of the same vantage point and use immersive virtual envrionments or IVEs to turn them into immersive experiences.
-      These so called photorealistic IVEs are very cost-effecitve and powerfull tools for replicating the in-situ experience.
-      Now since both viewscape analyis and IVEs consider the 360 field of view, they are an ideal match for linking the objective and subjective evaluation of the landscape.
+      Now since both viewscape analyis and IVEs consider the 360 field of view,
+      they are an ideal match for linking the objective and subjective evaluation of the landscape.
 
     </aside>
 
@@ -819,13 +812,13 @@
     <aside class="notes">
 
     This scheme provides an overview to my proposed integrated approach combining viewscape analysis and human perceptions.
-    In the objective side, I prepare high-resolution surfaces, then I perform viewscape analysis to compute metrics related to composition and configuration of visible landscape (called viewscape).
+    In the objective side, I prepare high-resolution surfaces,
+    then I perform viewscape analysis to compute metrics related to composition and configuration of visible landscape (called viewscape).
 
     On the subjective analysis side, I conduct a survey of photorealstic IVEs based on panoramas that are representative of site's visual charactristics.
 
     I statistically compare the viewscape metrics and perceptions to draw relationhips between landscape structure and patten and human experiences.
     These relationships can then be used to estimate experience of other viewpoints and generate a predictive map of experiential quality.
-
 
     </aside>
 
@@ -842,7 +835,7 @@
 
   <aside class="notes">
     For the purpose of this study I chose is the historic site Dorothia Dix park which is located here in Raleigh/North Carolina.
-    I chose this site for many reasons. but more importantly, it has a relativiely diverse land cover including natural and landscaping vegetation and historic, residential and administrative buildings.
+    I chose this site for many reasons. First, it has a relativiely diverse land cover including natural and landscaping vegetation and historic, residential and administrative buildings.
   </aside>
 
 </section>
@@ -851,8 +844,8 @@
 <section data-background= "https://github.com/ptabriz/presentation_viewscape/raw/master/img/news_dix.png" data-background-size="95%">
 
   <aside class="notes">
-Also, the site is recently acquired by the city of Raleigh and planned to be the largest city park and a Landmark destination for North Carolina. That being said, providing spatial evidence of
-the restorative potential of the park can help in additionally incorporating experiential qualities in park design.
+Also, the site is recently acquired by the city of Raleigh and planned to be the largest city park and a Landmark destination for North Carolina.
+That being said, providing spatial evidence of the restorative potential of the park can help in additionally incorporating experiential qualities in park design.
 
   </aside>
 
@@ -931,7 +924,9 @@ the restorative potential of the park can help in additionally incorporating exp
       <aside class="notes">
 
       A well known limiation of Lidar derived surfaces if the way that they represent the trees structures which can be big source of error for visbility estimations.
-      The panoramic image shows a photograph taken from a vantage point and here left you can see the viewscape map computed on the bare-earth model and on the DSM with trees and buidlings from that vantage point.
+      The panoramic image shows a
+      photograph taken from a vantage point and here
+      you can see the viewscape map computed on the bare-earth model and on the DSM with trees and buidlings from that vantage point.
       You can see that neither condition accurately estimates the visbibility, the bare earth viewscape hugly overestimates the visibility and the DSM with underestimates the visbility becasue
       the trees are represented as walls that block the view.
 
@@ -1100,8 +1095,10 @@ classification corresponding to the site’s existing land cover.
 
 
   <aside class="notes">
-  Based on the detailed landcover then, I computed a bunch of viewscape maps. The binary viewscape shows the visibile areas from a vantage points, it simply shows much one can see.
-  I intersected this map with landcover to acquire a map showing the land cover types that are present in a viewscape. I also intersected the binary viewscape with the bare earth model to
+  Based on the detailed landcover then, I computed a bunch of viewscape maps.
+  The binary viewscape shows the visibile areas from a vantage points, it simply shows much one can see.
+  I intersected this map with landcover to acquire a map showing the land cover types that are present in a viewscape.
+  I also intersected the binary viewscape with the bare earth model to
   disect the viewscape into seperate maps of on the ground and above-ground visibility.
 
   Based on these maps, I was able to compute the viewscape metrics.
@@ -1159,7 +1156,8 @@ classification corresponding to the site’s existing land cover.
       For example, Extent indicates how wide is your view and depth indicates how far you can see. More complex metrics such as Shannon diversity index show how complex is your view and how many
       different land covers are present in your view. The relief and skyline variability show the elevation change of the surface and above surface elements, respectively.
 
-      Through a python Code implemented in GRASS GIS I reiterated this process for the entire study area considering a viewpoints every 5 meters resulting in around 40000 points.
+      Through a python script implemented in GRASS GIS I reiterated this process for the entire study area
+      considering a viewpoints every 5 meters resulting in around 40000 points.
 
 
     </aside>
@@ -1384,7 +1382,7 @@ classification corresponding to the site’s existing land cover.
           </aside>
 </section>
 
-<section data-background="white">
+<!-- <section data-background="white">
           <h3>IVE image acquisition method</h3>
           <p style="float: left; font-size: 18pt; text-align: left; width: 100%; margin-bottom: 0.5em;">
             <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/ive_method.png" style="width: 100%">
@@ -1398,7 +1396,7 @@ classification corresponding to the site’s existing land cover.
 
     </aside>
 
-</section>
+</section> -->
 
               <!-- <section data-background="white">
 
@@ -1485,6 +1483,7 @@ classification corresponding to the site’s existing land cover.
                   102 Undergraduate students were recruited for the study. For each IVE, they responded to three direct measures of
                   perceived visual characteristics including perception of visual access, perception of naturalness,
                   and complexity. They also responded to one item related to perceived restorativeness.
+
                   </aside>
 
               </section>
@@ -1512,8 +1511,8 @@ classification corresponding to the site’s existing land cover.
                 a long and tiring day. Then, each participant experienced a random presentation of the 24 IVEs and rated each of the
                 scenes on the perception measures using joystick. There was a a 2 minutes recess period in the middle.
 
-                The IVE representation and survey collection procedure was implemented as a python script in WorldViz VR development software.
-                The entire study took around 55 minutes.
+                <!-- The IVE representation and survey collection procedure was implemented as a python script in WorldViz VR development software.
+                The entire study took around 55 minutes. -->
 
               </aside>
               </section>
@@ -1559,10 +1558,10 @@ classification corresponding to the site’s existing land cover.
               All independent variables (Viewscape metrics) were checked for collinearity. For each of the response variables, the best fit model was selected using stepwise selection method.
               The results seem promising specially for perceived restorativeness model which predicted 72% of the variations in perceived restorativeness potential.
 
-              The results also confirmed relationships between viewscape characteristics and human perceptions.
-              Visual access was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased visual access.
-              For example, the naturalness was mostly explained by presence of natural elements and absence of built elements,
-              Whereas complexity was explained in large part by landcover heterogeneity and terrain roughness, and shape complexity.
+              The results also confirmed several relationships between viewscape characteristics and human perceptions.
+              Perceived Visual access was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased visual access.
+              For example, perceived naturalness was mostly explained by presence of natural elements and absence of built elements,
+              Whereas percepived complexity was explained in large part by landcover heterogeneity and terrain roughness, and shape complexity.
 
               </aside>
 
@@ -1671,7 +1670,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
 
     <aside class="notes">
  To achieve the second aim of the study, which was to acquire a spatial model of restoration potential.
- I applied the coefficients derived from viewscape model to all the other viewpoints across the study area.
+ I applied the coefficients derived from viewscape model to all the other viewpoints in the study area.
  The resulting predictive map indicates hotspots for higher restoration likelihood and coldspots which are less
  likely to be perceived as restorative.
 
@@ -1703,11 +1702,11 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     <p style="font-size:14pt"> The Sunflower field
 
 
-
+<!--
     <aside class="notes">
  The other hotspot is the vast area covered with natural low vegetation with no views to buidlings and roads.
  This area is also very popular and called sunflower field.
-    </aside>
+    </aside> -->
 
 </section>
 
@@ -1766,14 +1765,14 @@ The other hotspot is the large grassy area called big field which is a very popu
 
       Finaly, the automated viewscape computation script developed for this study can be used to compute and thus be used for larger study areas.
 
-      TENTATIVE. For example with Dr. Van Berkel, our colleague at EPA, we used the automated viewscape analysis
+      <!-- TENTATIVE. For example with Dr. Van Berkel, our colleague at EPA, we used the automated viewscape analysis
       in combination with geotagged photos harvested from social media to model cultural ecosystem services
       of the entire North Carolina. We are have extended our investigation to develop a model for the entire
       United States with more than 10 million viewpoints.
 
       The VR survey software can also be used to conduct design perception surveys with immersive photos,
       which we have used in several of our experiments with Dr. Baran, a couple of which are published
-      in Environmental Psychology and Urban Greening and Urban Forestry Journals.
+      in Environmental Psychology and Urban Greening and Urban Forestry Journals. -->
 
       </aside>
 
@@ -2428,10 +2427,10 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
 <h3>Method 2: Conclusion</h3>
 <ul>
 <li>  Developed technology makes design more efficient and supports tradeoff assessment between spatial/experiential factors.
-<li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks increase collaboration.
+<li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks facilitates collaboration and public participation.
+<li class="fragment fade-in">  User studies (e.g., designers cognition, participation, collaboration).
 <li class="fragment fade-in">  The framework for Realtime 3D rendering with geospatial data can be implemented as a desktop or web-based application to complement other simulations.
-<li class="fragment fade-in">  The framework be transferred to other design and planning applications and scales.
-
+<li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales.
 
 </ul>
 
