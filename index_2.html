@@ -1,0 +1,3149 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Dissertation presentation</title>
+
+        <meta name="description" content="Tangible Landscape slides">
+        <meta name="author" content="NCSU GeoForAll Lab members">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/payam_grey.css" id="theme">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    </style><style type="text/css">.MJXp-script {font-size: .8em}
+      .MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+      .MJXp-bold {font-weight: bold}
+      .MJXp-italic {font-style: italic}
+      .MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+      .MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+      .MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+      .MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+      .MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+      .MJXp-largeop {font-size: 150%}
+      .MJXp-largeop.MJXp-int {vertical-align: -.2em}
+      .MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+      .MJXp-display {display: block; text-align: center; margin: 1em 0}
+      .MJXp-math span {display: inline-block}
+      .MJXp-box {display: block!important; text-align: center}
+      .MJXp-box:after {content: " "}
+      .MJXp-rule {display: block!important; margin-top: .1em}
+      .MJXp-char {display: block!important}
+      .MJXp-mo {margin: 0 .15em}
+      .MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+      .MJXp-denom {display: inline-table!important; width: 100%}
+      .MJXp-denom > * {display: table-row!important}
+      .MJXp-surd {vertical-align: top}
+      .MJXp-surd > * {display: block!important}
+      .MJXp-script-box > *  {display: table!important; height: 50%}
+      .MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+      .MJXp-script-box > *:last-child > * {vertical-align: bottom}
+      .MJXp-script-box > * > * > * {display: block!important}
+      .MJXp-mphantom {visibility: hidden}
+      .MJXp-munderover {display: inline-table!important}
+      .MJXp-over {display: inline-block!important; text-align: center}
+      .MJXp-over > * {display: block!important}
+      .MJXp-munderover > * {display: table-row!important}
+      .MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+      .MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+      .MJXp-mtr {display: table-row!important}
+      .MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+      .MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+      .MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+      .MJXp-mlabeledtr {display: table-row!important}
+      .MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+      .MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+      .MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+      .MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+      .MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+      .MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+      .MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+      .MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+      .MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+      .MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+      .MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+      .MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+      .MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+      .MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+      </style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+      .MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+      .MathJax .MJX-monospace {font-family: monospace}
+      .MathJax .MJX-sans-serif {font-family: sans-serif}
+      #MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+      .MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+      .MathJax:focus, body :focus .MathJax {display: inline-table}
+      .MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+      .MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+      img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+      .MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+      .MathJax nobr {white-space: nowrap!important}
+      .MathJax img {display: inline!important; float: none!important}
+      .MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+      .MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+      .MathJax_Processed {display: none!important}
+      .MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+      .MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+      .MathJax_LineBox {display: table!important}
+      .MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+      .MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+      .MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+      #MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+      @font-face {font-family: MathJax_Main; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Main-bold; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Main-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Math-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Caligraphic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Size1; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Size2; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Size3; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.0') format('opentype')}
+      @font-face {font-family: MathJax_Size4; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.0') format('opentype')}
+      .MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+      </style><style type="text/css">@font-face {font-family: MathJax_AMS; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf?V=2.7.0') format('opentype')}
+      </style></head><body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;">
+        <div id="MathJax_Hidden"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div></div><div id="MathJax_Message" style="display: none;"></div>.
+
+        <header style="position: absolute;top: 50px; z-index:500; font-size:100px;background-color: rgba(0,0,0,0.5)"></header>
+
+        <style type="text/css">
+
+          html.dimbg_095 .slide-background.present {
+            opacity: 0.95 !important;
+          }
+          html.dimbg_08 .slide-background.present {
+            opacity: 0.8 !important;
+          }
+          html.dimbg_06 .slide-background.present {
+            opacity: 0.6 !important;
+          }
+          html.dimbg_05 .slide-background.present {
+            opacity: 0.5 !important;
+          }
+          html.dimbg_04 .slide-background.present {
+            opacity: 0.4 !important;
+          }
+          html.dimbg_03 .slide-background.present {
+            opacity: 0.2 !important;
+          }
+          html.dimbg_02 .slide-background.present {
+            opacity: 0.2 !important;
+          }
+          html.dimbg_01 .slide-background.present{
+            opacity: 0.1 !important;
+          }
+          .overl {
+            background-color:rgba(0,0,0,0.9);
+          }
+          .overlaybottom{
+            background-color:rgba(0,0,0,0.9);
+            margin-bottom: 20% !important;
+          }
+          .overlaytop{
+            background-color:rgba(0,0,0,0.9);
+            margin-top: 20% !important;
+          }
+          .overlayleft{
+            background-color:rgba(0,0,0,0.9);
+            margin-right: 50% !important;
+          }
+          .overlayright{
+            background-color:rgba(0,0,0,0.9);
+            margin-left: 50% !important;
+          }
+
+          .transp_bottom {
+              position:absolute;
+              left:0;
+              top: 350px;
+              background: rgba(0,0,0,.8);
+              height:1000px;
+              width: 100%;
+          }
+          .transp_top {
+              position:absolute;
+              left:0;
+              top: -600px;
+              background: rgba(0,0,0,.8);
+              height:600px;
+              width: 100%;
+          }
+
+        </style>
+
+        <!-- Printing and PDF exports -->
+        <script>
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        body {
+        background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a:hover {
+            color: #444 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            /* color: #060 !important; */
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #444 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+
+      <div class="reveal">
+
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+<!-- <section data-background= "img/intro_1.jpg" data-background-size="95%">
+</section>
+<section data-background= "img/intro_2.jpg" data-background-size="95%">
+</section> -->
+
+
+<section data-background= "img/intro.jpg" data-background-size="95%">
+      <aside class="notes">
+      In the course my PhD research I had the unique upportunity to work with Geospatial computation, visualization and user interaction technologies — which made me realized that
+      these technologies not only as tools but also as modes of operation and inquiry — can radically change the way we study and design of our landscapes.
+      </aside>
+</section>
+
+<section data-background= "img/intro_tech.jpg" data-background-size="95%">
+
+      <aside class="notes">
+    With geospatial computation technologies, we can develop an accurate model of the earth surface and rapidly simulate the
+    impact of our interventions on a wide range of environmental factors from flow of
+    water and pollution to spread of fire and pathogens and to flow of traffic and people.
+      </aside>
+</section>
+
+<section data-background= "img/intro_tech2.jpg" data-background-size="95%">
+
+      <aside class="notes">
+      With virtual reality and specefically immersive virtual environments (IVEs),
+      we can replicate “real world” experiences of existing landscapes and simulate lifelike scenarios for the imagined landscapes.
+
+      </aside>
+
+</section>
+
+<section data-background= "img/intro_tech3.jpg" data-background-size="95%">
+
+      <aside class="notes">
+      Advanced interaction technologies such as Tangible user interfaces, provide intuitive and inclusive access to these
+      highly specialized design and analysis tools. By doing so they break the knowledge barriers and disciplinary divides between designers,
+      scientists, and public allowing them to collaboratively design and decide about the future of their landscapes.
+      </aside>
+
+</section>
+
+<section data-background="white">
+        <h3> Coupling geospatial computation, virtual
+        reality, and tangible interaction to improve landscape </br> design and research </h3>
+        <br>
+        <br>
+        <h6> Payam Tabrizian </h6>
+        <h6 style = "color : grey"> October 2018 </h6>
+<ul>
+<br><br>
+  <table width="110%">
+        <col width="6%">
+        <col width="15%">
+        <col width="6%">
+        <col width="15%">
+        <col width="6%">
+        <col width="15%">
+
+        <tr style = "font-size:.7em ; height: 1px">
+          <td><img src="img/perver.jpg" style="width: 100%"></td>
+          <td style = "border-bottom: 0px; vertical-align: middle">Perver Baran <br>
+                                                                   Co-chair<br>
+                                                                   <highlight style="background-color: lightgray ; font-size:.7em">Design</highlight>
+
+          <td><img src="img/ross.jpg" style="width: 100%"></td>
+          <td style = "border-bottom: 0px; vertical-align: middle">Ross Meentemeyer<br>
+                                                                   Co-chair<br>
+                                                                   <highlight style="background-color: #b4b4b4 ; font-size:.7em">Geospatial Analytics</highlight>
+
+          <td><img src="img/helena.jpg" style="width: 100%"></td>
+          <td td style = "border-bottom: 0px; vertical-align: middle">Helena  Mitasova <br>
+                                                                      Commitee member <br>
+                                                                      <highlight style="background-color: #b4b4b4; font-size:.7em">Geospatial Analytics</highlight></font>
+
+
+        </tr>
+
+        <tr style = "font-size:.7em ; height: 1px">
+
+          <td style = "border-bottom: 0px"><img src="img/chris.jpg" style="width: 100% "></td>
+          <td style = "border-bottom: 0px; vertical-align: middle">Christopher Mayhorn <br>
+                                                                   Minor representative<br>
+                                                                   <highlight style="background-color: #eeeeee; font-size:.7em">Cognitive sciences</highlight>
+
+          <td style = "border-bottom: 0px"><img src="img/andy.png" style="width: 100%"></td>
+          <td style = "border-bottom: 0px; vertical-align: middle">Andrew Fox<br>
+                                                                   Commitee member<br>
+                                                                   <highlight style="background-color: lightgray ; font-size:.7em">Design</highlight>
+          <td style = "border-bottom: 0px"><img src="img/deni.jpg" style="width: 100%"></td>
+          <td style = "border-bottom: 0px; vertical-align: middle">Deni Ruggeri <br>
+                                                                   Commitee member<br>
+                                                                   <highlight style="background-color: lightgray ; font-size:.7em">Design</highlight>
+
+
+        </tr>
+
+        <aside class="notes">
+  In my PhD research, I develop methodologies that
+  leverage and integrate these technologies to enhance the research and design of the urban landscape.
+  Needless to say, this builds on the expertise of my
+  co-chairs and committee members from Design and Landscape architecture, Geospatial analytics and cognitive sciences.
+        </aside>
+
+</table>
+
+
+
+</section>
+
+  <section data-background="white">
+  <!-- <h3> Outline</h3><br> -->
+    <ul>
+
+        <p2>Chapter 1: Introduction</p2><br>
+          <br>
+        <p style = "margin-left:12%"><strong>Modeling experiential qualities of urban landscape with viewscape analysis and IVE</strong>
+          <hr>
+        <p2>
+        <highlight style = "background-color:#eeeeee">Chapter 2:</highlight>
+        Modeling visual characteristic of urban landscape with
+          viewscape analysis of lidar surfaces and immersive virtual environments
+          <br>
+
+        <highlight style = "background-color:#eeeeee">Chapter 3:</highlight>
+          Restorative viewscapes: spatial mapping of urban landscape’s restorative
+          potential using viewscape modeling and photorealistic immersive virtual environments</p2>
+
+          <br><br>
+        <p style = "margin-left:12%"><strong>Realtime 3D modeling and immersion with geospatial data and tangible interaction </strong>
+          <hr>
+        <p2>
+        <highlight style = "background-color:lightgray">Chapter 4:</highlight>
+        Realtime modeling, rendering and VR with GIS and tangible interaction<br>
+
+        <highlight style = "background-color:lightgray">Chapter 5:</highlight>
+         Tangible immersion for ecological design </p2>
+          <br><br>
+        <p2>Chapter 6: Conclusion </p2>
+
+    </ul>
+
+        <aside class="notes">
+          I specefically developed two methodologoies.
+          The first method contributes to landscape assessment and combines geospatial analysis and immersive virtual environments to model
+          experiential qualities of urban environments. The second method integrates geospatial computation,
+          automated 3D visualization and Tangible interaction to make design process more intuitive, efficient,
+          accessible and collaborative. These two methods are described in four chapters and four articles.
+        </aside>
+
+  </section>
+
+
+<!-- _______________ Chapter 2. Viewscape Experiment ________________-->
+
+              <!-- --SLIDE 1-- intro-->
+<section data-background="https://github.com/ptabriz/presentation_viewscape/raw/master/img/anim.gif" data-background-size="200" >
+<br/><br/>
+<br/><br/><br/>
+
+<h4 class="shadow">Modeling human experience of urban landscape</h4><h4 class="shadow" style="font-size:1.3em"> through viewscape analysis of lidar and immersive virtual environments survey </h4>
+
+<br/>
+<br/>
+<h4>Chapter 2 & Chapter 3<h4>
+
+  <aside class="notes">
+
+  </aside>
+
+</section>
+
+
+<section data-background="white">
+
+
+      <h3> Experience of urban landscape </h3>
+      <ul>
+          <!-- <li> Landscape visual charactristics impact people's experiences (aesthetic appeal, sense of safety, restorativeness, etc.)<reference> (reference)</reference> -->
+          <li> Landscape experience impact people's decisions for visiting, developing or maintaining landscapes <reference> (Gobster et al., 2007; Tveit and Fry, 2006)</reference>.
+          <li class="fragment fade-in"> Exposure to landscape's with certain visual attributes can promote mental well-being through psychological restoration <reference>(Nordh et al., 2009; Berto, 2005)</reference>.
+          <li class="fragment fade-in"> Identifiying experiential qualities of urban enviroments can help making more targetted design and management decisions.
+      </ul>
+
+
+      <aside class="notes">
+
+        Our experiences of an landscapes (such as sense of beauty, safety, excitemment, serenity and so on) impact our choices of visiting or living in a landscape,
+        -- They also influence our psyhiological and psychological health.
+
+        For example, research shows that spending time in urban green spaces with certain visual attributes our cognticie resources that become deplete after a long working day or being in demanding environments. A process called psychological restoration.
+
+        Therefore, identifying and predicting experiential qualities of a landscape can be very helpfull for designers and planners to make
+        more informed decisions about preserving or altering landscapes.
+
+        This can be paticularly important in urban envrionments becasue of all the stressors associated with urban living
+        and limited availability and access to natural resources.
+
+        <!-- If a designers is given a map of experiential potentials a site he can make much more targetted decisions about
+        preserving certain areas and imporove the others.  -->
+        But the question is how we can measure the experiential qualities of a certain site ?
+
+        <!-- ,on the other hand are very efficient or expert approach uses spatial analysis of GIS data to compute metrics for landscape structure
+        and pattern and estimate landscape quality based on attributes such as openness, harmony, etc. While this
+        approach is very efficient, cost-effective and allows for spatial mapping, it relies on the assessor’s judgement
+        and does not reflect the experiences from the eye of the beholder.// -->
+
+      </aside>
+      </section>
+
+
+
+<section data-background="white">
+  <h3> Landscape experience asessment </h3>
+  <br>
+  <table width="70%" class="no_bottom_border" style="font-size:14pt">
+    <col width="35%">
+    <col width="5%">
+    <col width="35%">
+
+
+    <th style="text-align:center">Objective</th>
+
+    <tr>
+      <td>
+        <li class="condensed">Based on GIS analysis
+        <li class="condensed">Efficient
+        <li class="condensed">Spatial, ideal for mapping
+        <hr>
+        <img src="img/objective.jpg" style= "border:1px solid black">
+
+
+        <p3 style="float:middle">Spatial map of landscape aesthetic quality <a href="http://dx.doi.org/10.1016/j.apgeog.2010.03.001">
+          (Vizarri, 2011)</a></p3>
+
+      </td>
+        <td></td>
+          <td></td>
+      <!-- <small> viewshed map computed on digital elevation model </small> -->
+    </tr>
+  </table>
+  <aside class="notes">
+
+  We can take an objective approach and use spatial data such as GIS analysis to compute
+  landscape structure and pattern and make assumptions about experiential qualities based on
+  harmony, variation, openness, etc.
+
+  This approach is very efficient, and provides actionable data such a metrics
+  and maps that are valuable for planning and managament purposes.
+
+  However, it misses the critical aspect of experience that is the subjectivity and the way we experience landcape on-the-ground.
+
+  <!-- The analysis usually starts with computing the visible area from a 3D surface model using line-of sight analysis which is called viewshed map.
+  The viewshed can be combined with landcover to estimate the composition of the visible surface ?
+  Landscape structure analysis and spatial statisics can also show the configuration of the space such as
+  is it wide or narrow vista ? how far one can see ?
+  how diverse is the visible landscape and so forth ? -->
+
+
+  </aside>
+
+</section>
+
+
+<section data-background="white" data-transition="fade-in" data-transition-speed="slow">
+  <h3> Landscape experience asessment </h3>
+  <br>
+  <table width="70%" class="no_bottom_border" style="font-size:14pt">
+    <col width="35%">
+    <col width="5%">
+    <col width="35%">
+
+
+
+    <th style="text-align:center">Objective</th>
+    <th style="text-align:center"></th>
+    <th style="text-align:center">Subjective</th>
+
+
+
+
+    <tr>
+        <td>
+          <li class="condensed">Based on GIS analysis
+          <li class="condensed">Efficient
+          <li class="condensed">Spatial, ideal for mapping
+          <!-- <li class="condensed">Insufficient granularity -->
+          <hr>
+          <img src="img/objective.jpg" style= "border:1px solid black">
+
+
+          <p3 style="float:middle">Spatial map of landscape aesthetic quality <a href="http://dx.doi.org/10.1016/j.apgeog.2010.03.001">
+            (Vizarri, 2011)</a></p3>
+
+        </td>
+        <td></td>
+
+        <td>
+          <li class="condensed">Based on perception survey
+          <li class="condensed">Reliable
+          <li class="condensed">Non-spatial, difficult for mapping
+          <!-- <li class="condensed">Limited field of view of photos -->
+          <hr>
+          <img src="img/subjective.jpg">
+
+
+          <p3>Photo-based perception survey</p2>
+
+        </td>
+      <!-- <small> viewshed map computed on digital elevation model </small> -->
+    </tr>
+  </table>
+  <aside class="notes">
+
+    We can also take a subjective approach and run perceptions survey based on landscape photos, or simulations.
+    This approach is very powerfull and relible for representing "in-situ" landscape experience and capturing perceptions.
+    But it is somehow difficult to quantify pictures and draw accurate information about the landscape attributes.
+    For example its difficult to say how many square meters of area you can see from a location or how far is a specefic buildings or more inricate
+    analysis such as how harmonius or complex is the viewscape.//
+
+    We can also combine these approaches to benefit from advantages of both. That means linking the perceptions derived from subjective analysis
+    with the landscape structure and pattern derived from objective analysis.
+
+
+  </aside>
+
+</section>
+
+
+
+
+<section data-background="white">
+
+    <h3> Aims </h3>
+        <ul>
+
+          <li> Develop and evaluate an integrated approach for modeling experiential qualities of urban evironments. </li>
+          <li> Apply the method to generate a spatial map of perceived (psychological) restoration potential for an urban park. </li>
+      <br>
+        </ul>
+    <aside class="notes">
+
+
+      I aimed to develop an integrated methodology for modeling experiential qualities of urban landscape.
+      To test how the efficiency of the method, I apply it to model perceived restorative potential an urban park.
+      Restorative potential is the degree to which we find an environment restorative.
+
+    </aside>
+
+
+</section>
+
+<section data-background="white">
+<h3> Approach </h3>
+<br>
+<!-- <ul> -->
+
+  <!-- <li> Viewscape analysis <reference> (reference) </reference> -->
+  <!-- <li> Light ranging and detection technology (lidar) <reference> (reference)</reference> -->
+  <!-- <li> Viewscape analysis <reference> (reference)</reference> -->
+  <!-- <li> Immersive Virtual Environments (IVEs) <reference> (reference)</reference> -->
+<!-- </ul> -->
+<table style= "font-size:18pt"  class= "no_bottom_border fragment fade-in" width="105%">
+  <col width = "33%">
+  <col width = "33%">
+  <col width = "33%">
+
+  <tr class="center_text">
+    <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Light detection and ranging <br>(lidar)</td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td><img src="img/lidar_points.PNG" style="width:100%; border:1px solid black"></td>
+    <td></td>
+    <td></td>
+
+  </tr>
+
+  </tr>
+</table>
+
+
+
+    <aside class="notes">
+      For modeling urban environments, specially at the scale we percieve and interact with them, we need to make improvements in the precision of our objective analysis.
+      For that, I used data derived from light detection and ranging technology (or LIDAR) that allows for creating a very detailed surface model of the earth surface and above-surface features like trees and buildings.
+      This surface is alled DSM.
+
+    </aside>
+
+    </section>
+
+
+    <section data-background="white" data-transition="fade in">
+    <h3> Approach </h3>
+<br>
+<table style= "font-size:18pt"  class= "no_bottom_border" width="105%">
+  <col width = "33%">
+  <col width = "33%">
+  <col width = "33%">
+
+  <tr class="center_text">
+    <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Light detection and ranging <br>(lidar)</td>
+    <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Viewscape analysis </td>
+    <td>
+     </td>
+  </tr>
+
+  <tr>
+    <td><img src="img/lidar_points.PNG" style="width:100%; border:1px solid black"></td>
+    <td><img src="img/viewscape.PNG" style="width:100%; border:1px solid black"></td>
+    <td></td>
+
+  </tr>
+
+</table>
+
+    <aside class="notes">
+    Based on the detialed DSM we can then use viewscape analysis to compute landscape structure and
+    patten from the viewpoint of the human observer on the ground.
+    Viewscape analysis is a widely used GIS-based method for mapping
+    the visible area of a 3D surface based on a given vantage point.
+    </aside>
+
+    </section>
+
+
+    <section data-background="white">
+    <h3> Approach </h3>
+    <br>
+    <table style= "font-size:18pt"  class= "no_bottom_border" width="105%">
+      <col width = "33%">
+      <col width = "33%">
+      <col width = "33%">
+
+      <tr class="center_text">
+          <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Light detection and ranging <br>(lidar)</td>
+          <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Viewscape analysis <br><br></td>
+          <td style="border-bottom: 1px solid black; border-top: 1px solid black"> Photorealistic Immersive virtual enviroments (IVEs)</td>
+      </tr>
+
+      <tr>
+        <td><img src="img/lidar_points.PNG" style="width:100%; border:1px solid black"></td>
+        <td><img src="img/viewscape.PNG" style="width:100%; border:1px solid black"></td>
+        <td><img src="img/oculus_2.jpg" style="width:100%; border:1px solid black"></td>
+
+      </tr>
+
+      </tr>
+    </table>
+
+    <aside class="notes">
+
+      We can then take panoramic photos of the same vantage point and use immersive virtual envrionments or IVEs to turn them into immersive experiences.
+      Now since both viewscape analyis and IVEs consider the 360 field of view,
+      they are an ideal match for linking the objective and subjective evaluation of the landscape,
+      as oppsoed to commonly used images that have limited field of view.
+
+    </aside>
+
+    </section>
+
+<section data-background="img/overview.jpg" data-background-size="90%">
+
+    <!-- <h2 style="margin-bottom:85%"> Overview of methodology </h2> -->
+      <!-- <p style=" text-align: left; font-size: 18pt;  width: 120%; margin-bottom: 0.5em">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/overview_3.jpg"> -->
+
+    <aside class="notes">
+
+    This scheme provides an overview to my developed integrated approach combining viewscape analysis and human perceptions.
+    In the objective side, I prepare high-resolution surfaces,
+    then I perform viewscape analysis to compute metrics related to composition and configuration of visible landscape (called viewscape).
+
+    On the subjective analysis side, I conduct a survey of photorealstic IVEs based on panoramas that are representative of site's visual charactristics.
+
+    I statistically compare the viewscape metrics and perceptions to draw relationhips between landscape structure and patten and human experiences.
+    These relationships can then be used to estimate experience of other viewpoints and generate a predictive map of experiential quality.
+
+    </aside>
+
+</section>
+
+
+<section data-background= "white">
+
+  <h3>Study area</h3>
+
+  <p style="float: left; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/site_2.jpg" style="width: 100%">
+        Dorothea Dix park, Raleigh, NC, 308 acres </p>
+
+  <aside class="notes">
+    For the purpose of this study I chose is the historic site Dorothia Dix park which is located here in Raleigh/North Carolina.
+    I chose this site for many reasons. First, it has a relativiely diverse land cover including natural and landscaping vegetation and historic, residential and administrative buildings.
+  </aside>
+
+</section>
+
+
+<section data-background= "https://github.com/ptabriz/presentation_viewscape/raw/master/img/news_dix.png" data-background-size="95%">
+
+  <aside class="notes">
+Also, the site is recently acquired by the city of Raleigh and planned to be the largest city park and a Landmark destination for North Carolina.
+That being said, providing spatial evidence of the restorative potential of the park can assist design and planning of the park.
+
+  </aside>
+
+</section>
+
+
+<section data-background= "white">
+<h3>Lidar data</h3>
+  <ul>
+  <p style="float: center; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lidar.png" style="width: 100%">
+      Airborne lidar (North Carolina QL2), Acquired Jan 11, 2015 (leaf-off)
+
+      <aside class="notes">
+    To obtain a high-resolution surface, I used North Carolina QL2 lidar data that has a 3 points per
+    square meter density and acquired in winter 2015.
+
+      </aside>
+
+</section>
+
+<section data-background= "white">
+ <h3>Digital surface model (DSM)</h3>
+
+   <p style="float: center; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
+     <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lidar2.png" style="width: 100%">
+       0.5m resolution DSM
+
+     <aside class="notes">
+    Then I interpolated it to develop a 0.5 meters surface model that represents buildings and vegetation.
+     </aside>
+</section>
+
+<!-- <section data-background= "white">
+ <h3> Tree obstruction error</h3>
+
+   <p style="float: center; font-size: 18pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.5em;">
+     <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lidar3.png" style="width: 100%">
+       0.5m Digital surface model (DSM)
+
+     <aside class="notes">
+    A well known limitation of interpolated surfaces is the way that trees are represented which can be a big
+    source of error in visibility calculations.
+     </aside>
+</section> -->
+
+
+<section data-background="white">
+
+     <h3> Tree obstruction error</h3>
+
+          <ul>
+            <p style="float: left; font-size: 14pt; text-align: center; width: 43%; margin-left: 1.3%; margin-bottom: 0.0em;">
+              <img src="img/viewscape_DEM.jpg" style="width: 100%">
+              Viewscape based on bare-ground (DEM) </p>
+
+             <p style="float: left; font-size: 14pt; text-align: center; width: 43%; margin-left:1.355%; margin-bottom: 0.0em;">
+                <img src="img/viewscape_DSM.jpg" style="width: 100%">
+              Viewscape based on DSM  </p>
+             <p style="float: left; font-size: 14pt; text-align: center; width: 90%; margin-left: 0%; margin-bottom:0.0em;">
+                  <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/extract.png" style="width: 100%">
+              Panoramic image taken from the viewpoint   </p>
+             </ul>
+
+       <!-- <p style="float: left; font-size: 20pt; text-align: center; width: 40%; margin-bottom: 0.5em;margin-left:10%">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/obstruction.png" style="width: 100%">
+         Real-world situation
+       </p>
+
+        <p style="float: left; font-size: 20pt; text-align: center; width: 40%; margin-right:.5%; margin-bottom: 0.5em;">
+           <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/obstruction2.png" style="width: 100%">
+           Representation of trees in DSM
+        </p> -->
+
+
+      <aside class="notes">
+
+      A well known limitation of Lidar derived surfaces if the way that they represent the trees structures which can be big source of error for visbility estimations.
+      The panoramic image shows a
+      photograph taken from a vantage point and here
+      you can see the viewscape map computed on the bare-earth model and on the DSM with trees and buidlings from that vantage point.
+      You can see that neither condition accurately estimates the visbibility, the bare earth viewscape hugly overestimates the visibility and the DSM with underestimates the visbility becasue
+      the trees are represented as walls that block the view.
+
+      </aside>
+
+</section>
+
+<section  data-background="white">
+
+     <h3>Vegetation structure</h3>
+     <ul>
+      <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right: .5%; margin-bottom: 0.0em;">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_a.png" style="width: 100%"></p>
+
+      <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right:.5%; margin-bottom: 0.0em;">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_b.png" style="width: 100%"></p>
+
+      <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right: .5%; margin-bottom:0.0em;">
+           <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_c.png" style="width: 100%"></p>
+
+     <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right: .5%; margin-bottom: 0.0em;">
+       <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_1.png" style="width: 100%">Evergreen</p>
+
+      <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right:.5%; margin-bottom: 0.0em;">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_2.png" style="width: 100%">Evergreen + dense understory</p>
+
+      <p style="float: left; font-size: 18pt; text-align: center; width: 28%; margin-right: .5%; margin-bottom: 0.0em;">
+           <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/structure_3.png" style="width: 100%">Deciduous stands</p>
+    </ul>
+
+    <aside class="notes">
+    A closer inspection vegetation strcuture shown from Lidar points and site photos shows that deciduous specimen are all mostly affected by
+    this error whereas the mixed vegetation and evergreen trees are predominantly impermeable.
+    </aside>
+</section>
+
+
+<section data-transition="fade-out" data-background="white">
+  <h3> Trunk obstruction modeling </h3>
+  <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/dsm.png" style="width: 100%"><br>Digital surface model (DSM)
+    <br><reference style="float:right">Source: Murguitto et al. 2013</reference></p></p>
+
+
+    <aside class="notes">
+      A way to address this issue is to extract the decidous trees from the DSM and replace them with their trunks, a technique called trunk obstruction modeling.
+    </aside>
+</section>
+
+<section data-transition="fade-out" data-background="white">
+    <h3> Trunk obstruction modeling </h3>
+    <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
+      <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/geomorphon.png" style="width: 100%"><br>Landform analysis (Geomorphons)
+      <br><reference style="float:right">Source:Jasiewicz & Stepinski (2013)</reference></p>
+
+      <aside class="notes">
+      To exatract the trees, I applied a landform detection algorithm called Geomorphons to DSM to detect the treetops. The as treetop are mostly detected as summits shown in dark brown.
+
+      </aside>
+</section>
+
+<section data-transition="fade-in" data-background="white">
+      <h3> Trunk obstruction modeling </h3>
+      <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
+        <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/peaks.png" style="width: 100%"><br>Extracted tree peaks</p>
+
+      <aside class="notes">
+          This maps shows the extracted treetop.
+
+
+      </aside>
+</section>
+
+
+<section data-transition="fade-in" data-background="white">
+  <h3> Trunk obstruction modeling </h3>
+  <p style="float: left; font-size: 20pt; text-align: center; width: 90%; margin-right: .5%; margin-bottom: 0.0em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/trunk_replace.png" style="width: 100%"><br>DSM after trunk replacement</p>
+
+    <aside class="notes">
+    Assuming that the stems
+     In the next step, I used a landcover map to replace the deciduous trees with their trunks in the DSM.
+     The resulting surface model represents a more realistic representation of vegetation with deciduous trees shown as
+     trunks and the rest of the vegetation left intact.
+
+    </aside>
+
+</Section>
+
+
+<section data-background="white">
+    <h3> Trunk obstruction modeling </h3>
+     <ul>
+       <p style="float: left; font-size: 16pt; text-align: center; width: 43%; margin-left: 1.3%; margin-bottom: 0.0em;">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/thick_view.jpg" style="width: 100%">
+         Viewscape before obstruction modeling </p>
+
+        <p style="float: left; font-size: 16pt; text-align: center; width: 43%; margin-left:1.355%; margin-bottom: 0.0em;">
+           <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/thin_view.jpg" style="width: 100%">
+         Viewscape after obstruction modeling  </p>
+        <p style="float: left; font-size: 16pt; text-align: center; width: 90%; margin-left: 0%; margin-bottom:0.0em;">
+             <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/extract.png" style="width: 100%">
+         Panoramic taken from viewscape point  </p>
+        </ul>
+
+        <aside class="notes">
+          Now you can see that how trunk obstruction modeling improved the visibility estimations, allowing the line of sight to extend beyonds the decidous trees.
+          --Now ! A good DSM can give us a good estimation of how much we can see, but we also need a good land cover mop to estimate what we can see.
+
+        </aside>
+
+</section>
+
+
+<section data-background="white">
+
+     <h3> High resolution land cover</h3>
+     <ul>
+       <p style="float: left; font-size: 20pt; text-align: center; width: 32%; margin-right: .5%; margin-bottom: 0.5em;">
+         <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/landcover_a.png" style="width: 100%">
+         Trees derived from lidar points</p>
+        <p style="float: left; font-size: 20pt; text-align: center; width: 32%; margin-right:.5%; margin-bottom: 0.5em;">
+           <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/landcover_b.png" style="width: 100%">
+          Ground cover derived from supervised classification </p>
+        <p style="float: left; font-size: 20pt; text-align: center; width: 32%; margin-right: .5%; margin-bottom: 0.5em;">
+             <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/landcover_c.png" style="width: 100%">
+             Roads and buildings derived from official vector data
+</p>
+      </ul>
+      <aside class="notes">
+
+      To develop a detailed lancover, I combined Lidar vegetation points, with ground cover derived from image classification of multi-band imagery, and buildings derived from vector data.
+    </aside>
+</section>
+
+
+<section data-background="https://github.com/ptabriz/presentation_viewscape/raw/master/img/lancover_final.png" data-background-size="80%">
+  <aside class="notes">
+This resulted in fairly detailed map with .5 m resolution and
+classification corresponding to the site’s existing land cover.
+  </aside>
+</Section>
+
+
+<section>
+  <h3>Viewscape maps</h3>
+  <br><br>
+
+  <table class="condensed no_bottom_border" width= "110%">
+    <col width="20.3%">
+    <col width="20%">
+    <col width="20.7%">
+    <col width="20.3%">
+
+  <tr class = "center_text">
+    <td><img src="img/viewshed_1.jpg"></td>
+    <td><img src="img/viewshed_2.jpg"></td>
+    <td><img src="img/viewshed_3.jpg"></td>
+    <td><img src="img/viewshed_4.jpg"></td>
+  </tr>
+
+  <tr class = "center_text" style="font-size:14pt">
+  <td> Binary viewscape </td>
+  <td> Landcover viewscape </td>
+  <td> Horizontal viewscape</td>
+  <td> Vertical viewscape </td>
+  </tr>
+
+</table>
+
+
+
+  <aside class="notes">
+  Based on the spatial data, I generated 4 viewscape maps.
+  The first one is shows the visibile areas of the surface model from a vantage point, so called binary viewscape.
+  I intersected this map with landcover to acquire a second map that shows the types of land cover present in a viewscape.
+  I also intersected the binary viewscape with bare-ground model to create Horizontal viewscape which is what you can see
+  on the ground and vertical viewscape which is what you can see above the ground.
+
+  Based on these maps, I was able to compute the viewscape metrics.
+
+
+
+  </aside>
+</Section>
+
+
+              <!-- <section data-background="white">
+                <table style= "font-size: 16pt">
+              <tr><th>Viewscape metrics</th><th>references</th></tr>
+              <tr><td></td></tr>
+              <tr><td><i><strong>Configuration metrics<i></td><td></td></tr>
+              <tr><td>Extent (viewshed size)</td><td><reference>Tveit et al.(2009), Dramstad et al.(2006)
+              <tr><td>Depth</td><td><reference>Ode et al.(2008), Fry et al.(2012), Tveit et al.(2009) </td></tr>
+              <tr><td>Relief</td><td><reference>Tveit et al.(2009), Dramstad et al.(2006)</td></tr>
+              <tr><td>Visible Horizontal surface</td><td><reference>Tveit et al.(2009), Stamps(2005)</td></tr>
+              <tr><td>Viewdepth variation</td><td><reference>Sahraoui(2016)</td></tr>
+              <tr><td>Skyline</td><td><reference>Sahraoui(2016)</td></tr>
+              </td></tr>
+              <tr><td>Shannon diversity index (SDI)</td><td><reference>Sahraoui(2016), Sang(2008), Ode et al.(2008)</td></tr>
+              <tr><td>Mean Shape Index (MSI)</td><td><reference>Stamps(2005), Sahraoui(2016)
+              </td></tr>
+              <tr><td>Edge density (ED)</td><td><reference>Sang(2008), Ode et al.(2008), Fry et al.(2012)</td></tr>
+              <tr><td>Number of patches (Nump)</td><td><reference>Sang(2008), Ode et al.(2008), Fry et al.(2012)</td></tr>
+
+
+              <tr><td></td></tr>
+              <tr><td><em><strong>Composition metrics<em></td><td></td></tr>
+              <tr><td> % Visible landcover</td><td><reference>Ode et al.(2008), Sahraoui(2016)</td></tr>
+
+                </table>
+                <aside class="notes">
+                I chose a set of configuration and composition metrics that are shown to be related to
+                human perceptions and determinant of landscape characteristics.
+                </aside>
+
+              </section> -->
+
+<section data-background="img/viewscape_comp.jpg"  data-background-size="64%">
+<h3 style="margin-bottom:80%">Viewscape computation workflow</h3>
+    <!-- <p style="float: left; font-size: 18pt; text-align: left; width: 90%; margin-bottom: 85%;"> -->
+    <!-- <img src="img/grass_logo.png" style="float: right; width: 15%; margin-top:50.5%; margin-right:5%"> -->
+
+    <aside class="notes">
+
+      This shows the entire workflow for computing viewscape metrics for a single viewscape.
+      Based on the viewscape maps, several metrics related to compositions and computations of viewscape were computed.
+
+      <!-- I chose a set of configuration and composition metrics that are previously shown to be related to human perceptions. -->
+      Composition variables indicate the percentage of each landcover present in viewscape such as percentage of mixed forest, buildings, etc.
+
+      Configuration metrics include the extent and depth of view, some metrics borrowed from landscape ecology that indicate pattern and shape diversity, and metrics
+      related to vertical variability such as relief and skyline.
+
+      Finally, I developed a python script in GRASS GIS, to automatically compute viewscapes for the entire study area
+      considering a viewpoints every 5 meters resulting in around 40000 points.
+
+    </aside>
+
+</section>
+
+<section data-background="white">
+      <h2>Composition metrics</h2>
+
+      <table class= "condensed" width="90%" style = "font-size:.6em">
+            <col width="10%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <!-- <tr style = "font-size:.7em">
+              <th style="text-align:center"> Metric </th>
+              <th style="text-align:center"> Viewpoint 1 </th>
+              <th style="text-align:center"> Viewpoint 2 </th>
+              <th style="text-align:center"> Viewpoint 3 </th>
+            </tr> -->
+            <tr class= "border_bottom_solid border_top">
+              <td style="text-align:left; vertical-align: middle"> Areal photo <br><br><br><br><br><br><br> Viewscape </td>
+              <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural.png" style="width: 100%"></td>
+              <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural2.png" style="width: 100%"></td>
+              <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural3.png" style="width: 100%"></td>
+              <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/natural4.png" style="width: 100%"></td>
+            </tr>
+
+
+            <tr class = "center_text">
+
+            <td style = "text-align:left"> Herbaceous </td>
+            <td> 0 %  </td>
+            <td> 0 %  </td>
+            <td> 0 %  </td>
+            <td><highlight class="dark"> 65 % </highlight> </td>
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Mixed</td>
+            <td> 12 %  </td>
+            <td> 0 %  </td>
+            <td> 5 %  </td>
+            <td> <highlight class = "dark"> 12 %  </td>
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Evergreen</td>
+            <td> 0 %  </td>
+            <td> 0 %  </td>
+            <td> 4 %  </td>
+            <td>8 % </td>
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Deciduous </td>
+            <td> 0 %  </td>
+            <td> <highlight class = "dark"> 18 %  </highlight> </td>
+            <td> <highlight class = "dark"> 38 % </highlight> </td>
+            <td> 15 %  </td>
+          </tr>
+
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Grassland </td>
+            <td> 17 %  </td>
+            <td> <highlight class = "dark"> 38 % </highlight </td>
+            <td> 32 %  </td>
+            <td> 0 %  </td>
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Paved roads </td>
+            <td> <highlight class = "dark"> 48 %  </highlight</td>
+            <td> 27 %  </td>
+            <td> 14 %  </td>
+            <td> 0 %  </td>
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Buildings </td>
+            <td> <highlight class = "dark"> 25 %  </td>
+            <td> 17 %  </td>
+            <td> 5 %  </td>
+            <td> 0 %  </td>
+          </tr>
+
+        </table>
+
+
+        <aside class="notes">
+        I pulled out the results for four viewpoints to show how the composition metrics charactrize the viewscapes.
+        You can see the first viewscape is charactrized by dominant presence of Paved roads and buildings.
+        The second and third viewscapes have a in general a good mixture of landcover types.
+        The forth viewscapes is mostly charactrized by presense of natural ground cover and mixed forest.
+
+        </aside>
+
+</section>
+
+
+<section data-background="white">
+    <h2>Configuration metrics</h2>
+
+      <table class= "condensed" width="100%" style = "font-size:.5em">
+          <col width="18%">
+          <col width="17%">
+          <col width="17%">
+          <col width="17%">
+
+            <!-- <tr style = "font-size:.7em">
+              <th style="text-align:center"> Metric </th>
+              <th style="text-align:center"> Viewpoint 1 </th>
+              <th style="text-align:center"> Viewpoint 2 </th>
+              <th style="text-align:center"> Viewpoint 3 </th>
+            </tr> -->
+          <tr class = "border_bottom_solid border_top no_space" style = "font-size:1.2em">
+            <td style="text-align:left; vertical-align: middle"> Viewscape image </td>
+            <td><img src="img/ENV_210.png" style="width: 80%"></td>
+            <td><img src="img/ENV_196.png" style="width: 80%"></td>
+            <td><img src="img/ENV_194.png" style="width: 80%"></td>
+
+
+          <tr class= "border_bottom_solid no_space" style = "font-size:1.2em">
+            <td style="text-align:left; vertical-align: middle"> Viewscape map</td>
+            <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_210.PNG" style="width:80%"></td>
+            <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_196.png" style="width: 80%"></td>
+            <td><img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/complexity_194.png" style="width: 80%"></td>
+
+          </tr>
+
+          <tr class = "center_text">
+
+            <td style = "text-align:left"> Extent (m<sup>2</sup>) </td>
+            <td><highlight class="dark"> 185,000 </highlight></td>
+            <td> <highlight class="dark"> 1072 </highlight></td>
+            <td> 50,710 </td>
+
+          </tr>
+
+          <!-- <tr class = "center_text">
+            <td style = "text-align:left"> releif (m)</td>
+
+              <td>7.12</td>
+              <td>2.11</td>
+              <td>4.76</td>
+
+          </tr> -->
+
+          <tr class = "center_text">
+            <td style = "text-align:left"> Depth (m) </td>
+              <td>538</td>
+              <td>305</td>
+              <td>1293</td>
+
+          </tr>
+
+          <tr class = "center_text">
+            <td style = "text-align:left"> SDI (Shannon Diversity index) </td>
+              <td>1.11</td>
+              <td>1.49</td>
+              <td><highlight class="dark">1.51</highlight></td>
+
+          </tr>
+
+          <tr class = "center_text">
+            <td style = "text-align:left"> MSI (Mean Shape Index) </td>
+              <td>39.1</td>
+              <td>19.7</td>
+              <td><highlight class="dark">63.48</highlight></td>
+
+          </tr>
+
+
+          <tr class = "center_text">
+            <td style = "text-align:left"> Nump (Number of Patches)</td>
+              <td>3700</td>
+              <td>642</td>
+              <td><highlight class="dark">4168</highlight></td>
+          </tr>
+
+          <tr class = "center_text">
+            <td style = "text-align:left"> Vdepth (m)</td>
+              <td>17.3</td>
+              <td>5.29</td>
+              <td><highlight class="dark">29.90</highlight></td>
+
+          </tr>
+
+      </table>
+
+              <aside class="notes">
+                  The same was done for configuration metrics.
+                  --As you can see in the Extent charactrize large and small viewscapes shown in the first two maps.
+                  In the third map Shannon diversity index, Mean shape index and Patch number charactrize the high pattern and shape variability of the viewscape.
+
+              </aside>
+</section>
+
+
+<section data-background="img/mapping_objective-2.jpg" data-background-size="58%">
+          <h2 style= "margin-bottom:60%">Viewscape metrics maps</h2>
+
+          <aside class="notes">
+
+            To show how viewscape metrics can spatially vary across the site, I assigned their values to all 40.000 viewpoints.
+
+            Here is a look to some of these maps. Each of them can be informative, but for the sake of time I am only describing the first four.
+
+            In the extent map you can see how viewscape area varies across the landscape. The most expansive areas are aviable on the western side of the park wheras the
+            eastern side is has low to medium viewscape areas.
+
+            The Shannon Diversity map shows that except the large field to the South West, the rest of the site have highly varied and heterogenous viewscapes.
+
+            Finally, from the composition maps we see that the buildings and decidous trees are mostly visibile in the eastern portions of the site.
+
+
+          <p style="float:center; font-size: 18pt; text-align: center; width: 80%; margin-left: 7em">
+              <!-- <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/mapping_objective.jpg" style="width: 100%"> -->
+          </aside>
+</section>
+
+<section data-background="https://github.com/ptabriz/presentation_viewscape/raw/master/img/ive_sample.png" data-background-size="65%">
+          <h3 style= "margin-bottom:84%">IVE survey</h3>
+          <aside class="notes">
+
+          In the next step, I selected a set of locations with viewscape values corresponding to values of all other viewpoints in the site.
+          From those, I selected a subsample that was dispersed enough to spatially represent the study area, which resulted in 24 viewpoints.
+
+
+
+          </aside>
+</section>
+
+<!-- <section data-background="white">
+          <h3>IVE image acquisition method</h3>
+          <p style="float: left; font-size: 18pt; text-align: left; width: 100%; margin-bottom: 0.5em;">
+            <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/ive_method.png" style="width: 100%">
+              Image aquisition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stiching and editing
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cube mapping and wrapping
+
+    <aside class="notes">
+      For each point I took 360 imagery using a DSLR camera mounted on an a robotic arm,
+      and stiched the images to acquire a high-resolution panorama.
+      I converted the panoramas to cube faces so that they can be viewed in headmounted displays.
+
+    </aside>
+
+</section> -->
+
+              <!-- <section data-background="white">
+
+                <script src="https://360player.io/static/dist/scripts/embed.js" async></script>
+
+                <h3>Sample IVE images</h3>
+                <br>
+                <iframe src="https://360player.io/p/aJY8U3/" frameborder="0" width=800 height=240 allowfullscreen data-token="aJY8U3"></iframe>
+                <br><br>
+
+
+              <iframe src="https://360player.io/p/jwFc2d/" frameborder="1" width=800 height=240 allowfullscreen data-token="jwFc2d"></iframe>
+
+
+              </section>
+
+              <section data-background="white">
+
+                <h3>Sample IVE images</h3>
+                <br>
+
+                <iframe src="https://360player.io/p/UUPC9m/" frameborder="0" width=800 height=240 allowfullscreen data-token="UUPC9m"></iframe>
+                <br><br>
+                <iframe src="https://360player.io/p/rMeBHm/" frameborder="0" width=800 height=240 allowfullscreen data-token="rMeBHm"></iframe>
+
+              </section> -->
+
+<section data-background="img/panoramas_2.jpg" data-background-size="73%">
+<p style="margin-top:60%; font-size:16pt"> Example of panoramic photos (Feb 2016) </p>
+    <aside class="notes">
+    At each location, I captured a 360 panoramic photo that can be viewed in IVE headsets.
+    I captured all the images in Winter season to be consistent with the lidar data.
+    These example panoramas show how the selected viewpoints represent diffrent envrionmetns whithin the site.
+    </aside>
+</section>
+
+                  <section data-background="white">
+                  <h3> IVE survey</h3>
+
+                  <ul>
+
+                  <li> <strong>Sample:</strong> 102 total undergraduate students, park recreation tourism management
+                  <li> <strong>Design:</strong> Repeated measure (24 randomized trials)
+                  <li> <strong>Response measures </strong>
+
+                 </ul>
+                 <br><br>
+
+                      <table style = "float: left; margin-left: 1em ;font-size: 14pt">
+
+                        <col width="12%">
+                        <col width="30%">
+                        <col width="15%">
+
+                        <tr><th>Survey item</th><th>Statement</th><th>Reference</th></tr>
+                        <tr>
+                          <td>Restorativeness</td>
+                          <td><i>I would be able to rest and recover my ability to focus in this environment</i> </Reference></td>
+                          <td>Lindal & Hartig, 2013</td></tr>
+                        <tr>
+                          <td>Openness (Visual access)</td>
+                          <td><i>How well can you see all parts of this setting without having your view blocked or interfered with?</i></td>
+                          <td>Herzog & Kutzli, 2002</td>
+                        </tr>
+
+                        <tr>
+                          <td>Complexity</td>
+                          <td><i>I perceive this environments as . . . Simple=0, Complex=10 <i></td>
+                        </td>
+                        <td><reference></td></tr>
+
+                        <tr>
+                          <td>Naturalness</td>
+                          <td><i>I perceive this environment as … Not natural = 0 , Natural =10 </i></td>
+                          <td>Marselle, Irvine, Lorenzo-Arribas, & Warber, 2015</td>
+                        </tr>
+
+                        <!-- <tr><td>Fascination</td><td><reference style= "font-size: 12pt">There is much to explore and discover here
+                        </td><td><reference>Hartig, Korpela, Evans, & Gärling, 1996</td></tr> -->
+<!--
+                        <tr><td>Being Away</td><td><reference style= "font-size: 12pt">Spending time here gives me a good break from my day-to-day routine
+                        </td><td><reference>Lindal & Hartig, 2013</td></tr> -->
+
+                        <!-- <tr><td>Coherence</td><td><reference style= "font-size: 12pt">There is much to explore and discover here
+                        </td><td><reference>Pals, Steg, Dontje, Siero, & van der Zee, 2014</td></tr> -->
+
+
+
+                        <!-- <tr><td>Preference</td><td><reference style= "font-size: 12pt">I like this environment </td>
+                          </td><td><reference>Nordh, Hartig, Hagerhall, & Fry, 2009</td></tr> -->
+                      </table>
+
+
+
+                  <aside class="notes">
+                  In the next step, I conducted a lab-based experiment to collect the perception of the IVE scene.
+                  102 Undergraduate students were recruited for the study. For each IVE, they responded to 1 item related to restoration potential, in addition to
+                  perceived openness, perceived naturalness, and perceived complexity. I chose these three commonly tested and more intuitive perceptions to see how viewscape analysis captures the visual charactirstics of the site.
+
+                  </aside>
+
+              </section>
+
+              <section data-background="white">
+                 <h3> Survey procedure</h3>
+
+                    <img src="img/arrow_timline.jpg" style="width: 100%; margin-bottom: 0px">
+                 <!-- <ul>
+                   <li> Nature attitude survey (1 month prior to lab experiment)
+                   <li> Briefing and calibration ~ 5 min
+                   <li> Warmup (2 scenes, presence, realism) ~ 5 min
+                   <li> Fatigue scenario - 2 min
+                   <li> 12 trials > 2 min recess > 12 trials ~ 25 min
+                   <li> Demographics (age, race, gender, major) and familiarity ~ 5 min
+                 </ul> -->
+
+                <video data-autoplay class="stretch"  src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/video_restorativeness.mp4" frameborder="5" width="50%" loop="loop" style="width: 100%; border: 2px dashed darkgrey; margin-top: 0px">
+              </video>
+
+              <aside class="notes">
+
+                To briefly describe the experiment procedure, upon arrival, participants were briefed and got familiar with the IVE equipment.
+                To set the same context for all participants we asked them to imagine themselves walking in the presented environments after
+                a long and tiring day. Then, each participant experienced a random presentation of the 24 IVEs and rated each of the
+                scenes on the perception measures using joystick. There was a a 2 minutes recess period in the middle.
+
+                <!-- The IVE representation and survey collection procedure was implemented as a python script in WorldViz VR development software.
+                The entire study took around 55 minutes. -->
+
+              </aside>
+              </section>
+
+              <!-- <section data-background="white">
+                <h3>Data analysis (Chapter 2)</h3>
+
+                <p style="float: left; font-size: 18pt; text-align: center; width: 80%; margin-left: 7em; margin-bottom: 0.5em;">
+              <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/Connection_3.jpg" style="width: 100%">
+
+                <aside class="notes">
+                I geolocated the points and for each point I took 360 imagery using a DSLR camera mounted on a gigapan robot,
+                and stiched the images to acquire a high-reolution panorama.
+                </aside>
+              </section> -->
+
+              <section data-background="white">
+                <h3>Viewscape models</h3>
+
+<br>
+              <table style= "font-size: 16pt" width = "110%">
+                <col width = "25%">
+                <col width = "15%">
+                <col width = "75%"
+                <tr><th>Response variable</th><th>R<sup><small>2</small></sup> adjusted</th><th>Significant independent variable</th></tr>
+                <tr><td>Perceived Openness </td><td>0.64</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***, Depth<font style="color:green">&uarr;</font>**, Relief<font style="color:red">&darr;</font>***, Vdepth var<font style="color:red">&darr;</font>***, Nump<font style="color:red">&darr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:green">&uarr;</font>** , Deciduous<font style="color:green">&uarr;</font>** </td></tr>
+                <tr><td>Perceived Complexity</td><td>0.42</td> <td style= "font-size: 14pt"> SDI *** <font style="color:green">&uarr;</font>, Relief **<font style="color:green">&uarr;</font>, Depth** <font style="color:red">&darr;</font>, ED***<font style="color:green">&uarr;</font>, Nump***<font style="color:green">&uarr;</font>, Building**<font style="color:green">&uarr;</font></td></tr></tr>
+                <tr><td>Perceived Naturalness</td><td>0.62</td><td style= "font-size: 14pt">Relief <font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Nump<font style="color:green">&uarr;</font>**</td></tr>
+                <tr><td>Perceived Restoration potential</td><td>0.72</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***,  Depth <font style="color:red">&darr;</font>***, Relief <font style="color:red">&darr;</font> ***, SDI<font style="color:red">&darr;</font>***, Skyline<font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:red">&darr;</font>**</td></tr>
+                </table>
+
+              <p style="float: left; font-size: 12pt; text-align: left; width: 100%; margin-top: 0.1em;">
+              Generalized linear models for four response variables. Best model fit was determined by step-wise regression. <br>
+              <font style="color:green">&uarr;</font> : Positive association <br><font style="color:red">&darr;</font> : Nagative association <br>*p<0.05, ** p <0.01, *** p <0.001 <br>
+              <i>Variables:</i> Vdepth_var = viewdepth variation, Nump = patch number, ED = edge density, MSI= mean shape index,
+              SDI= shannon diversity index.
+
+              </p>
+
+              <aside class="notes">
+
+              I used multiple linear regression analysis to examine to what extent the viewscape metrics explain the perceptions of the 24 viewpoints.
+              The results seem promising specially for perceived restorativeness model which predicted 72% of the variations in perceived restorativeness potential.
+
+              The findigs also confirmed several relationships between viewscape characteristics and human perceptions.
+              Perceived openness was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased openness.
+              For example, perceived naturalness was mostly explained by presence of natural elements and absence of built elements,
+              Whereas percepived complexity was explained in large part by landcover heterogeneity and terrain roughness, and shape complexity.
+
+              </aside>
+
+              </section>
+
+
+<!-- _______________ Chapter 3. Mapping________________-->
+
+<section data-background="white">
+  <h3>Restoration potential model</h3>
+
+<table style= "font-size: 16pt" width = "100%">
+
+  <col width = "15%">
+  <col width = "20%">
+  <col width = "20%">
+  <col width = "20%">
+
+  <tr><th>Variable</th><th>coefficient</th><th>&Beta; coefficient</th><th>Student t</th><th>sig</th></tr>
+  <tr><td style="background-color: #DAECD8">Extent</td><td>&nbsp1.90E-05</td><td>&nbsp0.39</td><td>11.07</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Relief</td><td>-1.20E-01</td><td>-0.12</td><td>16.17</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Depth</td><td>-1.27E-03</td><td>-0.34</td><td>-6.06</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Skyline</td><td>&nbsp1.08E-01</td><td>&nbsp0.12</td><td>-17.10</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Vdepth_var</td><td>&nbsp7.18E-02</td><td>&nbsp0.27</td><td>&nbsp6.25</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">SDI</td><td>-3.82E-01</td><td>-0.14</td><td>-1.92</td><td>**</td></tr>
+  <tr><td style="background-color: #FFEAE2">Building</td><td>-5.41E-02</td><td>-0.37</td><td>-5.38</td><td>***</td></tr>
+  <tr><td style="background-color: #FFEAE2">Paved</td><td>-6.14E-03</td><td>-0.03</td><td>-1.53</td><td>*</td></tr>
+  <tr><td style="background-color: #DAECD8">Mixed</td><td>&nbsp1.07E-01</td><td>&nbsp0.66</td><td>&nbsp23.97</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Deciduous</td><td>&nbsp8.13E-02</td><td>&nbsp0.32</td><td>&nbsp16.47</td><td>***</td></tr>
+  <tr><td style="background-color: #DAECD8">Herbaceous</td><td>&nbsp4.44E-02</td><td>&nbsp0.27</td><td>&nbsp20.30</td><td>***</td></tr>
+  </table>
+
+<p style="float: center; font-size: 14pt; text-align: left; width: 100%; margin-top: 0.1em;">
+Generalized linear models perceived restoration potential. Best model fit was determined by step-wise regression.<br>*p<0.05, ** p <0.01, *** p <0.001 <br>
+ <font style="background-color: #DAECD8">Positive association </font>&nbsp;<font style="background-color: #FFEAE2">Negative association </font>
+<br>Vdepth_var = viewdepth variation, Nump = patch number, ED = edge density, MSI= mean shape index,
+SDI= shannon diversity index.
+</p>
+
+<aside class="notes">
+Looking closer at the restoration potential model, Extent showed the highest positive impact indicating that large viewscapes were were perceived as highly restorative. --
+Also, presence of lush vegetation such as natural ground cover and mixed forest positively impacted perception of restoration potential.
+Intrestingly, presence of decidous trees greatly increased restorativeness likelihood of viewscapes, although they didnt have any foliage in the time of my study. --
+I expect that the majestic appearance of the willow oaks and their arrangement have played a part in particpants positive reaction.
+
+The negative influence of vertical variability and pattern complexity is indicative that, controlling for all variables, participants found coherent viewscapes as more restorative.
+
+</aside>
+
+
+</section>
+
+<!-- <section data-background="white">
+  <h3>Spatial mapping of perceptions</h2>
+  <ul>
+    <li> Landcover mapping. <reference> (Burkhard et al. 2009)</reference>
+       <ul>
+         <li> Less accurate <reference> (Van Zenten al. 2016)</reference>
+       </ul>
+    <li> Landscape configuration and stucture mapping <reference> (Van berkel,2014) </reference>
+      <ul>
+        <li> High-autocorrelation <reference>(Van Zenten al. 2016)</reference>
+      </ul>
+    <li> Viewscape configuration and composition mapping <reference>(Sahraoui et al. 2017) </reference>
+  </ul>
+
+  <br>
+
+  <ul>
+    <p style="float: left; font-size: 12pt; text-align: center; width: 32%; margin-top: 1.2em">
+  <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/mapping_features.jpg" style="width: 100%">
+  Landcover mapping
+  <p style="float: left; font-size: 12pt; text-align: center; width: 32%; margin-bottom: 0em">
+  <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/mapping_composition.jpg" style="width: 100%">
+  Landscape composition and structure mapping
+  <p style="float: left; font-size: 12pt; text-align:  center; width: 32%; margin-top: 1.75em">
+  <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/viewscape_mapping.png" style="width: 100%">
+  Viewscape composition and structure mapping
+  </ul>
+
+</section> -->
+
+
+
+<section data-background="white">
+  <h2>Perceived restoration potential map</h2>
+
+    <table width = "100%" class= "condensed">
+        <tr>
+              <td style="text-align:center"><img src="img/mapping2.jpg" style="width: 54%"></td>
+        </tr>
+        <tr>
+              <td style="vertical-align:middle; text-align:left; font-size:14px; border-bottom: 0px">
+
+              \[Y= 1.90\mathrm{e}{-5}(Extent) -1.20\mathrm{e}{-1}(Relief) -
+              3.82\mathrm{e}{-1}(SDI) \quad + \quad ... \quad- 1.44\mathrm{e}{-2}(Evergreen) +
+              4.44\mathrm{e}{-2}(Herbaceous) \]
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <aside class="notes">
+ To achieve the second aim of the study, which was to acquire a spatial model of restoration potential.
+ I applied the coefficients derived from viewscape model to all the other viewpoints in the study area.
+ The resulting predictive map indicates for the lack of a better term hotspots for higher restoration likelihood and coldspots which are less
+ likely to be perceived as restorative.
+
+ <!-- The greenway, the natural, unpaved areas and
+ rolling hills with scattered willow oaks were among those with highest restoration potential,
+ whereas densely built areas showed the least likelihood of restoration. -->
+    </aside>
+
+</section>
+
+<section data-background="white">
+  <h2>Restorative hotspots</h2>
+
+  <img src="img/mapping3.jpg" style="width: 80%"></td>
+    <p style="font-size:14pt"> The Grove
+
+
+    <aside class="notes">
+   For example, One of the most restorative location in the park, is the space locally refered to as the grove, which is charactrized by abundant presence of willow oaks, grassy areas, and large viewscapes.
+    </aside>
+
+</section>
+
+<section data-background="white">
+  <h2>Restorative hotspots</h2>
+
+
+  <img src="img/mapping4.jpg" style="width: 80%"></td>
+    <p style="font-size:14pt"> The Sunflower field
+
+
+
+    <aside class="notes">
+   The other highly restorative area is the large open space covered with natural low vegetation and sorrounded by mixed forests.
+   This area is also very popular and called sunflower field.
+    </aside>
+
+</section>
+
+
+<!-- <section data-background="white">
+  <h2>Restorative hotspots</h2>
+
+
+  <img src="img/mapping6.jpg" style="width: 80%"></td>
+    <p style="font-size:14pt"> The Big field
+
+    <aside class="notes">
+    The other hotspot is the large grassy area called big field.
+    </aside>
+
+</section> -->
+
+<section data-background="white">
+  <h2>Restorative coldspots</h2>
+
+
+  <img src="img/mapping5.jpg" style="width: 80%"></td>
+    <p style="font-size:14pt">
+
+    <aside class="notes">
+    Not surprisingly, the least restorative spaces are those with high concentration of buidlings and parking lots.
+    </aside>
+
+</section>
+
+<section data-background="white">
+
+  <h3> Method 1: Conclusion</h3>
+  <ul>
+      <li>  My developed methodology can be used to model experiential qualities of urban environments.
+      <li class="fragment fade-in">  The spatial maps of perceptions are useful for urban planning and design.
+      <li class="fragment fade-in">  Findings contribute to environmental psychology and design research.
+      <li class="fragment fade-in">  Tree obstruction modeling can improve other landscape visual assessment applications.
+      <li class="fragment fade-in">  The automated viewscape computation script can be used to study larger areas.
+
+  </ul>
+
+      <aside class="notes">
+
+      To conclude this section, I will point out 5 novel contributions of this work.
+
+      First, the intergrated method using LidAR and IVEs proved to be usefull for modeling experiential qualities of urban environments, which can be considered an improvement of
+      the existing assessment methods that were developed for landscape scale studies and lacked the granaularity and precision to study urban environments.--<br>
+
+      Second, the developed spatial maps of perceptions can contribute to urban planning and design by enabling more targetted preservation and interventions decisions.
+      These maps can also be extremely usefull mediums to communicate these qualities with the community.--<br>
+
+      Third, findings of this study contribute to environmental psychology and design research by providing the links between environmental attributes and perceptions,
+      specially for psychological restoration which is a relatively recent field of research.--<br>
+
+      Forth, my suggested protocol for tree obstruction modeling can improve many other visual assessment studies that deal with vegetation, such as
+      such as visual impact of forest clearing, or visual impact of landscape change on scenic roads, and identification of ecosystem services of forested areas.--<br>
+
+      Finaly, the automated viewscape computation script developed for this study can be used to compute much higher number of viewpoints and therby can be used to model larger study areas.
+      In fact, I am with Dr.Van Berkel from EPA, we have applied this script to study the vaued landscapes of North Carolina and
+      planning to extend it to the entire United States.
+
+      <!-- TENTATIVE. For example with Dr. Van Berkel, our colleague at EPA, we used the automated viewscape analysis
+      in combination with geotagged photos harvested from social media to model cultural ecosystem services
+      of the entire North Carolina. We are have extended our investigation to develop a model for the entire
+      United States with more than 10 million viewpoints.
+
+      The VR survey software can also be used to conduct design perception surveys with immersive photos,
+      which we have used in several of our experiments with Dr. Baran, a couple of which are published
+      in Environmental Psychology and Urban Greening and Urban Forestry Journals. -->
+
+      </aside>
+
+</section>
+
+<section data-background="white">
+
+    <h3>Publications</h3>
+    <br>
+
+    <p style=" text-align: left; text-align: justify; display: inline-block"> Modeling visual characteristic of urban landscape with
+      viewscape analysis of lidar surfaces and immersive virtual environments
+      <br><br>Target Journal:<i> Computers, Environment and Urban Systems</i></p>
+<hr>
+
+    <p style=" text-align: left; text-align: justify; display: inline-block">Restorative viewscapes: spatial mapping of urban landscape’s restorative
+      potential using viewscape modeling and photorealistic immersive virtual environments
+      <br><br>Target Journal: <i>Landscape and Urban Planning</i></p>
+
+
+
+    <aside class="notes">
+    I have developed two manuscripts for this project which are soon to be submitted for review.
+    The first paper have a methodological approach and targets Computes and urban system journal.
+    The second manuscript, targeted for landscape and urban planning journal has a more applied perspective and focuses on development of
+    the spatial model on restoration potential.
+    </aside>
+
+
+</section>
+
+<section data-background="white">
+
+  <h3>Related contributions</h3>
+
+<h2>Viewscape method</h2>
+  <!-- <li> Viewscape analysis <br> -->
+  <p3>Van Berkel, D., <strong>Tabrizian, P. </strong> , Dorning, M. A., Smart, L.,
+       Newcomb, D., Mehaffey, M., … Meentemeyer, R. K., (2018)
+       <a href = "https://www.sciencedirect.com/science/article/pii/S2212041617307714">
+         Quantifying the visual-sensory landscape qualities that contribute to cultural ecosystem services using social media and LiDAR.
+  </a><i> Ecosystem Services</i>, 31, Part C, pp. 326-335.
+
+</p3>
+
+<br>
+  <p3>Van Berkel, D., Tieskens, T., <strong>Tabrizian, P.</strong>, Van Zanten, B., Smith, J., … M., Neale, A., and Verburg, P.
+    National assessment of cultural ecosystem services: Leveraging social media to understand America’s most valued landscapes.
+    <i>Nature Sustainability</i>, in preperation.</p3>
+  <br>
+
+<h2>IVE survey method</h2>
+
+<p3><strong>Tabrizian, P. </strong>, Baran, P., Smith, W. R. & Meentemeyer, R. K. (2018), <a href = "https://www.sciencedirect.com/science/article/pii/S0272494418300124?via%3Dihub"> Exploring perceived restoration potential of urban green enclosure through
+immersive virtual environments </a>, <i>Journal of Environmental Psychology </i>, 55.</p3>
+
+  <p3>Baran, P., <strong>Tabrizian, P. </strong>, Zahi, J., Smith, J. W., Floyd, M. (2018) <a href = "https://ptabriz.github.io/publication.html">An exploratory study of perceived
+    safety in a neighborhood park using immersive virtual environments</a>
+    , <i>Journal of Urban Forestry and Urban Greening </i>, in press.</p3>
+
+
+<aside class="notes">
+    Viewscape analysis and IVE survey methods have been seperately used in colloborative researches with my collegues.
+    Resulting in 4 manuscripts, 3 of which are already published.
+</aside>
+
+</section>
+
+
+<section>
+<h3>Related contributions</h3>
+
+
+<h2>Presentation</h2>
+
+<p3>Tabrizian, P., Baran, P., Mitasova, H., & Meentemeyer, R. K. (2018), <a href = "https://ptabriz.github.io/publication.html">Developing viewscape model for urban landscape using LiDAR and Immersive
+Virtual Environments</a>,<i>US Regional Association of the International Association for Landscape Ecology (USIALE)</i>, Chicago, Il,
+8-12 April.</p3>
+
+<p3>Tabrizian, P., Petrasova, A., Petras, V., Mitasova, H. (2017). <a href = "https://ptabriz.github.io/publication.html">Using open-source tools and high-resolution geospatial data to estimate landscapes’
+visual attributes.</a> <i>International conference for Free and Open Source Software for Geospatial (FOSS4G)</i>, Boston, MA, Aug 14-19.</p3>
+
+<p3>Tabrizian, P., Baran, P. (2017). <a href = "https://ptabriz.github.io/publication.html">Immersive Virtual Environment Technology in Environmental Design Research: Experimental Methods and
+Procedures</a>, <i> 48th environment and design research association (EDRA) annual conference</i>, Madison, Wisconsin, May 31- June 6.</p3>
+
+<p3>Baran, P., Tabrizian, P. (2017).<a href = "https://ptabriz.github.io/publication.html"> Linking Immersive Virtual Environments to complement human perception research</a>, <i>NCGIS
+conference</i>, Raleigh, North Carolina. 23-24 Feb.</p3>
+
+<p3>Baran, P., Tabrizian, P. (2016).<a href = "https://ptabriz.github.io/publication.html"> Use of Immersive Virtual Environments in mapping perceived safety in a park</a>, <i>39th National
+Recreation and Park Association (NRPA) Annual Conference</i>, St. Louis, Missouri, October 5–6.</p3>
+
+<aside class="notes">
+This work has also been presented at several Geospatial and urban planning conferences.  Including EDRA, X, Y, Z.
+</aside>
+
+</section>
+
+
+<!-- _______________ Chapter 4. COUPLING________________-->
+
+<!-- --SLIDE 1-- intro-->
+<section data-background="
+https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/slider_1.jpg"
+data-background-size="100%">
+
+<h4 class="shadow">Realtime 3D modeling and immersion with geospatial data and tangible interaction</h4>
+
+  <br/>
+  <br/>
+<h4 class="shadow" style = "font-size:1.4em">Chapter 4 & Chapter 5<h4>
+
+ <aside class="notes">
+
+ In the previous project, we discussed how objective analysis and subjective can be integrated
+ to advance landscape assessment.
+
+ The second method aims to integrate these aspects into the design process.
+
+ </aside>
+
+</section>
+
+
+
+
+<section data-background="white">
+
+  <h3>The Science/Design divide </h3>
+  <ul>
+    <li> Effective design and decision making require interdiciplinary collaboration and public participation <reference> (Wang et al. 2015; Bishop,2011)</reference>
+    <li class="fragment fade in"> Scale and tools are different, specialized and complicated <reference> (Foster, 2016)</reference>
+    <!-- <li> Assessment of environmental/experiential trade-offs are difficult <reference> (reference)</reference> -->
+
+  </ul>
+
+<aside  class="notes">
+
+As we all know, design and planning process today require collaboration between designers, engineers,and scientists to effectively
+address environmental aspects such as flow of water, erosion, bio-diversity, pollution along with aesthetic and design considerations.
+At the same time design scenarios should integrate public input and communicate tradeoffs in a way they can understand and participate.
+
+But designers and scientisct tools and materials are very different.
+Designers use tools such as CAD and 3D renderings to draft the plans and visualize the landscape experience
+in a way that clients and stakeholders can understand.
+Scientists, on the other hand, mostly work with Spatial and statistical analysis software and communicate their results with maps and indicators.
+
+As these software and tools become more and more specialized, integration of scientific
+inquiry into iterative design process becomes more and more difficult.
+
+These analytical divides slows down the design process, and makes collaboration and public participation difficult.
+
+</aside>
+
+</section>
+
+
+<section data-background="white">
+<h3> Aims </h3>
+
+<ul>
+  <li> Develop an easy-to-use collaborative design tool that enables simultaneous
+       assessment of experiential and spatial analysis in the iterative design process
+  <li> Test the methods's functionality using a landscape design case-study
+</ul>
+
+<aside  class="notes">
+ To address these limitations, I sought to develop a method that
+ enables more intuitive interaction with design phenomenon and
+ simultaneous spatial and experiential analysis in each iteration of design.
+
+ I also aimed to test the method's functionality in a landscape design case-study.
+ While this methods is applicable to other design applications,
+ I chose landscape design study becasue it involves a good deal of ecological and aesthetic trade-offs.
+
+
+
+</aside>
+
+</section>
+
+<!-- <section data-background="white">
+<h3> Approach </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/approach_cycle.jpg">
+
+  <aside  class="notes">
+  To achieve these aims I leverage Tangible interaction, Geospatial Computation and 3D visualizations to enable simultaneous spatial and experiential
+  assessment in each iteration of design. Tangible interfaces enable for more intuitive,
+  and collaborative manipulation of spatial features. Geospatial computation at
+  the same time provides the spatial analysis of the changing environments,
+  while 3D visualizations supports human view representation of environments and aesthetic exploration.
+  Tools like 3D rendering and immersive virtual environment representing environments
+  in a way that people experience everyday, leading to better understanding and engagement,
+  and thus gives them more agency to participate in the design process.
+  </aside>
+
+</section> -->
+
+
+<section data-background="white">
+<h3> Approach </h3>
+<img class="stretch" src="img/coupling_concept.jpg">
+
+  <aside  class="notes">
+    My developed approach combines geospatial computation, tangible interaction and 3D visulization.
+    Thanks to Tangible landscape system, Realtime linkage between Tangible interaction
+    and geospatial analysis has been already enabled. My developed addition links
+    geospatial analysis with 3D modeling and rendering so that design scenarios can be
+   rendered into perspective views and immersive scenes, in real time.
+
+  </aside>
+
+</section>
+<!--<section data-background="white">
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/IVE+TL.jpg">
+<div style="margin-left:7%;float:left;max-width:45% !important">
+Tangible Interaction</div>
+<div style="margin-right:5%;float:right;max-width:45% !important"> Realtime 3D rendering and immersion</div>
+
+<aside class="notes">
+  I will specifically discuss why and how I coupled Tangible landscape- a tangible interface for GIS and an immersive virtual environment and to make ecological design process more effective,
+  and more imporantly how this technology can potentialy help bridging the gaps between experiential and ecological analysis of landscape.
+
+</aside>
+</section>-->
+
+<!-- <section data-background="white">
+  <h2>Scale</h2>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/flooding_secraf.jpg">
+
+<div style="text-align:left">
+<p2> &nbsp;&nbsp;&nbsp;&nbsp; In-situ view of inundated area &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    	Surface inundation and flow model</p2>
+</div>
+    <aside class="notes">
+      The first keyword comes to mind is perhaps the scale. As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
+      So we wanted to bring in the real-world human scale experience of spatial features and phenomenon.
+    </aside>
+
+</section>
+
+  <section data-background="white">
+  <h2>Interdiciplinary collaboration</h2>
+<ul>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/colloboration.jpg" width=90%>
+</ul>
+
+<p>
+  <p><small>Source: </i> <a href="http://www.pinsdaddy.com/landscape-architect-working_hGaVnJkWJ4Um0gbrE9EIycd9ZTWpIq0IPBDulPs%7CqEs/"> Pinsdaddy.com</a></small></p>
+    <aside class="notes">
+      Second is collobration. Landscape problems of today are complex and require interdiciplinary colloboration between designers,
+      planners, engineering and scientist. So it is important for a successful spatail decision support system to accomodate visualization tools that designers work, and 3D rendering is the utmost impotance.
+        </aside>
+</section>
+
+<section data-background="white">
+  <h2>Participation</h2>
+<ul>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/participation.png" width=90%>
+</ul>
+<p>
+  <p><small>Source: </i> <a href="https://design.ncsu.edu/ah+sc/wp-content/uploads/2013/06/community-participation1-1024x587.png"> NC State design</a></small></p>
+    <aside class="notes">
+      Visualizing scenarios
+        Tools like 3D rendering and immersive virtual environment representing enviornments in a way that poeple experience everyday, leading to better understanding and engamenent,
+        and thus gives them more agency to participate in the design process.
+</aside>
+</section>
+
+<section data-background="white">
+  <h2>Aesthetics</h2>
+<ul>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/aesthetics.jpg" width=90%>
+</ul>
+<p>
+  <p><small> Landscape rendering produced by Tangible landscape</small></p>
+    <aside class="notes">
+      The last and perhaps the most important implication of rendering is enabling aesthetics.
+      Abundant research has maded it crystal clear that people are not willing to accept and maintain the landscape they do not like, regardless of of its ecological value.
+      So a ecologically sound and aesthetically pleasing landscape.
+        </aside>
+</section>
+
+<section data-background="white">
+<h2> Design process </h2>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/designprocess.png" width=50%>
+
+<p>
+  <p><small>Source: </i> <a href="https://www.tandfonline.com/doi/abs/10.1207/s15327051hci2101_4?journalCode=hciDesigning"> Visser (2010)</a></small></p>
+    <aside class="notes">
+    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective.
+    So it is not capable of fully representing the real-world experience of geospatial feature or phenomenon, in the way that I perceive it in human view.
+    </aside>
+</section> -->
+
+<section  data-background="white">
+<h3>
+    Tangible Landscape </h3>
+<!-- <img height="350px" src="https://github.com/ptabriz/IDEO_presentation/raw/master/img/system_setup.png" > &nbsp;&nbsp;&nbsp; -->
+<video data-autoplay width="700" height="380" controls muted>
+  <source src="https://github.com/ptabriz/IDEO_presentation/raw/master/img/tl_video.mp4" type="video/mp4" data-background-video-loop="loop">
+</video>
+<br><br>
+<ul>
+  <li> Embodied and intuitive interaction, rapid sketching and geospatial feedback
+  <li> Realtime streaming of GIS data
+  <li> Robust open-source computation backend (GRASS GIS)
+</ul>
+<br><br>
+    <p style= "float:right"><small>Source: Petrasova el al.<i>Tangible Modeling with Open Source GIS </i>, Springer, NY.</small></p>
+      <aside class="notes"></p>
+
+
+
+<aside class="notes">
+  A quick intro to Tangible landscape, is a technology for tangible interaction with GIS developed here at the center
+  for Geospatial analytics by Anna Petrasova and colleagues in Dr. Mitasova's lab. It allows user to manipulate a physcial model of the landscape with hand or tangible objects,
+  and in near real time and recieve relevant geospatial feedback.
+  The system uses the open-source GRASS GIS software that allows for
+  implementing a wide range of geospatial simulations such aa variety of spatial analysis such as water flow, biodiversity, fire spread, pathogen spread, etc..
+
+</aside>
+
+</section>
+
+<section data-transition="fade-out">
+<h3> Hardware setup </h3>
+<img  style = "width:40%" src="img/setup_1.jpg">
+
+<aside class="notes">
+
+To implement this concept, I made additions to Tangible Landscape's hardware and software.
+Here you can see you the existing tangible landscape setup.
+
+</aside>
+
+</section>
+
+<section data-transition="fade-in">
+<h3> Hardware setup </h3>
+<img  style = "width:40%" src="img/setup_2.jpg">
+
+<aside class="notes">
+  I added a 3D modeling and game engine software,
+  called blender with outputs to a computer display and an
+  immersive virtual reality headset.
+  Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
+  Blender was perfectly suited to this application because it is has an internal python scripting environment for automating
+  3D modeling procedures and more importantly, it has addons for importing GIS data. It also has a very efficient and realistic real time rendering
+  capabilities with output for head mounted displays.
+
+</aside>
+
+</section>
+
+<section data-background="white">
+<h3> Software architecture  </h3>
+<img  style = "width:70%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_schema.jpg">
+
+<aside class="notes">
+
+  On the software side, I developed an addon for Blender that is linked with Tangible landscape addon in GRASS GIS.
+  GRASS GIS and Blender are loosely coupled through file-based communication. As user interacts with the tangible model or objects,
+  GRASS GIS sends a copy of the geospatial data to a specified system directory.
+  A monitoring module in blender scripting environment that constantly watches the directory,
+  identifies the type of incoming information, and applies procedural 3D modeling to update the 3d scene.
+
+</aside>
+
+</section>
+
+<section data-background="white">
+
+<table width="60%" style= "font-size: 16pt">
+  <tr ><th style="text-align: center">Feature</th><th style="text-align: center">Import</th><th style="text-align: center">Model</th><th style="text-align: center">Shading</th></tr>
+
+  <tr class="border_bottom">
+      <td style="vertical-align: middle"> Terrain raster </td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/terrain_1.JPG"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/terrain_2_1.JPG"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/terrain_3.JPG"></td>
+
+  </tr>
+
+  <tr class="border_bottom">
+      <td style="vertical-align: middle"> Water raster </td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/water_1.jpg"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/water_2.jpg"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/water_3.jpg"></td>
+
+  </tr>
+
+  <tr class="border_bottom" >
+    <td style="vertical-align: middle"> Patches polygons </td>
+    <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/tree_1.jpg"></td>
+    <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/tree_2.jpg"></td>
+    <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/tree_3.jpg"></td>
+
+  </tr>
+
+  <tr>
+      <td style="vertical-align: middle"> Trail polyline </td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/trail_1.jpg"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/trail_2.jpg"></td>
+      <td><img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/procedural_3D_modeling/trail_3.jpg"></td>
+
+  </tr>
+
+  </table>
+
+  <aside class="notes">
+The implemented procedural 3D modeling follows three general steps of importing the GIS features,
+turning them into 3D models and and apply materials and textures (a procees called shading).--
+
+--Different geospatial formats are supported. --Rasters can be used to communicate surfaces and terrains, polylines can be used for linear features such as waypoints
+and polygons can be used to delineate zone type objects such as patches of trees and urban blocks.--
+
+Once imported specific modeling and rendering procedures are applied for each environmental features.
+For example terrain requires addition of side fringes and surface material whereas tree patches related should get populated with trees.
+
+  </aside>
+
+</section>
+
+<section data-background="white">
+<h3> Landform and water </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case.jpg">
+<!-- <video data-autoplay  width="800" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/water2.mp4" frameborder="0"></iframe> -->
+
+   <aside class="notes">
+    Here I show you some examples of how the development can support diffrent design activities.
+    For example, users can change the landform using their hands and sculpting knife to see the projection of water flow and accumulation simulations.
+    You can see on the left side of the model we project numeric feedback about the depth and surface area of the retained water.
+    In this case both terrain and water data are sent to Blender to update the 3D model.
+
+   </aside>
+
+</section>
+
+<!----SLIDE 19-- Plant species -->
+<section data-background="white">
+<h3> Vegetation  </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case2.jpg">
+
+  <aside class="notes">
+
+  For vegetation design users can use pieces of colored felt. Each color represents a landscape class, like deciduous, evergreen etc.
+  --As user places the felt, the RGB image of the camera is classified in GRASS GIS to compute analysis related landscape heterogeneity,
+  and biodiversity. We also project an estimated degree of pollution remediation as a result of planting phyto remediating vegetation.
+  On the 3D side, blender populates corresponding plants in each patch based on a predefined spacing and density.
+
+  </aside>
+
+</section>
+
+<!-- --SLIDE 20-- Trails, features -->
+<section data-background="white">
+<h3> Paths </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case3.jpg">
+
+ <aside class="notes">
+
+   We can use wooden cubes as waypoint to design linear features like a trail or a road.
+   As user inserts each of the waypoints, Grass GIS recalculates and projects an optimal route with minimized slope.
+   A profile of the road and the slope of the segments are projected as feedback (show them).
+   For 3D visulization, the line is extruded with a pre-defined profile and material in this case a baord walk.
+
+
+ </aside>
+
+</section>
+
+<!----SLIDE 21-- Human-views -->
+<section data-background="white">
+<h3> Cameras </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case7.jpg">
+
+ <aside class="notes">
+   Any time during the interaction users can pick a mouse and freely navigate the 3D scene environment and explore diffrent vantage points.
+   But I wanted to keep that feature Tangible as well.
+   We used a wooden marker with colored tip that is linked to the camera in the 3D scene.
+   The center of the defines the location of the camera and the colored tip defines the direction of the view.
+
+ </aside>
+
+</section>
+
+<!----SLIDE 22 immersion-- -->
+<section data-background="white">
+  <h3> Immersion </h3>
+   <video data-autoplay class="stretch"  src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/video/immersion.mp4" frameborder="0" loop="loop"></iframe>
+
+<aside class="notes">
+  Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
+  so users can pick up the headset and get immersed in their prefered views.
+
+</section>
+
+<!----SLIDE 23 Realism-->
+
+<!-- <section data-background="white">
+
+<h2> Realism </h2>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/realism.jpg">
+
+</section> -->
+
+<section data-background="white">
+<h3> Realism </h3>
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/coupling_case5.jpg">
+<p> Low-poly rendering  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High-poly style rendering
+
+<aside class="notes">
+
+We implemented a feature allowing designers to switch between different rendering modes anytime during the design process. This allows them to
+use more abstract representation in the site planning and zoning phases, and use more realistic renderings in later phases.
+The low-poly cartoonish rendering can be also usefull for engaging the younger age groups in the design process.
+
+</aside>
+</section>
+
+<section data-background="white">
+<h3> Realism </h3>
+<img class="stretch" src="https://github.com/ptabriz/geodesign_with_blender/raw/master/img/render_hero_2.jpg">
+<p4>cycles render engine, 5 minutes, 2 million pixels</p4><br><br>
+<p> Realistic rendering </p>
+
+<aside class="notes">
+For end-products, printing and presentation purposes,
+the scenes can be rendered with much higher quality which ofcourse depending on the details can take from one to several minutes.
+</aside>
+</section>
+
+<section data-background="white" data-transition="fade-out" >
+<h3> Case-study</h3>
+
+<table class= "condensed no_border" width="110%">
+      <col width="64.5%">
+      <col width="12%">
+      <col width="12%">
+
+      <!-- <tr  style = "font-size:.7em ; height: 1px">
+      <td style= "border-bottom:0px; text-align:center">Tangible interaction</td>
+        <td style= "border-bottom:0px; text-align:center">3D rendering</td>
+      </tr> -->
+
+      <tr class="no_border">
+
+        <td style = "vertical-align:middle;border-bottom:0px">
+          <img src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/site.png">
+        </td>
+          <td style= "border-bottom:0px">
+              <table class= "condensed no_border">
+                <tr class="no_border">
+                  <td style= "border-bottom:0px"><img width="100%" src="img/mugshots/vasek_3.jpg"></td>
+                </tr>
+                <tr>
+                  <td style= "border-bottom:0px"><img width="100%" src="img/mugshots/SAHAND_2.jpg"></td>
+                </tr>
+
+              </table>
+          </td>
+
+          <td style= "border-bottom:0px;  vertical-align:top">
+              <table class= "condensed no_border">
+                <tr class="no_border" style= "border-bottom:0px; vertical-align:top">
+                  <td style= "border-bottom:0px; vertical-align:top"><p4><br>Participant A, PhD
+                                                  <strong>Geospatial Scientist</strong><p4></td>
+                </tr>
+                <tr>
+                  <td style= "border-bottom:0px; vertical-align:bottom"><p4 style= "vertical-align:bottom" ><br><br><br><br><br><br>Participant B, MLA
+                                                  <strong>Landscape Architect<p4></strong></td>
+                </tr>
+
+              </table>
+          </td>
+
+
+
+    </tr>
+</table>
+
+
+
+<p>Spring Hill house site (48000 m<sup><small>2</small></sup>), Raleigh, NC</p>
+<aside class="notes">
+  To test the functionality the prototype in the design process, we conducted several pilot user studies.
+  Here I am showing a design case-study performed collaboratively
+  by a geospatial scientist and a landscape architect to plan a small recreational site in Raleigh.
+  They were tasked to design the topography, vegetation arrangement, water-regime, a small shelter and a recreatioal trail.
+
+
+
+</aside>
+
+</section>
+
+<section data-background="white" data-transition="fade-in" >
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process.jpg">
+
+<p>Changing landform and hydrology</p>
+
+<aside class="notes">
+  In the first step, they changed the landform to create a pond, and direct the road runoff to the pond. They used the excavation soil to create artificial mounds to
+  buffer the site adjacent roads, and create invitings entrance to and out of the site.
+</aside>
+
+
+</section>
+
+<section data-background="white" data-transition="fade-in" >
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process2.jpg">
+<p>Exploring views from the park site entrances</p>
+<aside class="notes">
+Here you can see how they used the view markers to check the entrance profiles from and to the access roads.
+</aside>
+
+</section>
+
+<section data-background="white" data-transition="fade-in" >
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process3.jpg">
+<p>Planting trees and siting the shelter </p>
+<aside class="notes">
+Then they planted four different plant species while exploring the biodiversity measures.
+To site the shelter, they used a wooden marker to explore a suitable location that has best views to the pond and is backed by the forested area.
+
+</aside>
+</section>
+
+<section data-background="white" data-transition="fade-in" >
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process4.jpg">
+<p>Designing the trail and exploring views</p>
+
+<aside class="notes">
+  In the last step, they designed a scenic trail to connect the shelter to the parking lot,
+  the trade-off in this case was to minimize the trail slope while providing interesting viewscapes.
+</aside>
+
+</section>
+
+<section data-background="white" data-transition="fade-in" >
+<img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process7.jpg">
+<p>Evaluation of design scenarios</p>
+
+<aside class="notes">
+They repeated the design process with another strategy. Each scenario took around 10 minutes and designers explored multiple solutions in each design step.
+You can see that how these scenarios can be compared against each other to support more informed decisions.
+Spatial analysis such as landscape metrics, Site hydrology maps,
+amount of runoff saved can be collaboratively balanced to create a landscape that works and is appealing.
+</aside>
+</section>
+
+<section  data-background="white" >
+<h3>Method 2: Conclusion</h3>
+<ul>
+<li class=>  Developed technology can potentially improve landscape design and planning.
+<!-- <li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks facilitates collaboration and public participation. -->
+<li class="fragment fade-in">  User studies (e.g., designers cognition, participation, collaboration).
+<!-- <li class="fragment fade-in">  Developed technology can contribute to teaching spatial concepts.  -->
+<li class="fragment fade-in">  Framework for real-time 3D rendering with geospatial data can improve other modeling and simulation applications.
+<!-- <li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales. -->
+
+</ul>
+
+<aside class="notes">
+
+  I conclude by mentioning a few novel contributions of this work and its implications on design.
+
+  First, our exploratory results indicate that the developed technology can potentially improve landscape design and planning by supporting
+  collobration and parallell exploration the tradeoff between environmental and aesthetic factors. It also can make design process more efficient by enabling rapid sketching, instant 3D rendering, and geospatial output.
+
+  --To empiricaly test these claims, we are intending to conduct user studies to compare the technology with typical design tools to assess whether and
+   how interaction with system and its components impact the design process as well as interdiciplinary collaboration, and participation.
+
+  -- Second, my framework for realtime rendering with GIS can be used with or without the tangible landscape -- as a standalone desktop or web application-- can enhance
+  other geospatial simulation applications, such as landuse change models, landscape evolution, firespread, storm surge and so on.
+
+</aside>
+</section>
+
+<section  data-background="white" >
+  <h2>
+    3D rendering and animation with FUTURES model </h2>
+  <table class= "condensed no_border" width="110%" style="font-size:14px">
+        <col width="24%">
+        <col width="65%">
+
+
+
+        <tr class="no_border center_text">
+            <td style= "border-bottom:0px">
+                <table class= "condensed no_border">
+                  <tr class="no_border">
+                    <td style= "border-bottom:0px"><img width="99%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_1.png">Tangible interaction</td>
+                  </tr>
+                  <tr>
+                    <td style= "border-bottom:0px"><img width="99%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_anim.gif">Projected simulation output</td>
+                  </tr>
+
+                </table>
+            </td>
+          <td style = "vertical-align:middle;border-bottom:0px"><img width="105%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/render_1.JPG"><br>3D visualization</td>
+
+      </tr>
+
+      <!-- <tr  style = "font-size:.7em ; height: 1px">
+      <td style= "border-bottom:0px; text-align:center">Tangible interaction</td>
+        <td style= "border-bottom:0px; text-align:center">3D rendering</td>
+      </tr> -->
+  </table>
+
+  <br>
+  <br>
+      <p><small> Meentemeyer, et al. (2013), </i> <a href="https://www.tandfonline.com/doi/abs/10.1080/00045608.2012.707591">
+        FUTURES: multilevel simulations of emerging urban–rural landscape structure using a stochastic patch-growing algorithm.</a>
+      </small></p>
+
+<aside class="notes">
+  For example, we have used it to help better visualizing the results of an urban growth simulation called FUTURES
+  Developed by Meentemeyer et al., in 2013.
+</aside>
+
+
+
+  <!-- <img width="25%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_1.png">
+  <img width="25%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_2.png">
+  <img width="25%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_anim.gif"> -->
+
+</section>
+
+
+<section data-background="white">
+<h2>Related publications</h2>
+
+<p3>
+<strong>Tabrizian, P.</strong>,
+Harmon, B.,
+Petrasova, A.,
+Vaclav, P.,
+Mitasova, H., &
+Meentemeyer, R.K. (2017).
+<a href = "http://papers.cumincad.org/cgi-bin/works/Show?acadia17_600">
+Tangible immersion for ecological design</a>,
+<i>Proceedings of the 37th Annual Conference of the Association
+    for Computer Aided Design in Architecture (ACADIA)</i>, Cambridge, MA. pp. 600-609. </p3>
+
+<p3>
+  <strong>Tabrizian, P.</strong><a href= "https://www.springer.com/us/book/9783319893020" >
+  Realtime 3D modeling, VR and immersion </a>, In :
+  Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. <i> Tangible Modeling with Open Source GIS </i>, Springer, NY.
+</p3>
+
+<p3>
+  <strong>Tabrizian, P.</strong><a href= "https://www.springer.com/us/book/9783319893020" >
+  Landscape design </a>, In :
+  Petrasova, A, Harmon, B., Petras, V, Tabrizian, P, Mitasova, H. <i> Tangible Modeling with Open Source GIS </i>, Springer, NY.
+</p3>
+
+<p3><strong>Tabrizian, P.</strong>
+  Petrasova, A.,
+  Harmon, B.,
+  Vaclav, P.,
+  Mitasova, H.,
+  & Meentemeyer,R. K. (2016).
+  <a href= "https://www.springer.com/us/book/9783319893020" >Immersive Tangible Geospatial Modeling </a>, Proceedings
+of 24th ACM SIGSPATIAL, <i>International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL)</i>, 2-6 Nov, Burlingame, CA.</p3>
+
+<!-- <p3>Tateosian, L.,
+<strong>Tabrizian, P. </strong>
+   <a href = "https://www.researchgate.net/publication/320383098_Blending_tools_for_a_Smooth_Introduction_to_3D_Geovisualization">
+  Blending tools for a Smooth Introduction to 3D Geovisualization.</a>
+   <i>Proceedings of IEEE Visual Analytics Science
+  and Technology (VAST) IEEE VIS </i>, Phoenix, Arizona.</p3> -->
+
+
+  <h2>Software</h2>
+  <p3>Realtime 3D rendering and immersion with Tangible Landscape.
+    <a href = "https://github.com/ptabriz/3D_immersion_TL">Tangible Landscape Blender plugin.
+  <br></p3></a>
+  <br>
+
+
+<aside class="notes">
+This work has been published in three peer reviewed proceedings and two book chapters in Tangible Landscape book's second edition.
+Also, the software is usable as a Blender plugin is open-source and publicly available.
+
+It is currenlty being used in tandem with Tangible landscape in several research and academic instituions
+including University of Georgia and University of Illions.
+</aside>
+
+
+</section>
+
+<section data-background="white">
+<h2>Related presentations</h2>
+  <table class= "condensed no_border" width="110%">
+        <col width="15%">
+        <col width="35%">
+        <col width="15%">
+        <col width="35%">
+  <tr>
+    <td>
+      <img src="img/paper_icons/iale-logo.png">
+    </td>
+
+    <td>
+      <p4><strong>3D Visualization of Landscape Change Scenarios with Real-time Tangible Interaction.
+      </strong> <i> US Regional Association of the International Association for Landscape Ecology (USIALE)</strong>, Chicago, Il, April 8-12
+      2018</i></p4>
+    </td>
+
+    <td>
+      <img src="img/paper_icons/acadia_logo.jpg">
+    </td>
+
+    <td style = "vertical-align : middle">
+      <p4><strong>Tangible immersion for ecological design.
+      </strong> <i> 37th Annual Conference of the Association for Computer Aided Design in Architecture (ACADIA)</strong>, Cambridge, MA , 2-4 November 2017</i></p4>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="img/paper_icons/foss4g_logo.png">
+    </td>
+
+    <td>
+      <p4><strong>Coupling a geospatial Tangible User Interfaces (TUI) and an Immersive Virtual Environment
+      (IVE) using using open-source geospatial and 3D modelling tools.
+      </strong> <i> International conference for Free and Open Source Software for Geospatial, Boston, MA, Aug 14-19
+      April.</i></p4>
+    </td>
+
+    <td  style = "vertical-align : middle">
+      <img src="img/paper_icons/icc_logo.png">
+    </td>
+
+    <td style = "vertical-align : middle">
+      <p4><strong>Tangible Landscape + VR: Moving along Reality-Virtuality gradient to deal with geospatial complexity.
+      </strong> <i> 28th International cartographic conference (ICC), Washington D.C, July 2-7, 2017</i></p4>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td style = "border-bottom:0px">
+      <img src="img/paper_icons/edra_logo.png">
+    </td>
+
+    <td style = "border-bottom:0px">
+      <p4><strong>Immersive Tangible Landscape modelling: a step towards the future for integrative
+      ecological planning.
+      </strong> <i> 48th environment and design research association (EDRA) annual conference, Madison, Wisconsin, May 31-
+      June 6. 2017</i></p4>
+    </td>
+
+    <td style = "vertical-align : top; text-align:center; border-bottom:0px">
+      <img src="img/paper_icons/sigspatial-logo.png"  width="50%">
+    </td>
+
+    <td style = "vertical-align:top; border-bottom:0px">
+      <p4><strong>Immersive Tangible Modeling with Geospatial data.
+      </strong> <i> International Conference on Advances in Geographic Information Systems (ACM SIGSPATIAL), San fransisco, CA, Oct 31-Nov 3, 2016</i></p4>
+    </td>
+  </tr>
+</table>
+
+<h2>Related workshops</h2>
+<table class= "condensed no_border" width="110%">
+      <col width="15%">
+      <col width="35%">
+      <col width="15%">
+      <col width="35%">
+
+<tr>
+  <td style = "vertical-align :top; border-bottom:0px; text-align:center">
+    <img src="img/paper_icons/cga_logo_harvard.png">
+  </td>
+
+  <td style = "vertical-align :middle; border-bottom:0px">
+    <p4><strong>Real-time 3D modeling with Geospatial data</strong> <i>Harvard University Center for Geospatial Analysis (CGA)</strong>, Cambridge, US, Aug 2017
+    2018</i></p4>
+  </td>
+
+
+    <td  style = "vertical-align : middle; border-bottom:0px">
+      <img src="img/paper_icons/icc_logo.png">
+    </td>
+
+    <td style = "vertical-align : middle; border-bottom:0px">
+      <p4><strong>3D Visualization of Geospatial Data With Blender and Sketchfab.
+      </strong> <i> 28th International cartographic conference (ICC), Washington D.C, July 2-7, 2017</i></p4>
+    </td>
+</tr>
+
+</table>
+
+
+</section>
+<!-- <section data-background="white" >
+
+
+<h2> Acknowledgement </h2>
+<table width="50%" class= "no_bottom_border">
+      <col width="4%">
+      <col width="4%">
+      <col width="4%">
+      <col width="4%">
+      <col width="4%">
+
+      <tr style = "font-size:.7em ; height: 1px">
+        <td><img src="img/mugshots/intellectual.jpg" style="width: 100%"></td>
+        <td><img src="img/mugshots/anna.jpg" style="width: 100%"></td>
+        <td><img src="img/mugshots/brendan.jpg" style="width: 100%"></td>
+        <td><img src="img/mugshots/vasek.jpg" style="width: 100%"></td>
+        <td><img src="img/mugshots/derek.jpg" style="width: 100%"></td>
+
+      </tr>
+
+      <tr style = "font-size:.7em ; height: 1px">
+
+
+      <td><img src="img/mugshots/laura.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/siamak.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/garret.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/reza.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/saeed.jpg" style="width: 100%"></td>
+
+      </tr>
+
+      <tr style = "font-size:.7em ; height: 1px">
+
+      <td><img src="img/mugshots/sahand.jpg" style="width: 100%"></td>
+      <td><img src="img/mugshots/support.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/rachel.jpg" style="width: 100%"></td>
+      <td><img src="img/mugshots/zach.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/emotional.jpg" style="width: 100%"></td>
+
+      </tr>
+
+      <tr style = "font-size:.7em ; height: 1px">
+
+        <td><img src="img/mugshots/mooni.jpg" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/mom.jpg" style="width: 100%"></td>
+      <td><img src="img/mugshots/dad.JPG" style="width: 100%"></td>
+
+      <td><img src="img/mugshots/parnaz.jpg" style="width: 100%"></td>
+      <td><img src="img/mugshots/hila.jpg" style="width: 100%"></td>
+
+      </tr>
+
+
+    </table>
+
+    <aside class="notes">
+
+    It goes without saying that none of these projects could have been realized without the awesome mentorship of my advisors,
+    intellectual input of my colleagues, indefinite support of the CGA staff, and emotional support of my family.
+
+     </aside>
+
+</section> -->
+
+<section>
+  <h3> Summary of contributions </h3>
+  <ul>
+    <li> Method for modeling and mapping experiential qualities of urban environments
+    <!-- <li class="fragment fade-in"> High-resolution predictive map of restoration potential and novel predictors for restoration potential -->
+    <li class="fragment fade-in"> Method for improving tree obstruction in DSM
+    <li class="fragment fade-in"> Software for automated viewscape analysis and IVE survey
+    <li class="fragment fade-in"> Method and software for real-time 3D rendering and immersion with geospatial data, and tangible interaction.
+    <!-- <li class="fragment fade-in"> Improvement of Tangible Landscape as a design and planning tool -->
+  </ul>
+<br><br><br>
+    <a href = https://ptabriz.github.io/final_dissertation_presentation/>ptabriz.github.io/final_dissertation_presentation/</a>
+
+    <aside class="notes">
+      Across both methods there are the most notable contributions I made.
+
+
+      I Developed a novel method for modeling the experience of urban landscapes.
+
+      This method led to development of two software which can be potentially usefull for other researchers.
+
+      -- The framework for realtime rendering and VR with geospsatial data is also Novel and has not been developed before as a software.
+      Also, this is the first effort that tried to use realistic 3D rendering in conjuction with Tangible user interfaces.
+
+
+      <aside class="">
+
+      </aside>
+
+
+
+     </aside>
+</section>
+
+
+<!-- <section data-background-video = "https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/video/case_study_video.mp4" frameborder="0">
+  <h3 class="shadow" style = "margin-top:45%"> Thank you ! </h3>
+
+
+   <aside class="notes">
+
+ It goes without saying that none of these projects could have been realized without the awesome mentorship of my advisors,
+ intellectual input of my colleagues, indefinite support of the CGA staff, and emotional support of my family.
+
+    </aside>
+</section> -->
+
+
+<!-- <section data-background="white" >
+<h3>Aesthetics, socio-cultural norms and action</h3>
+  <p style="float: left; font-size: 18pt; text-align: left; width: 48%; margin-bottom: 0.5em;">
+<img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/nassaur_1.png" style = "margin-right: 20px ;margin-top:50px ">
+    <p style="float: left; font-size: 18pt; text-align: left; width: 48%; margin-bottom: 0.5em;">
+<img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/nassaur_2.png" >
+
+<br><br><br><br>
+ <p><small> Gobster, P. H., Nassaur, J. I., Daniel, T. C., Fry, G. F. (2013), </i>
+  <a href="https://www.semanticscholar.org/paper/The-shared-landscape%3A-what-does-aesthetics-have-to-Gobster-Nassauer/5d6a33b91e26b1d707805926b3ff54a6d6ad8d16">The shared landscape: what does aesthetics have to do with ecology?</a></small></p>
+
+<aside class="notes">
+In our next example, I scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
+Developed by Meentemeyer et al., FUTURES in 2013 is an open source urban growth model specifically designed to capture the spatial structure of development.
+FUTURES has been has been implemented in GRASS GIS and coupled with Tangible landscape.
+The case study is the Buncombe county region located in the North West of North Carolina with 660 Sq miles area.
+
+</aside>
+</section> -->
+
+<!-- <section data-background="white" >
+<h3>PAR, co-creation and co-design</h3>
+  <p style="float: left; font-size: 12pt; text-align: left; width: 32%; margin-top: 1em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/co_creation.jpg">
+Nurses co-creating a concept for ideal <br>workflow  on a patient floor
+  <p style="float: left; font-size: 12pt; text-align: left; width: 32%; margin-bottom: 0.5em;">
+    <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/co_design.jpg" >
+    Nurses co-designing the ideal future patient room using a three dimensional
+    toolkit for generative prototyping <reference>
+
+      <p style="float: left; font-size: 12pt; text-align: left; width: 33.5%; margin-bottom: 0.5em; margin-right: 1em;">
+        <img src="https://github.com/ptabriz/presentation_viewscape/raw/master/img/participatory.jpg" >
+        Participatory 3D modeling of Tobago <reference>
+<br><br><br><br><br><br>
+
+<br><br><br><br>
+ <p><small> Sanders, E.B.-N., (2006c) Nurse and patient participatory workshops for the NBBJ project:
+Inpatient Tower Expansion for H. Lee Moffitt Cancer Center and Research Institute, Tampa,
+Florida, USA.</p></small>
+
+<p><small><a href= "http://participatorygis.blogspot.com/2012/10/participatory-3d-model-of-tobago-seen.html">
+  Participatory 3D model of Tobago seen as time capsule</p></small>
+
+<aside class="notes">
+In our next example, I scale up a bit to explore 3D rendering with a dynamic Urban-rural growth model, called FUTURES.
+Developed by Meentemeyer et al., FUTURES in 2013 is an open source urban growth model specifically designed to capture the spatial structure of development.
+FUTURES has been has been implemented in GRASS GIS and coupled with Tangible landscape.
+The case study is the Buncombe county region located in the North West of North Carolina with 660 Sq miles area.
+
+</aside>
+</section> -->
+
+
+<!-- ________________ FUTURES __________________
+<section data-background="white" data-transition="fade-in" >
+<h3>Urban growth scenarios</h3>
+<img width="32%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_1.png">
+<img width="32%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_2.png">
+<img width="32%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/applications/Sod_anim.gif">
+<p>Simulation of urban growth scenarios with FUTURES model</p>
+</section>
+
+<section>
+<h3>Urban growth scenarios</h3>
+
+<iframe width="800" height="500" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/https://www.youtube.com/embed/oFILb0En258" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Simulation of urban growth scenarios with FUTURES model</p>
+</section>
+
+<section>
+<img width="110%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/render_1.JPG">
+</ul>
+<p>Rendering of the FUTURES simulation</p>
+</section>
+
+<section>
+<img width="110%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/night_render.JPG">
+</ul>
+<p>Night-time rendering of the FUTURES simulation</p>
+</section>
+
+<section>
+  <h3> Road map</h3>
+<img width="65%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/typology_1.jpg">
+</ul>
+<p>User defined or simulated layout and typology</p>
+<p><small>Source: </i> <a href="https://a-project.co.uk/2014/12/03/field-2-_-urban-typologies/"> a-project</a></small></p>
+
+</section>
+
+<section>
+  <h3> Road map</h3>
+<img width="50%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/LOD.png">
+</ul>
+<p>Level of Detail management (LOD)</p>
+<p><small>Source: </i> <a href="https://www.sciencedirect.com/science/article/pii/S0198971516300436?via%3Dihub#!"> Biljecki et al.(2016)</a></small></p>
+
+</section>
+
+<section>
+  <h3> Road map</h3>
+<img width="80%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/futures/enhanced_textures.jpg">
+</ul>
+<p>Enhanced textures</p>
+<p><small>Source: </i> <a href="https://www.sciencedirect.com/science/article/pii/S0198971516300436?via%3Dihub#!"> Biljecki et al.(2016)</a></small></p>
+
+</section>
+
+
+<section>
+<h2>Open source</h2>
+
+<p>Tangible Landscape plugin for GRASS GIS <br>
+    <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
+        github.com/tangible-landscape/grass-tangible-landscape
+    </a></p>
+    <p>Tangible Landscape plugin for Blender <br>
+        <a href="https://github.com/tangible-landscape/tangible-landscape-immersive-extension">
+            github.com/tangible-landscape/tangible-landscape-immersive-extension
+        </a></p>
+<p>GRASS GIS module for importing data from Kinect v2 <br>
+    <a href="https://github.com/tangible-landscape/r.in.kinect">
+        github.com/tangible-landscape/r.in.kinect
+    </a></p>
+<p>Tangible Landscape repository on Open Science Framework <br>
+    <a href="https://osf.io/w8nr6/">
+        osf.io/w8nr6
+    </a></p>
+
+<img width="20%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/logos/gpl.png">
+<aside class="notes">
+
+This system and all other development made by our team is free and open source and I are committed to help you setting up your own Tangible landscape system.
+</aside>
+
+</section>
+
+
+<section>
+<h3>Resources</h3>
+
+<ul>
+    <li>Tangible Landscape website:  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a></li>
+    <li>Tangible Landscape wiki: <br><a href="https://github.com/tangible-landscape/grass-tangible-landscape/wiki">github.com/tangible-landscape/grass-tangible-landscape/wiki</a> </li>
+    <li>Book:
+      <ul>
+
+        <li><a href="http://www.springer.com/us/book/9783319893020"><em>Tangible Modeling with Open Source GIS 2nd ed</em></a></li>
+        <li><a href="http://www.springer.com/us/book/9783319257730"><em>Tangible Modeling with Open Source GIS 1st ed</em></a></li>
+      </ul>
+<li><a href="https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling">
+    Immersive Tangible Geospatial Modeling.</a> Proceedings of ACM SIGSPATIAL 2016.</li>
+    <li><a href="https://www.researchgate.net/publication/318846696_Tangible_Immersion_for_Ecological_Design">
+    Tangible Immersion for ecological design </a> Proceedings of ACADIA 2017.</li>
+
+</ul>
+
+
+<img width="20%" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/tl_book_cover.png">
+<img  class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/logos/tl_logo.png">
+<aside class="notes">
+If you are interested to learn more about Tangible landscape, These are some useful resources that can get you started.
+
+</aside>
+
+
+</section> -->
+
+
+<!----SLIDE 28 Video-- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>  <!-- slides -->
+
+</div>  <!-- reveal -->
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        center: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+         width: 1060,
+        // height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.05,  // increase?
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.5,
+        maxScale: 5.0,
+
+        theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+        chalkboard: {
+    // optionally load pre-recorded chalkboard drawing from file
+        src: "chalkboard.json",
+            color: [ 'rgb(255, 38, 0)', 'rgba(255,255,255,0.5)' ]
+      },
+
+        math: {
+          		mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          		config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+      },
+
+        dependencies: [
+      	{ src: 'plugin/math/math.js', async: true }
+      ],
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/math/math.js', async: true },
+            { src: 'plugin/chalkboard/chalkboard.js' }
+        ],
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+      },
+    });
+
+</script>
+
+</body>
+</html>
