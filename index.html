@@ -340,18 +340,18 @@
 
 
 <section data-background= "img/intro.jpg" data-background-size="95%">
-
       <aside class="notes">
       Geospatial computation, visualization and user interaction technologies —not only as
-      tools but also as modes of operation and inquiry — can radically disrupt the study and design of our landscapes.
+      tools but also as modes of operation and inquiry — can radically change the way we study and design of our landscapes.
       </aside>
 </section>
 
 <section data-background= "img/intro_tech.jpg" data-background-size="95%">
 
       <aside class="notes">
-    With geospatial computation technologies, we can capture an accurate model of the urban Landscape structure and patterns and rapidly simulate the
-    impact of our interventions on a range of environmental factors from flow of water and pollution to spread of fire and pathogens and to flow of traffic and people.
+    With geospatial computation technologies, we can develop an accurate model of the earth surface and rapidly simulate the
+    impact of our interventions on a wide range of environmental factors from flow of
+    water and pollution to spread of fire and pathogens and to flow of traffic and people.
       </aside>
 </section>
 
@@ -359,8 +359,7 @@
 
       <aside class="notes">
       With virtual reality and specefically immersive virtual environments (IVEs),
-      we can replicate “real world” experiences of existing landscapes and simulate lifelike “what if” scenarios for the imagined landscapes.
-      These technologies also allow us to rigorously measure cognitive and affective responses to landscape experience.
+      we can replicate “real world” experiences of existing landscapes and simulate lifelike scenarios for the imagined landscapes.
 
       </aside>
 
@@ -521,8 +520,8 @@
 
       <aside class="notes">
 
-        Our experiences of an landscapes (such as sense of beauty, safety, excitemment, serenity and so on) impacts our choices of visiting or living in a landscape,
-        They also influence our psyhiological and psychological health.
+        Our experiences of an landscapes (such as sense of beauty, safety, excitemment, serenity and so on) impact our choices of visiting or living in a landscape,
+        -- They also influence our psyhiological and psychological health.
 
         For example, research shows that spending time in urban green spaces with certain visual attributes our cognticie resources that become deplete after a long working day or being in demanding environments. A process called psychological restoration.
 
@@ -585,10 +584,6 @@
   and maps that are valuable for planning and managament purposes.
 
   However, it misses the critical aspect of experience that is the subjectivity and the way we experience landcape on-the-ground.
-  <!-- Also, it has been rather difficult to obtain a spatial data that can account for
-  granularity and complexity of the urban strcuture and pattern. -->
-
-
 
   <!-- The analysis usually starts with computing the visible area from a 3D surface model using line-of sight analysis which is called viewshed map.
   The viewshed can be combined with landcover to estimate the composition of the visible surface ?
@@ -654,13 +649,12 @@
 
     We can also take a subjective approach and run perceptions survey based on landscape photos, or simulations.
     This approach is very powerfull and relible for representing "in-situ" landscape experience and capturing perceptions.
-    But since pictures are non-spatial and not easily quantifiable, it is rather difficult to draw accurate information about the landscape attributes.
+    But it is somehow difficult to quantify pictures and draw accurate information about the landscape attributes.
     For example its difficult to say how many square meters of area you can see from a location or how far is a specefic buildings or more inricate
     analysis such as how harmonius or complex is the viewscape.//
 
     We can also combine these approaches to benefit from advantages of both. That means linking the perceptions derived from subjective analysis
-    with the landscape structure and pattern derived from objective analysis -- this approach has had limited use in landscape-scale and regional studies an approach which has not yet applied for urban envionments.
-
+    with the landscape structure and pattern derived from objective analysis.
 
 
   </aside>
@@ -725,9 +719,8 @@
 
 
     <aside class="notes">
-      For modeling urban environments we need to make improvements to both subjective and objective methods.
-      For example, we needed a spatial data that can capture the complexity and granularity of the urban landscape.
-      For that, I employed data derived light detection and ranging technology (or LIDAR) that allows for creating a very detailed surface model of the earth surface and above-surface features like trees and buildings.
+      For modeling urban environments, specially at the scale we percieve and interact with them, we need to make improvements in the precision of our objective analysis.
+      For that, I used data derived from light detection and ranging technology (or LIDAR) that allows for creating a very detailed surface model of the earth surface and above-surface features like trees and buildings.
       This surface is alled DSM.
 
     </aside>
@@ -762,7 +755,7 @@
     <aside class="notes">
     Based on the detialed DSM we can then use viewscape analysis to compute landscape structure and
     patten from the viewpoint of the human observer on the ground.
-    Viewscape analysis is a widely used GIS-based method for computing
+    Viewscape analysis is a widely used GIS-based method for mapping
     the visible area of a 3D surface based on a given vantage point.
     </aside>
 
@@ -797,7 +790,8 @@
 
       We can then take panoramic photos of the same vantage point and use immersive virtual envrionments or IVEs to turn them into immersive experiences.
       Now since both viewscape analyis and IVEs consider the 360 field of view,
-      they are an ideal match for linking the objective and subjective evaluation of the landscape.
+      they are an ideal match for linking the objective and subjective evaluation of the landscape,
+      as oppsoed to commonly used images that have limited field of view.
 
     </aside>
 
@@ -811,7 +805,7 @@
 
     <aside class="notes">
 
-    This scheme provides an overview to my proposed integrated approach combining viewscape analysis and human perceptions.
+    This scheme provides an overview to my developed integrated approach combining viewscape analysis and human perceptions.
     In the objective side, I prepare high-resolution surfaces,
     then I perform viewscape analysis to compute metrics related to composition and configuration of visible landscape (called viewscape).
 
@@ -845,7 +839,7 @@
 
   <aside class="notes">
 Also, the site is recently acquired by the city of Raleigh and planned to be the largest city park and a Landmark destination for North Carolina.
-That being said, providing spatial evidence of the restorative potential of the park can help in additionally incorporating experiential qualities in park design.
+That being said, providing spatial evidence of the restorative potential of the park can assist design and planning of the park.
 
   </aside>
 
@@ -875,7 +869,7 @@ That being said, providing spatial evidence of the restorative potential of the 
        0.5m resolution DSM
 
      <aside class="notes">
-    Then I interpolated it to acquire a 0.5 meters surface model that represents buildings and vegetation.
+    Then I interpolated it to develop a 0.5 meters surface model that represents buildings and vegetation.
      </aside>
 </section>
 
@@ -923,7 +917,7 @@ That being said, providing spatial evidence of the restorative potential of the 
 
       <aside class="notes">
 
-      A well known limiation of Lidar derived surfaces if the way that they represent the trees structures which can be big source of error for visbility estimations.
+      A well known limitation of Lidar derived surfaces if the way that they represent the trees structures which can be big source of error for visbility estimations.
       The panoramic image shows a
       photograph taken from a vantage point and here
       you can see the viewscape map computed on the bare-earth model and on the DSM with trees and buidlings from that vantage point.
@@ -1205,7 +1199,7 @@ classification corresponding to the site’s existing land cover.
             <td> 12 %  </td>
             <td> 0 %  </td>
             <td> 5 %  </td>
-            <td> 12 %  </td>
+            <td> <highlight class = "dark"> 12 %  </td>
           </tr>
 
           <tr class = "center_text">
@@ -1214,15 +1208,15 @@ classification corresponding to the site’s existing land cover.
             <td> 0 %  </td>
             <td> 0 %  </td>
             <td> 4 %  </td>
-            <td><highlight class="dark">  8 % </highlight </td>
+            <td>8 % </td>
           </tr>
 
           <tr class = "center_text">
 
             <td style = "text-align:left"> Deciduous </td>
             <td> 0 %  </td>
-            <td> 18 %  </td>
-            <td> <highlight class = "dark"> 38 % </highlight </td>
+            <td> <highlight class = "dark"> 18 %  </highlight> </td>
+            <td> <highlight class = "dark"> 38 % </highlight> </td>
             <td> 15 %  </td>
           </tr>
 
@@ -1475,7 +1469,7 @@ classification corresponding to the site’s existing land cover.
                           <td><i>I would be able to rest and recover my ability to focus in this environment</i> </Reference></td>
                           <td>Lindal & Hartig, 2013</td></tr>
                         <tr>
-                          <td>Openness(Visual access)</td>
+                          <td>Openness (Visual access)</td>
                           <td><i>How well can you see all parts of this setting without having your view blocked or interfered with?</i></td>
                           <td>Herzog & Kutzli, 2002</td>
                         </tr>
@@ -1569,7 +1563,7 @@ classification corresponding to the site’s existing land cover.
                 <col width = "15%">
                 <col width = "75%"
                 <tr><th>Response variable</th><th>R<sup><small>2</small></sup> adjusted</th><th>Significant independent variable</th></tr>
-                <tr><td>Perceived Visual access</td><td>0.64</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***, Depth<font style="color:green">&uarr;</font>**, Relief<font style="color:red">&darr;</font>***, Vdepth var<font style="color:red">&darr;</font>***, Nump<font style="color:red">&darr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:green">&uarr;</font>** , Deciduous<font style="color:green">&uarr;</font>** </td></tr>
+                <tr><td>Perceived Openness </td><td>0.64</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***, Depth<font style="color:green">&uarr;</font>**, Relief<font style="color:red">&darr;</font>***, Vdepth var<font style="color:red">&darr;</font>***, Nump<font style="color:red">&darr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:green">&uarr;</font>** , Deciduous<font style="color:green">&uarr;</font>** </td></tr>
                 <tr><td>Perceived Complexity</td><td>0.42</td> <td style= "font-size: 14pt"> SDI *** <font style="color:green">&uarr;</font>, Relief **<font style="color:green">&uarr;</font>, Depth** <font style="color:red">&darr;</font>, ED***<font style="color:green">&uarr;</font>, Nump***<font style="color:green">&uarr;</font>, Building**<font style="color:green">&uarr;</font></td></tr></tr>
                 <tr><td>Perceived Naturalness</td><td>0.62</td><td style= "font-size: 14pt">Relief <font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Nump<font style="color:green">&uarr;</font>**</td></tr>
                 <tr><td>Perceived Restoration potential</td><td>0.72</td><td style= "font-size: 14pt">Extent <font style="color:green">&uarr;</font>***,  Depth <font style="color:red">&darr;</font>***, Relief <font style="color:red">&darr;</font> ***, SDI<font style="color:red">&darr;</font>***, Skyline<font style="color:green">&uarr;</font>***, Deciduous <font style="color:green">&uarr;</font>**, Mixed<font style="color:green">&uarr;</font>***, Herbaceous<font style="color:green">&uarr;</font>***, Building<font style="color:red">&darr;</font>***, Paved<font style="color:red">&darr;</font>**</td></tr>
@@ -1589,7 +1583,7 @@ classification corresponding to the site’s existing land cover.
               The results seem promising specially for perceived restorativeness model which predicted 72% of the variations in perceived restorativeness potential.
 
               The findigs also confirmed several relationships between viewscape characteristics and human perceptions.
-              Perceived Visual access was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased visual access.
+              Perceived openness was in large part explained by the extent and depth, wheras presence of vertical obstructions like buildings decreased openness.
               For example, perceived naturalness was mostly explained by presence of natural elements and absence of built elements,
               Whereas percepived complexity was explained in large part by landcover heterogeneity and terrain roughness, and shape complexity.
 
@@ -1742,7 +1736,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
 </section>
 
 
-<section data-background="white">
+<!-- <section data-background="white">
   <h2>Restorative hotspots</h2>
 
 
@@ -1753,7 +1747,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     The other hotspot is the large grassy area called big field.
     </aside>
 
-</section>
+</section> -->
 
 <section data-background="white">
   <h2>Restorative coldspots</h2>
@@ -1763,7 +1757,7 @@ The negative influence of vertical and landcover heterogeneity is indicative tha
     <p style="font-size:14pt">
 
     <aside class="notes">
-    The least restorative spaces corresponds to area with high concentration of buidlings and parking lots, which ofcourse is not a surprise.
+    Not surprisingly, the least restorative spaces are those with high concentration of buidlings and parking lots, which ofcourse is not a surprise.
     </aside>
 
 </section>
@@ -1939,28 +1933,27 @@ data-background-size="100%">
   <h3>The Science/Design divide </h3>
   <ul>
     <li> Effective design and decision making require interdiciplinary collaboration and public participation <reference> (Wang et al. 2015; Bishop,2011)</reference>
-    <li> Scale and tools are different, specialized and complicated <reference> (Foster, 2016)</reference>
+    <li class="fragment fade in"> Scale and tools are different, specialized and complicated <reference> (Foster, 2016)</reference>
     <!-- <li> Assessment of environmental/experiential trade-offs are difficult <reference> (reference)</reference> -->
 
   </ul>
 
 <aside  class="notes">
 
-But why do we need to blend experiential analysis and scientific inquiry into the design process.
-
 As we all know, design and planning process today require collaboration between designers, engineers,and scientists to effectively
-address environmental aspects such as flow of water, traffic, erosion, along with aesthetic and design considerations.
+address environmental aspects such as flow of water, erosion, bio-diversity, pollution along with aesthetic and design considerations.
 At the same time design scenarios should integrate public input and communicate tradeoffs in a way they can understand and participate.
 
 But designers and scientisct tools and materials are very different.
-Designers use tools such as CAD, 3D visualization and human-viewperspective views and so on to draft the plans and represent design outcomes
-in the way that clients and stakeholders can understand, while scientists and engineers work with spatial analysis
-and metrics mostly with maps to deliver the outcomes.
+Designers use tools such as CAD and 3D renderings to draft the plans and visualize the landscape experience
+in a way that clients and stakeholders can understand.
+Scientists, on the other hand, mostly work with Spatial and statistical analysis software and communicate their results with maps and indicators.
 
 As these software and tools become more and more specialized, integration of scientific
 inquiry into iterative design process becomes more and more difficult.
 
 These analytical divides slows down the design process, and makes collaboration and public participation difficult.
+
 </aside>
 
 </section>
@@ -2013,9 +2006,9 @@ These analytical divides slows down the design process, and makes collaboration 
 <img class="stretch" src="img/coupling_concept.jpg">
 
   <aside  class="notes">
-    My proposed approach combines geospatial computation, tangible interaction and 3D visulization.
+    My developed approach combines geospatial computation, tangible interaction and 3D visulization.
     Thanks to Tangible landscape system, Realtime linkage between Tangible interaction
-    and geospatial analysis has been already enabled. My proposed addition links
+    and geospatial analysis has been already enabled. My developed addition links
     geospatial analysis with 3D modeling and rendering so that design scenarios can be
    rendered into perspective views and immersive scenes, in real time.
 
@@ -2125,8 +2118,9 @@ Tangible Interaction</div>
 <aside class="notes">
   A quick intro to Tangible landscape, is a technology for tangible interaction with GIS developed here at the center
   for Geospatial analytics by Anna Petrasova and colleagues in Dr. Mitasova's lab. It allows user to manipulate a physcial model of the landscape with hand or tangible objects,
-  and in near real time recieve a variety of spatial analysis such as water flow, biodiversity, fire spread, pathogen spread, etc.
-  The system uses the open-source GRASS GIS software that allows for implementing a wide range of geospatial simulations.
+  and in near real time and recieve relevant geospatial feedback.
+  The system uses the open-source GRASS GIS software that allows for
+  implementing a wide range of geospatial simulations such aa variety of spatial analysis such as water flow, biodiversity, fire spread, pathogen spread, etc..
 
 </aside>
 
@@ -2153,9 +2147,9 @@ Here you can see you the existing tangible landscape setup.
   called blender with outputs to a computer display and an
   immersive virtual reality headset.
   Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
-  Blender was perfectly suited to this application because it has an internal python scripting environment for automating
+  Blender was perfectly suited to this application because it is has an internal python scripting environment for automating
   3D modeling procedures and more importantly, it has addons for importing GIS data. It also has a very efficient and realistic real time rendering
-  capabilities with realtime output for head mounted displays.
+  capabilities with output for head mounted displays.
 
 </aside>
 
@@ -2171,7 +2165,7 @@ Here you can see you the existing tangible landscape setup.
   a technique referred to as loose coupling. As user interacts with the tangible model or objects,
   GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory.
   A monitoring module in blender scripting environment that constantly watches the directory,
-  identifies the type of incoming information, and apply relevant operations needed to update the 3d scene.
+  identifies the type of incoming information, and applies procedural 3D modeling to update the 3d scene.
 
 </aside>
 
@@ -2217,14 +2211,15 @@ Here you can see you the existing tangible landscape setup.
   </table>
 
   <aside class="notes">
-The implemented procedural 3D visualization follows three general steps of importing the GIS features,
+The implemented procedural 3D modeling follows three general steps of importing the GIS features,
 turning them into 3D models and and apply materials and textures (a procees called shading).--
 
 --Different geospatial formats are supported. --Rasters can be used to communicate surfaces and terrains, polylines can be used for linear features such as waypoints
 and polygons can be used to delineate zone type objects such as patches of trees and urban blocks.--
 
-Once imported specific modeling and rendering procedures is applied for each environmental features.
+Once imported specific modeling and rendering procedures are applied for each environmental features.
 For example terrain requires addition of side fringes and surface material whereas tree patches related should get populated with trees.
+
   </aside>
 
 </section>
@@ -2235,8 +2230,8 @@ For example terrain requires addition of side fringes and surface material where
 <!-- <video data-autoplay  width="800" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/water2.mp4" frameborder="0"></iframe> -->
 
    <aside class="notes">
-    Here you can see that how tangible interaction, Geospatial analysis and 3D rendering can be used simultaneously to support landscape design activities.
-    For example, users can sculpt the landscape to see the projection of water flow and accumulation simulations.
+    Here I show you some examples of how the development can support diffrent design activities.
+    For example, users can change the landform using their hands and sculpting knife to see the projection of water flow and accumulation simulations.
     You can see on the left side of the model we project numeric feedback about the depth and surface area of the retained water.
     In this case both terrain and water data are sent to Blender to update the 3D model.
 
@@ -2251,12 +2246,10 @@ For example terrain requires addition of side fringes and surface material where
 
   <aside class="notes">
 
-  To enable vegetation design, we leveraged color detection of the scanner and machine vision algorithms in GIS.
-  For the tangible interaction, users can design and place pieces of colored felt.
-  Each color represents a landscape class, like deciduous, evergreen etc.
-  --As user places the felt, the RGB image of the camera is classified in GRASS GIS to compute computes simulations related landscape heterogeneity,
-  biodiversity and complexity. We also project an estimated degree of pollution remediation as a result of planting phyto remediating vegetation.
-  On the 3D side, blender populates corresponding species in each patch based on a predefined spacing and density
+  For vegetation design users can use pieces of colored felt. Each color represents a landscape class, like deciduous, evergreen etc.
+  --As user places the felt, the RGB image of the camera is classified in GRASS GIS to compute analysis related landscape heterogeneity,
+  and biodiversity. We also project an estimated degree of pollution remediation as a result of planting phyto remediating vegetation.
+  On the 3D side, blender populates corresponding plants in each patch based on a predefined spacing and density
 
   </aside>
 
@@ -2269,11 +2262,11 @@ For example terrain requires addition of side fringes and surface material where
 
  <aside class="notes">
 
-   Additionally users can use tangible objects, in this case wooden cubes to designtate a linear features like a trail or a road.
-   As user inserts each of the chekpoints, Grass GIS, recalculetes and projects an optimal route using an a least cost walking path algorithm.
+   We can use wooden cubes as waypoint to design linear features like a trail or a road.
+   As user inserts each of the waypoints, Grass GIS recalculates and projects an optimal route with minimized slope.
    A profile of the road and the slope of the segments are projected as feedback (show them).
    For 3D visulization, the line is extruded with a pre-defined profile and material in this case a baord walk.
-   A camera is set to follow the path to enable walkthrough animations.
+
 
  </aside>
 
@@ -2286,8 +2279,8 @@ For example terrain requires addition of side fringes and surface material where
 
  <aside class="notes">
    Any time during the interaction users can pick a mouse and freely navigate the 3D scene environment and explore diffrent vantage points.
-   But I wanted to keep that feature Tangible as well. We used wooden marker with colored tip, that denotes the viewers location and direction of view.
-   Once imported in blender, The scene camera is then relocated to the line’s starting point and the direction of view is aligned to the line’s endpoint.
+   But I wanted to keep that feature Tangible as well. We used a wooden marker with colored tip that is linked the location and direction of the camera in the 3D scene.
+
  </aside>
 
 </section>
@@ -2300,7 +2293,7 @@ For example terrain requires addition of side fringes and surface material where
 <aside class="notes">
   Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
   so users can pick up the headset and get immersed in their prefered views.
-  One additional camera is also set to follow the imported trail feature to initiate a walkthrough animation if required.
+
 </section>
 
 <!----SLIDE 23 Realism-->
@@ -2392,11 +2385,11 @@ the scenes can be rendered with much higher quality which ofcourse depending on 
 
 <p>Spring Hill house site (48000 m<sup><small>2</small></sup>), Raleigh, NC</p>
 <aside class="notes">
-  To test the functionality the prototype in the design process, we conducted series of pilot user studies.
-  As an example, I am showing a design case-study performed collaboratively
+  To test the functionality the prototype in the design process, we conducted several pilot user studies.
+  Here I am showing a design case-study performed collaboratively
   by a geospatial scientist and a landscape architect to plan a small recreational site in Raleigh.
   They were tasked to design the topography, vegetation arrangement, water-regime, a small shelter and a recreatioal trail.
-  
+
 
 
 </aside>
@@ -2429,7 +2422,7 @@ Here you can see how they used the view markers to check the entrance profiles f
 <img class="stretch" src="https://github.com/ncsu-geoforall-lab/tangible-landscape-talk/raw/master/img/design/process3.jpg">
 <p>Planting trees and siting the shelter </p>
 <aside class="notes">
-Then they planted four different plant species using felt pieces while exploring the biodiversity measures.
+Then they planted four different plant species while exploring the biodiversity measures.
 Using a wooden marker, they explore a suitable location for a shelter that has best views to the pond and is backed by the forested area.
 
 </aside>
@@ -2465,8 +2458,8 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
 <!-- <li class="fragment fade-in">  Tangible interaction in combination with automated feedbacks facilitates collaboration and public participation. -->
 <!-- <li class="fragment fade-in">  User studies (e.g., designers cognition, participation, collaboration). -->
 <!-- <li class="fragment fade-in">  Developed technology can contribute to teaching spatial concepts.  -->
-<li class="fragment fade-in">  Framework for Realtime 3D rendering with geospatial data can improve other modeling and simulation applications.
-<!-- <li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales. -->
+<li class="fragment fade-in">  Framework for real-time 3D rendering with geospatial data can improve other modeling and simulation applications.
+<li class="fragment fade-in">  The coupling framework be transferred to other design and planning applications and scales.
 
 </ul>
 
@@ -2474,15 +2467,16 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
 
   I conclude this section by mentioning a few novel contributions of this work and its implications on design.
 
-  First, our exploratory results indicate that the developed technology can improve landscape design by significantly decreasing the ideation to representaion loop,
-  enabling collaboration, and enabling tradeoff assessment between spatial and experiential factors.
+  First, our exploratory results indicate that the developed technology allows designers to easily collaborate with each other
+  ,try many solutions while and explore the tradeoff between environmental and aesthetic factors.
+
+  Also, this developement can increase the efficiency of the design process by enabling rapid prototyping, 3D rendering, and even mapping.
 
   However, to empiricaly test these claims, we are intending to conduct multiple user studies and to compare the technology with typical design tools to
   empirically test how interaction with system and its components influence the design process as well as collaboration, and participation.
 
   Second, the framework for coupling can be used to with or without the tangible landscape -- as a standalone desktop or web application-- to
-  better visualize the outcome of geospatial simulations, such as landuse change, landscape evolution, firespread, storm surge and so on.
-  Special effects in Blender can be used to much better visualize spatial phenomenon such as flooding, fire spread, deforestation, and so on.
+  in relation to any geospatial simulation, such as landuse change, landscape evolution, firespread, storm surge and so on.
 
 
 </aside>
@@ -2526,9 +2520,8 @@ amount of runoff saved can be collaboratively balanced to create a landscape tha
       </small></p>
 
 <aside class="notes">
-  For example, we have used it to visualize an urban growth simulation called FUTURES
-  Developed by Meentemeyer et al., in 2013. This application has great impications for urban planning and related decision support.
-
+  For example, we have used it to visualize the an urban growth simulation called FUTURES
+  Developed by Meentemeyer et al., in 2013.
 </aside>
 
 
@@ -2689,7 +2682,7 @@ including University of Georgia and University of Illions.
   </td>
 
   <td style = "vertical-align :middle; border-bottom:0px">
-    <p4><strong>Real-time 3D modelling with Geospatial data</strong> <i>Harvard University Center for Geospatial Analysis (CGA)</strong>, Cambridge, US, Aug 2017
+    <p4><strong>Real-time 3D modeling with Geospatial data</strong> <i>Harvard University Center for Geospatial Analysis (CGA)</strong>, Cambridge, US, Aug 2017
     2018</i></p4>
   </td>
 
@@ -2786,7 +2779,7 @@ including University of Georgia and University of Illions.
     <!-- <li class="fragment fade-in"> High-resolution predictive map of restoration potential and novel predictors for restoration potential -->
     <li class="fragment fade-in"> Method for improving tree obstruction in DSM
     <li class="fragment fade-in"> Software for automated viewscape analysis and IVE survey
-    <li class="fragment fade-in"> Method and software for realtime 3D rendering and immersion with geospatial data, and tangible interaction.
+    <li class="fragment fade-in"> Method and software for real-time 3D rendering and immersion with geospatial data, and tangible interaction.
     <!-- <li class="fragment fade-in"> Improvement of Tangible Landscape as a design and planning tool -->
   </ul>
 <br><br><br>
